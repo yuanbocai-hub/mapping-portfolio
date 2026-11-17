@@ -1,0 +1,11 @@
+{
+  "title": "The Yangtze as a river region",
+  "subtitle": "Commodity patterns, waterways, and historical cartography",
+  "description": "Reconstructing seven commodity patterns from a 1935 Yangtze map, with a reflection on regional geography and a related experiment in drawing navigation routes with Codex.",
+  "cover": "assets/yangtze-commodities.jpg",
+  "page": "index.html",
+  "repository": "https://github.com/yuanbocai-hub/crooked-stern-junk",
+  "tags": ["Historical GIS", "Cartography", "Regional geography"],
+  "primary_work": ["Yangtze commodity reconstruction", "Seven-panel thematic comparison"],
+  "related_work": ["Codex-assisted Wu River navigation chart", "Pearl River commodity comparison"]
+}

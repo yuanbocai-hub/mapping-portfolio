@@ -52,3 +52,19 @@ The international trade-route guide draws principally on Iftekhar Iqbal, *The Ra
 ## File provenance
 
 Original filenames are retained. `assets/` contains JPEG browsing derivatives, not replacement masters. `asset-manifest.json` records the supplied images’ dimensions, sizes, and SHA-256 checksums for later verification. Enlarging a low-resolution reproduction does not recover missing label detail.
+
+## Codex-assisted navigation chart
+
+The navigation chart is an experiment in drawing with Codex. Codex assisted the plotting and layout using the historical route information. Its role should be credited separately from the underlying navigation sources. The portfolio treats the chart as a related study; the Yangtze commodity reconstruction is the principal work.
+
+## Commodity extraction records
+
+[METHODS.md](METHODS.md) records the two extraction approaches, the corrected Yangtze class counts, the retained Pearl River band gaps, and the difference between source geometry and selective hiding in the final layout. It was checked against the saved GIS records and processing scripts on 17 November 2026.
+
+## Vessel illustrations
+
+- Upstream: YUE-FAN adaptation of plates 10 and 18 from G. R. G. Worcester, *Notes on the Crooked-bow and Crooked-stern Junks of Szechwan* (Shanghai: Statistical Department of the Inspectorate General of Customs, 1941). Bibliographic attribution follows the supplied diagram.
+- Downstream: YUE-FAN adaptation of plate 30 from L. Audemard, *Les Jonques Chinoises*, vol. 5, *Haut Yang Tse Kiang* (1963). Attribution follows the supplied image; the photograph is used to identify equipment, not to establish a particular rapid descent.
+- Plan, elevation, and perspective: supplied YUE-FAN drawing. Its original plate number is not established by the supplied file.
+
+Original supplied figures are in `assets/figures/`; JPEG browsing copies are in `assets/`. Watermarks and existing image credits are retained. The page provides edited text descriptions of the annotations, also collected in [the figure notes](notes/figure-annotations.md). Embedded lettering in the supplied images has not been repainted.

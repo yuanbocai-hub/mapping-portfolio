@@ -4,3 +4,7 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+yangtze-portfolio-preview.html
+yangtze-portfolio-update.zip
+portfolio-project.bundle

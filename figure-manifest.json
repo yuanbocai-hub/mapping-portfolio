@@ -1,0 +1,22 @@
+{
+  "figures": [
+    {
+      "file": "assets/figures/downstream.png",
+      "bytes": 7174486,
+      "sha256": "e3647b4e83efc6f5fc4167f10d2d2fe8324ebbc6a8d3b837aa258e8fcf809a47",
+      "credit": "Supplied YUE-FAN Studio illustration; embedded credits retained"
+    },
+    {
+      "file": "assets/figures/hull.png",
+      "bytes": 888970,
+      "sha256": "a286188f9a147d2636c330dedb201ffa02147a3e1114dc998d1e50279abbc1df",
+      "credit": "Supplied YUE-FAN Studio illustration; embedded credits retained"
+    },
+    {
+      "file": "assets/figures/upstream.png",
+      "bytes": 8808023,
+      "sha256": "24ad65dc365927fafec2bc3b123ff28a2fd75a6701af512586bdfc5fa2c7129a",
+      "credit": "Supplied YUE-FAN Studio illustration; embedded credits retained"
+    }
+  ]
+}
