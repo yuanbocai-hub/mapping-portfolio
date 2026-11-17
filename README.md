@@ -2,7 +2,7 @@
 
 Cartography, historical GIS, interactive storytelling, and river photography by Yuanbo Cai.
 
-**[Open the Mapping Portfolio](https://yuanbocai-hub.github.io/crooked-stern-junk/portfolio.html)**
+**[Open the Mapping Portfolio](https://yuanbocai-hub.github.io/mapping-portfolio/)**
 
 ## The Yangtze as a river region
 
@@ -12,9 +12,9 @@ Hong Maoxi’s historical map puts seven commodity patterns onto a crowded sheet
 
 The project asks how dispersed areas of production might be connected through waterways, ports, and exchange. It also records the interpretive work behind the reconstruction: distinguishing colored outlines from filled regions, reviewing interrupted loops, and deciding what to show where symbols overlap.
 
-**[Browse all portfolio projects](https://yuanbocai-hub.github.io/crooked-stern-junk/portfolio.html)** · **[Open the Yangtze project](https://yuanbocai-hub.github.io/crooked-stern-junk/)**
+**[Browse all portfolio projects](https://yuanbocai-hub.github.io/mapping-portfolio/)** · **[Open the Yangtze project](https://yuanbocai-hub.github.io/mapping-portfolio/yangtze.html)**
 
-Related projects: [Corridors before Borders](https://yuanbocai-hub.github.io/crooked-stern-junk/corridors.html) · [Following the Tsangpo](https://yuanbocai-hub.github.io/crooked-stern-junk/tsangpo.html)
+Related projects: [Corridors before Borders](https://yuanbocai-hub.github.io/mapping-portfolio/corridors.html) · [Following the Tsangpo](https://yuanbocai-hub.github.io/mapping-portfolio/tsangpo.html)
 
 ## Principal work: the Yangtze commodity maps
 
