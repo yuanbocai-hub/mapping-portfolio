@@ -6,7 +6,9 @@ Hong Maoxi’s historical map puts seven commodity patterns onto a crowded sheet
 
 The project asks how dispersed areas of production might be connected through waterways, ports, and exchange. It also records the interpretive work behind the reconstruction: distinguishing colored outlines from filled regions, reviewing interrupted loops, and deciding what to show where symbols overlap.
 
-**Portfolio page:** [index.html](index.html). Open this file in a browser with the repository files alongside it. The page works without a build step and can be served from the repository root through GitHub Pages. Adding this file does not itself enable Pages hosting.
+**[Browse all portfolio projects](https://yuanbocai-hub.github.io/crooked-stern-junk/portfolio.html)** · **[Open the Yangtze project](https://yuanbocai-hub.github.io/crooked-stern-junk/)**
+
+Related projects: [Corridors before Borders](https://yuanbocai-hub.github.io/crooked-stern-junk/corridors.html) · [Following the Tsangpo](https://yuanbocai-hub.github.io/crooked-stern-junk/tsangpo.html)
 
 ## Principal work: the Yangtze commodity maps
 

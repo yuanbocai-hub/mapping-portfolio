@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Following the Tsangpo: an interactive historical map by Zhiting Cai tracing Bailey and Morshead’s 1913 journey and the limits of direct observation.">
+  <meta name="theme-color" content="#f5f2ea">
+  <title>Following the Tsangpo · Yuanbo Cai</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="projects.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the project</a>
+<header class="site-header">
+  <a class="wordmark" href="portfolio.html">Yuanbo Cai <span>Cartography &amp; historical GIS</span></a>
+  <nav aria-label="Portfolio projects" class="project-links"><a href="portfolio.html">All projects</a> · <a href="corridors.html">Corridors before Borders</a> · <a href="index.html">The Yangtze</a></nav>
+</header>
+<main id="main">
+  <section class="hero wrap" id="top" aria-labelledby="project-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Interactive cartography <span>GEOG 458 · Historical narrative</span></p>
+      <h1 id="project-title">Following<br>the <em>Tsangpo</em></h1>
+      <p class="deck">Where could Bailey and Morshead follow the river in 1913, and how did they describe the reach they could not see?</p>
+      <a class="text-link" href="https://yuanbocai-hub.github.io/geog458-labs/lab7/">Open the interactive story <span aria-hidden="true">↗</span></a>
+    </div>
+    <figure class="hero-figure">
+      <a href="assets/tibet/pe-ferry.jpg" data-lightbox data-caption="The ferry at Pe. AI-assisted restoration derivative of a photographic plate published with Bailey’s 1914 article."><img src="assets/tibet/pe-ferry.jpg" alt="A restored monochrome view down the Tsangpo from the ferry at Pe, with the river between steep mountain slopes." fetchpriority="high"></a>
+      <figcaption><span>01 / The river at Pe</span>Restoration derivative · Bailey, 1914</figcaption>
+    </figure>
+  </section>
+  <nav class="chapter-nav" aria-label="Project chapters"><div class="wrap"><a href="#about">01 <span>About</span></a><a href="#evidence">02 <span>Reading evidence</span></a><a href="#related-map">03 <span>Related map</span></a><a href="#sources">04 <span>Sources</span></a></div></nav>
+  <section class="overview wrap" id="about">
+    <dl class="project-meta">
+      <div><dt>My contribution</dt><dd>Historical narrative<br>Route and place selection<br>Map interaction &amp; visual design</dd></div>
+      <div><dt>Format</dt><dd>Four chapters · scroll-driven map<br>Mapbox GL JS · GeoJSON</dd></div>
+      <div><dt>Context</dt><dd>GEOG 458<br>1913 fieldwork / 1914 publication</dd></div>
+    </dl>
+    <div class="prose intro"><p>This story follows the uneven reach of geographical knowledge along a difficult river.</p><p>I read Bailey’s account beside the expedition map, photographs, and digitized route fragments. Four chapters move from the departure toward the Tsangpo to Pe, Pemakochung, and the downstream reach beyond direct observation. Scrolling changes the map view; clicking a marked place opens a short evidence note.</p><p>The route remains open before Gompo Ne. Bailey’s estimate of the junction depended partly on information from Monba hunters and comparison with another river reach. Drawing a continuous line would conceal that distinction between travel, testimony, and inference.</p></div>
+  </section>
+  <section class="chapter wrap" id="evidence" aria-labelledby="evidence-title">
+    <div class="section-heading"><p class="eyebrow">02 / Reading evidence</p><h2 id="evidence-title">A mapped name does not<br>always record a visit</h2></div>
+    <div class="section-intro"><p>At Pemakochung, Bailey described a small monastery and a drop in the river. Pemakö names a much wider cultural and religious region. Keeping those scales distinct prevents accounts of a region from being assigned to a single point.</p><p>The photograph’s caption places the camera “100 feet above.” That is the viewpoint, rather than the height of the fall. Small wording choices can change what readers think a map or image establishes.</p></div>
+    <figure class="map-figure"><a href="assets/tibet/pemakochung.jpg" data-lightbox data-caption="Pemakochung falls. AI-assisted restoration derivative of the plate published with Bailey’s 1914 article. The original caption’s 100 feet refers to the viewpoint."><img src="assets/tibet/pemakochung.jpg" alt="A restored monochrome photograph of the Tsangpo at Pemakochung, viewed from above the river." loading="lazy"></a><figcaption><span>02 / Pemakochung</span><a href="https://yuanbocai-hub.github.io/geog458-labs/lab7/images/originals/pemakochung-falls-original.jpg">Compare the original scan ↗</a></figcaption></figure>
+    <aside class="map-note">The displayed photographs are AI-assisted restoration derivatives. The original scans remain the evidence for close reading; no measurements or newly identified features are derived from the restorations.</aside>
+    <div class="pearl-intro"><p class="eyebrow">Interaction and interpretation</p><h3>Let the reader follow the evidence</h3><p>I kept modern settlement labels, roads, and political boundaries out of the story’s basemap so that they would not compete with the historical transcription. Historical route fragments retain uncertain alignments. Readers can choose slower map flights, inspect evidence notes, and compare restored photographs with the scans.</p></div>
+    <details class="source-disclosure"><summary>View the historical expedition map</summary><figure><a href="assets/tibet/bailey-map.jpg" data-lightbox data-caption="Part of North-Eastern Frontier and Tibet showing the routes of Captains Morshead and Bailey 1913, published in 1914."><img src="assets/tibet/bailey-map.jpg" alt="The historical expedition map showing Bailey and Morshead’s routes through northeastern frontier and Tibet in 1913." loading="lazy"></a><figcaption>Fieldwork: 1913 · publication: 1914</figcaption></figure></details>
+  </section>
+  <section class="method-band" id="related-map" aria-labelledby="related-title"><div class="wrap">
+    <div class="section-heading"><p class="eyebrow">03 / Related map · GEOG 465</p><h2 id="related-title">Frontiers, roads,<br>and river landscapes</h2></div>
+    <div class="section-intro"><p>This separate Leaflet project lets readers explore rivers, roads, settlements, and historical sites in the Tsangpo region. Layer controls and selected popup fields support comparison across the landscape.</p><p>The course submission focused on a proposed hydropower tunnel, major rivers, historical sites, and the disputed-area boundary. The published map continued to develop afterward. Its expanded layers should be read as a later version of that coursework.</p></div>
+    <a class="text-link" href="https://yuanbocai-hub.github.io/riverscape_tsangpo/">Explore the Leaflet map <span aria-hidden="true">↗</span></a>
+    <p class="small-note">The mapped boundaries support academic discussion and do not establish an authoritative territorial interpretation.</p>
+  </div></section>
+  <section class="sources wrap" id="sources" aria-labelledby="sources-title">
+    <div class="section-heading"><p class="eyebrow">04 / Sources and connections</p><h2 id="sources-title">Read alongside the story</h2></div>
+    <div class="source-grid"><div><h3>Historical and regional sources</h3><ol class="bibliography"><li>F. M. Bailey, “Exploration on the Tsangpo or Upper Brahmaputra,” <i>The Geographical Journal</i> 44(4), 1914, pp. 341–360, and accompanying map.</li><li>Bailey, <i>Report on an Exploration on the North-East Frontier</i> (1914), and Morshead’s survey-report glossary.</li><li>Kerstin Grothmann, “Population History and Identity in the Hidden Land of Pemakö,” <i>Journal of Bhutan Studies</i> 26 (2012), pp. 21–52.</li></ol></div><div><h3>Explore the project</h3><a class="resource-row" href="https://yuanbocai-hub.github.io/geog458-labs/lab7/">Interactive story <span>↗</span></a><a class="resource-row" href="https://yuanbocai-hub.github.io/geog458-labs/lab7/sources.md">Source, data, and image notes <span>↗</span></a><a class="resource-row" href="https://yuanbocai-hub.github.io/geog458-labs/lab7/images/originals/pe-ferry-original.jpg">Original ferry photograph scan <span>↗</span></a><a class="resource-row" href="corridors.html">Related research: Corridors before Borders <span>→</span></a></div></div>
+  </section>
+</main>
+<footer class="wrap"><p>Zhiting Cai · University of Washington, Seattle<br>Historical sources and image credits are retained in the project notes.</p><a href="portfolio.html">All projects →</a></footer>
+<dialog id="image-dialog" aria-labelledby="image-caption"><div class="lightbox-toolbar"><p id="image-caption"></p><div><a id="image-original" href="#">Open image file ↗</a><button type="button" id="close-image" aria-label="Close image">Close ×</button></div></div><div class="lightbox-stage"><img id="lightbox-image" alt=""></div><p class="lightbox-help">Click the image to switch between fit and full size. Press Esc to close.</p></dialog>
+</body>
+</html>
