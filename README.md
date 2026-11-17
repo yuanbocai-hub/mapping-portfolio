@@ -1,4 +1,10 @@
-# The Yangtze as a river region
+# Mapping Portfolio
+
+Cartography, historical GIS, interactive storytelling, and river photography by Yuanbo Cai.
+
+**[Open the Mapping Portfolio](https://yuanbocai-hub.github.io/crooked-stern-junk/portfolio.html)**
+
+## The Yangtze as a river region
 
 Reconstructing commodity patterns from a 1935 map to examine how production regions relate to the river network.
 
