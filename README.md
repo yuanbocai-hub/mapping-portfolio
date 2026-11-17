@@ -24,7 +24,19 @@ The portfolio page explains why light tints and interrupted bands were used, and
 
 I made this chart as an experiment in drawing with Codex. Codex assisted the plotting and layout, using historical route information from Worcester’s account. The chart follows transfers from the Yangtze into the Wu River system. The 71 difficult rapids refer to the Kung-t’an–Ssu-nan reach as a whole; Hsin-t’an is interpolated from historical distances. The layout uses non-uniform scaling.
 
-The portfolio page pairs the chart with YUE-FAN’s annotated upstream towing and downstream steering illustrations. It also includes a text reading of each illustration.
+### Upstream towing
+
+[![Upstream towing: tracking beams, lifting line, and iron ring](assets/upstream.jpg)](assets/figures/upstream.png)
+
+Bamboo towing lines attach to the tracking beams. A lifting line and iron ring raise the towing line over the bow when it changes sides. A separate shore line controls the boat’s distance from the bank. YUE-FAN adaptation of Worcester (1941), plates 10 and 18.
+
+### Downstream steering
+
+[![Downstream steering: elevated platform and long steering sweeps](assets/downstream.jpg)](assets/figures/downstream.png)
+
+The elevated platform gives the stern operator room to work the long sweep. The raised stern provides a fulcrum and keeps the sweeps apart. YUE-FAN adaptation of Audemard (1963), volume 5, plate 30.
+
+[Read the edited diagram annotations](notes/figure-annotations.md). Click either image to open the full figure.
 
 ## Comparative extension: the Pearl River
 
