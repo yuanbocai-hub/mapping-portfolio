@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UW GIS course work and volunteer mapping by Zhiting Cai: Iceland, the Yarlung Tsangpo, and an earthquake intensity map prepared for Zhuo-Ming.">
+  <meta name="theme-color" content="#f5f2ea">
+  <title>UW Course Work &amp; Volunteer Mapping · Yuanbo Cai</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="projects.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the projects</a>
+<header class="site-header">
+  <a class="wordmark" href="portfolio.html">Yuanbo Cai <span>Cartography &amp; historical GIS</span></a>
+  <nav class="project-links" aria-label="Portfolio"><a href="portfolio.html">All projects</a><a href="corridors.html">Corridors</a><a href="tsangpo.html">Tsangpo</a><a href="index.html">Yangtze</a><a href="coursework.html" aria-current="page">Course work</a></nav>
+</header>
+<main id="main">
+  <section class="wrap portfolio-masthead">
+    <p class="eyebrow">Selected GIS work · Course projects &amp; volunteer mapping</p>
+    <h1>UW Course Work<br>&amp; <em>volunteer mapping</em></h1>
+    <p class="project-subtitle">Two University of Washington course projects, followed by an earthquake intensity map prepared for the disaster-response organization Zhuo-Ming (卓明).</p>
+  </section>
+  <nav class="chapter-nav" aria-label="Course projects"><div class="wrap"><a href="#iceland">01 <span>Iceland · GEOG 360</span></a><a href="#tsangpo-map">02 <span>Tsangpo · GEOG 465</span></a><a href="#zhuoming">03 <span>Zhuo-Ming · Volunteer work</span></a><a href="#materials">04 <span>Project materials</span></a></div></nav>
+  <section class="chapter wrap" id="iceland" aria-labelledby="iceland-title">
+    <div class="section-heading"><p class="eyebrow">01 / GEOG 360 · GIS cartography</p><h2 id="iceland-title">Volcanoes in<br>Iceland’s landscape</h2></div>
+    <div class="section-intro"><p>The final map brings Holocene and Pleistocene volcanic features into the same view as elevation, contours, roads, and water bodies. It gives the volcanic locations a landscape context, making it possible to compare their distribution across Iceland’s coast, interior, and highlands.</p><p>I used separate symbols for the two volcanic groups and a light elevation ramp to keep the terrain readable beneath them. The map combines the Smithsonian Global Volcanism Program’s volcano data, OpenDEM terrain data, and OpenStreetMap features.</p></div>
+    <figure class="map-figure"><a href="assets/coursework/iceland-volcanoes-original.png" data-lightbox data-caption="Volcanic Distribution and Topography of Iceland · GEOG 360 · Zhiting Cai" aria-label="Enlarge the Iceland volcano map"><img src="assets/coursework/iceland-volcanoes.jpg" width="2000" height="1414" alt="A map of Iceland showing Holocene and Pleistocene volcanic features over elevation shading, contours, roads, and water bodies." loading="lazy"></a><figcaption><span>GEOG 360 / Final map</span><a href="assets/coursework/iceland-volcanoes-original.png">Open the full-resolution map ↗</a></figcaption></figure>
+    <div class="reading-grid"><h3>From proposal<br>to final map</h3><div class="prose"><p>The proposal began with a wider question about volcanic hazards, terrain, and infrastructure accessibility. The final map presented here concentrates on volcanic distribution and topographic context. The proposal is included below so readers can distinguish the initial analytical plan from the finished cartographic output.</p></div></div>
+  </section>
+  <section class="chapter wrap" id="tsangpo-map" aria-labelledby="tsangpo-title">
+    <div class="section-heading"><p class="eyebrow">02 / GEOG 465 · Interactive web mapping</p><h2 id="tsangpo-title">Hydropower, rivers,<br>and the China–India frontier</h2></div>
+    <div class="section-intro"><p>This Leaflet project examines how proposed hydropower infrastructure, river systems, historical places, and disputed frontier space overlap in the eastern Himalaya. I prepared spatial layers in QGIS, converted them to GeoJSON, and selected attributes for labels and popups.</p><p>River names are part of the map’s interpretation. English labels help readers navigate the interface, while popup fields retain Chinese names, Tibetan or Tibetic transliterations, aliases, and name meanings where available. The aim is to keep the map legible while preserving the local naming context.</p></div>
+    <div class="project-actions"><a href="https://yuanbocai-hub.github.io/riverscape_tsangpo/">Open the interactive map ↗</a><a href="assets/coursework/tsangpo-interactive-map-report.docx" download>Download the project report ↓</a></div>
+    <figure class="map-figure"><a href="assets/coursework/tsangpo-working-map.png" data-lightbox data-caption="Working map during feedback and revision · GEOG 465. Some displayed layers were added after the course submission." aria-label="Enlarge the Tsangpo working map"><img src="assets/coursework/tsangpo-working-map.png" width="1874" height="1066" alt="A working Leaflet map of the Tsangpo region showing rivers, hydropower infrastructure, historical sites, roads, and a disputed-area outline." loading="lazy"></a><figcaption><span>GEOG 465 / Working interface</span><a href="assets/coursework/tsangpo-working-map.png">View the map image ↗</a></figcaption></figure>
+    <p class="small-note">The image records the feedback and revision process. The course submission focused on the proposed tunnel, major rivers, historical sites, and disputed-area boundary; the published map continued to develop afterward.</p>
+    <div class="reading-grid"><h3>What feedback<br>changed</h3><div class="prose"><p>Peer feedback made the first view and visual hierarchy central design questions. I widened the opening extent, made the proposed tunnel more prominent, reduced the weight of contextual layers, and added a legend. I also made the disputed-area polygon non-interactive so that it would not intercept clicks on rivers and places beneath it.</p><p>The project left me with a further question: how much should a map ask readers to discover for themselves? An exploratory interface supports comparison, but a guided narrative can explain why a particular reach or place matters. <a href="tsangpo.html">Following the Tsangpo</a> explores that question through a separate historical story map.</p></div></div>
+    <p class="small-note">The boundary layer provides context for academic discussion and does not establish an authoritative territorial interpretation.</p>
+  </section>
+  <section class="chapter wrap volunteer-project" id="zhuoming" aria-labelledby="zhuoming-title">
+    <div class="section-heading"><p class="eyebrow">03 / QGIS learning exercise · Zhuo-Ming (卓明)</p><h2 id="zhuoming-title">Earthquake intensity:<br>a QGIS learning exercise</h2></div>
+    <p class="project-context">An early exercise made while learning QGIS, prepared for the disaster-response organization Zhuo-Ming (卓明). This was volunteer work outside UW coursework.</p>
+    <div class="section-intro"><p>I made this map while learning QGIS, as a practical exercise for the disaster-response organization Zhuo-Ming (卓明). It combines preliminary earthquake intensity estimates with cities, major roads, and administrative boundaries around Montalbán, Venezuela.</p><p>The work gave me practice in clipping raster data, classifying values, choosing symbols, and arranging a map layout. I used a sequential red palette for intensity and kept the reference layers lighter. The notes beside the map identify the data sources, describe the processing steps, and explain that the estimates are preliminary.</p></div>
+    <figure class="map-figure"><a href="assets/coursework/venezuela-intensity-original.png" data-lightbox data-caption="Montalbán, Venezuela · Earthquake intensity map · Cartography: Zhiting Cai · QGIS learning exercise prepared for Zhuo-Ming (卓明), outside UW coursework." aria-label="Enlarge the Zhuo-Ming earthquake intensity map"><img src="assets/coursework/venezuela-intensity.jpg" width="2000" height="1414" alt="An earthquake intensity map around Montalbán, Venezuela, with red intensity classes, cities, roads, explanatory notes, and the Zhuo-Ming logo." loading="lazy"></a><figcaption><span>QGIS practice / Prepared for Zhuo-Ming</span><a href="assets/coursework/venezuela-intensity-original.png">Open the full-resolution map ↗</a></figcaption></figure>
+    <div class="reading-grid"><h3>Making the map<br>usable</h3><div class="prose"><p>The intensity surface alone gives little help in locating a named city or transport route. Adding those reference layers connects the estimates to places readers can identify. The accompanying notes retain the provenance of the estimates and the processing steps, making the map easier to assess and reuse.</p><p>Source credits on the original map include the Global Earthquake Rapid Response Team, China University of Geosciences (Wuhan), the Lanzhou Institute of Seismology, USGS, and OpenStreetMap.</p></div></div>
+  </section>
+  <section class="sources wrap" id="materials" aria-labelledby="materials-title">
+    <div class="section-heading"><p class="eyebrow">04 / Project materials</p><h2 id="materials-title">Maps and working documents</h2></div>
+    <div class="source-grid"><div><h3>GEOG 360</h3><a class="resource-row" href="assets/coursework/iceland-volcanoes-original.png">Final Iceland map <span>PNG ↗</span></a><a class="resource-row" href="assets/coursework/iceland-project-proposal.pdf">Original project proposal <span>PDF ↗</span></a><p class="small-note">Data credits: Smithsonian Global Volcanism Program, OpenDEM Europe, and OpenStreetMap. Full credits remain on the original map.</p></div><div><h3>GEOG 465</h3><a class="resource-row" href="https://yuanbocai-hub.github.io/riverscape_tsangpo/">Published interactive map <span>↗</span></a><a class="resource-row" href="assets/coursework/tsangpo-interactive-map-report.docx" download>Original project report <span>DOCX ↓</span></a><a class="resource-row" href="tsangpo.html">Related project: Following the Tsangpo <span>→</span></a><p class="small-note">The original report includes the design process, peer feedback, revisions, and future directions.</p></div></div>
+    <a class="resource-row volunteer-resource" href="assets/coursework/venezuela-intensity-original.png">Zhuo-Ming: original earthquake intensity map <span>PNG ↗</span></a>
+  </section>
+</main>
+<footer class="wrap"><p>Zhiting Cai · University of Washington, Seattle<br>GIS course projects and volunteer mapping · Original credits retained.</p><a href="portfolio.html">All projects →</a></footer>
+<dialog id="image-dialog" aria-labelledby="image-caption"><div class="lightbox-toolbar"><p id="image-caption"></p><div><a id="image-original" href="#">Open image file ↗</a><button type="button" id="close-image" aria-label="Close image">Close ×</button></div></div><div class="lightbox-stage"><img id="lightbox-image" alt=""></div><p class="lightbox-help">Click the image to switch between fit and full size. Press Esc to close.</p></dialog>
+</body>
+</html>
