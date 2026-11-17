@@ -10,3 +10,7 @@
 @media(max-width:680px){.embodiments-subtitle{font-size:14px}}
 
 .fish-caption{display:grid;gap:3px}.fish-common{font-size:12px;line-height:1.65;color:var(--ink)}.fish-scientific{font-size:12px;color:var(--muted)}.fish-name-note{max-width:720px;margin:25px auto 0;font-size:10px;line-height:1.7;color:var(--muted)}
+
+/* Research figures stay visible alongside the photographic sequence. */
+.research-heading{padding:25px 30px 0}.research-heading .eyebrow{margin:0 0 10px;font-size:10px}.research-heading .interlude-title{margin:0;font:29px/1.25 var(--serif)}.research-interlude .research-body figure>a{display:block;cursor:zoom-in}.research-interlude .research-body figure img{display:block;width:100%;height:auto}.research-interlude{max-width:1100px}
+@media(max-width:680px){.research-heading{padding:20px 17px 8px}.research-heading .interlude-title{font-size:25px}}
