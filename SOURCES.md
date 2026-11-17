@@ -1,0 +1,54 @@
+# Sources, reconstruction, and uncertainty
+
+## Navigation chart
+
+**Historical navigation:** G. R. G. Worcester, *Junks and Sampans of the Upper Yangtze* (Shanghai: Statistical Department of the Inspectorate General of Customs, 1940), Chapter V, “The Kungt’anho.” The research task supplied a photograph of the relevant chapter text. The chart’s bibliographic year was corrected from the earlier draft’s 1931 to 1940.
+
+- Catalogue record: https://ci.nii.ac.jp/ncid/BA29337189
+- River geometry: © OpenStreetMap contributors, ODbL, restored through public Nominatim geometry exports in November 2026. https://www.openstreetmap.org/copyright
+- Relief: AWS Terrain Tiles, Terrarium RGB elevation encoding, derived from SRTM/GMTED and other public elevation datasets. https://registry.opendata.aws/terrain-tiles/
+- Projection treatment: WGS 84 geographical coordinates transformed using non-uniform scaling to emphasize the Wu Kiang. A uniform linear scale is not implied.
+- Hsin-t’an: approximate position interpolated along the river at two-thirds of the Yen-ho–Ch’ao-ti distance, using the historical 40-mile and 20-mile stages.
+- Rapids: the count of 71 applies to the Kung-t’an–Ssu-nan reach as a whole. The map marks a corridor, not independently geolocated rapid points.
+- Distances: historical estimates. The approved c. 224 km overview is retained; the four stage figures total 140 miles, approximately 225 km.
+
+The original July river downloads were absent from the synced workspace. The rendering script was recovered from task history and geometry was restored from the same public data source. The present map should therefore not be described as a bit-for-bit reproduction of the July datasets.
+
+## Commodity maps
+
+The modern commodity maps identify **Hong Maoxi, compiler and cartographer, *Latest General Survey Map of China* (1935)** as their historical source. This attribution is recorded from the supplied modern maps. The separately supplied historical JPEGs do not by themselves provide a complete title-page or holding-institution citation; their full edition and reproduction provenance remains to be documented.
+
+### Yangtze
+
+- Historical reproduction: `长江流域物产_原件.jpg`, 1,440 × 1,025 pixels.
+- Modern main map: `Yangtze_Products_1930s_EN_HighRes15MB.jpg`.
+- Thematic companion: `yangtze_seven_panels_hydro_EN_600dpi.png`.
+- Commodity categories: sugar, hemp, tobacco, tea, silk, cotton, rice.
+
+### Pearl River basin and eastern Kuang-tung
+
+- Historical reproduction: `粤江流域物产_原件.jpg`, 2,844 × 2,038 pixels.
+- Modern map: `Pearl_River_Eastern_Kuangtung_EN_HighRes.png`.
+- Its thematic categories and mineral indications follow its own legend; they should not be equated automatically with the Yangtze classification.
+
+### Modern reference layers credited on the supplied maps
+
+- CHGIS version 6, historical administrative boundaries (1911), Harvard University / Fudan University.
+- Natural Earth land and reference geography.
+- Shaded relief from SRTM Plus.
+- HydroRIVERS v1.0; OpenStreetMap contributors where indicated.
+- HydroBASINS v1c on the Pearl River map.
+
+See the individual map footers for the layer attribution and projection specific to each image. Historical commodity boundaries represent source-derived regional indications rather than modern measured production boundaries. Historical thematic dates, 1911 administrative references, and modern physical basemaps describe different layers of evidence.
+
+## Written research notes
+
+The two Worcester notes are English translations of Chinese research documents based on the combined Chinese–English edition 《中国长江帆船通鉴（汉英双语）（全三册）》. Page references distinguish printed Chinese-text pages from combined-PDF pages. English passages translated from Chinese excerpts are not certified transcriptions of Worcester’s original English.
+
+The five-category port classification is the research note’s analytical synthesis, not a formal classification proposed by Worcester. Its evidence labels and distinctions between ordinary mention, functional evidence, and explicit description must be retained.
+
+The international trade-route guide draws principally on Iftekhar Iqbal, *The Range of the River: A Riverine History of Empire across China, India, and Southeast Asia*. Its source pages and route uncertainties remain in the guide. Its referenced GeoJSON datasets have not yet been supplied to this repository.
+
+## File provenance
+
+Original filenames are retained. `assets/` contains JPEG browsing derivatives, not replacement masters. `asset-manifest.json` records the supplied images’ dimensions, sizes, and SHA-256 checksums for later verification. Enlarging a low-resolution reproduction does not recover missing label detail.

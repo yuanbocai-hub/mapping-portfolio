@@ -1,0 +1,65 @@
+{
+  "description": "Original files are retained with supplied names. JPEG derivatives are for browsing only.",
+  "assets": [
+    {
+      "file": "歪屁股船英文_川江乌江航运体系_真实GIS版_EN_v10_400DPI.png",
+      "role": "Reconstructed navigation chart",
+      "width": 6620,
+      "height": 4677,
+      "dpi": 400,
+      "bytes": 19273334,
+      "sha256": "3cf94afb34823d968a5a99eb726e7f74941b8ce219cdbf961285a2ddaba9c966",
+      "preview": "assets/wu-navigation.jpg"
+    },
+    {
+      "file": "Yangtze_Products_1930s_EN_HighRes15MB.jpg",
+      "role": "Reconstructed commodity map",
+      "width": 9930,
+      "height": 7016,
+      "dpi": 600,
+      "bytes": 14725958,
+      "sha256": "b34e73fffa4da8eeb52994f3c57e4e668bc76b1fa78a4027de65f05639c3c6e4",
+      "preview": "assets/yangtze-commodities.jpg"
+    },
+    {
+      "file": "Pearl_River_Eastern_Kuangtung_EN_HighRes.png",
+      "role": "Reconstructed commodity map",
+      "width": 7689,
+      "height": 5437,
+      "dpi": 465,
+      "bytes": 14597513,
+      "sha256": "edff320f9783f69abba6ed33f179b4c777e1a31a9865108942af85a9f0fd9d66",
+      "preview": "assets/pearl-commodities.jpg"
+    },
+    {
+      "file": "yangtze_seven_panels_hydro_EN_600dpi.png",
+      "role": "Thematic comparison",
+      "width": 7015,
+      "height": 9921,
+      "dpi": 600,
+      "bytes": 13448010,
+      "sha256": "cfce2440b53fc436780dcb8ace89246cc7c3e8d9fea29927db9dd44474df762b",
+      "preview": "assets/yangtze-seven-panels.jpg"
+    },
+    {
+      "file": "长江流域物产_原件.jpg",
+      "role": "Supplied historical-map reproduction",
+      "width": 1440,
+      "height": 1025,
+      "dpi": 72,
+      "bytes": 302603,
+      "sha256": "0ffe0a44968268bf431b0caff2941eca7530da1352fb535d16dac7f387f66423",
+      "preview": "assets/yangtze-source.jpg"
+    },
+    {
+      "file": "粤江流域物产_原件.jpg",
+      "role": "Supplied historical-map reproduction",
+      "width": 2844,
+      "height": 2038,
+      "dpi": 300,
+      "bytes": 1605293,
+      "sha256": "554e91447cc7c5e784729ecbd5e9355ce7b95aa08fe7bdc6a1d720dea9d24aaa",
+      "preview": "assets/pearl-source.jpg"
+    }
+  ]
+}
