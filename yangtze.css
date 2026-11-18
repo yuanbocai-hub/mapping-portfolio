@@ -1,0 +1,16 @@
+.hero { grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.35fr); }
+.chengdu-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(16px,3vw,42px); }
+.chengdu-pair a { display: block; }
+.chengdu-pair figcaption, .map-figure figcaption, .mechanics-panel figcaption, .hero-map figcaption { font: 15px/1.55 var(--sans); color: var(--ink); }
+.chengdu-pair figcaption { padding: 12px 0; }
+.chengdu-pair strong { display: block; }
+.region-note { margin: 38px 0 44px; border-block: 1px solid var(--line); padding: 26px 0 10px; display: grid; grid-template-columns: 1fr 2fr; gap: 26px; }
+.region-note h2 i { display: block; font-size: 24px; }
+.region-note p, .method-lead p, .section-intro p { font-size: 17px; max-width: 70ch; }
+.method-steps h3, .method-comparison h3 { font: 650 21px/1.25 var(--sans); }
+@media(max-width:760px) {
+  .hero, .chengdu-pair, .region-note { grid-template-columns: 1fr; }
+  .region-note h2 i { display: inline; }
+}
+.chapter-nav a { font-size: 14px; color: var(--ink); }
+.chapter-nav a[aria-current] { text-decoration: underline; text-underline-offset: 5px; }

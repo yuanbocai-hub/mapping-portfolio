@@ -1,0 +1,54 @@
+/* Keep the atlas plate, expedition photograph and source comparison in their original proportions. */
+.landing .project-list article {
+  padding-block: clamp(36px, 5vw, 72px);
+  border-top: 1px solid var(--line);
+}
+.landing .project-list h2 {
+  font-size: clamp(34px, 4.7vw, 66px);
+  letter-spacing: -.045em;
+  max-width: 21ch;
+}
+.landing .project-list h2 a { text-decoration: none; }
+.landing .project-list p:not(.eyebrow),
+.landing .project-list li { font-size: clamp(17px, 1.35vw, 19px); }
+.landing .project-list .eyebrow { margin-bottom: 16px; }
+.landing .project-list figure { margin: 0; }
+.landing figcaption { font: 15px/1.5 var(--sans); color: var(--ink); }
+.landing .project-list figcaption { margin-top: 10px; }
+.landing .entry-link { font-weight: 600; text-underline-offset: .25em; }
+.atlas-entry header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 20px; }
+.atlas-entry header .eyebrow { width: 100%; }
+.atlas-entry .conference { font: italic 17px/1.5 var(--serif); margin: 8px 0 0; }
+.atlas-sheet { margin-top: 22px; }
+.atlas-sheet > a { display: block; background: #faf9f5; }
+.atlas-sheet img { max-height: 610px; object-fit: contain; }
+.atlas-reading { display: flex; gap: 24px; align-items: baseline; justify-content: space-between; padding-top: 16px; }
+.atlas-reading p { max-width: 77ch; margin: 0; }
+.atlas-reading .entry-link { flex: none; }
+.expedition-entry, .course-directory { display: grid; align-items: center; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(20px, 6vw, 90px); }
+.expedition-entry h2 { margin-bottom: 20px; }
+.commodity-intro { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(24px, 7vw, 98px); margin: 22px 0 24px; }
+.commodity-intro p { margin: 0; }
+.commodity-intro .vessel-context { border-left: 2px solid var(--line); padding-left: 20px; }
+.landing .vessel-context p { font-size: 16px; }
+.vessel-context p + p { margin-top: 8px; }
+.crop-comparison { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; color: inherit; text-decoration: none; margin-bottom: 18px; }
+.crop-comparison img { background: #eee9de; }
+.course-directory ul { list-style: none; margin: 0; padding: 0; }
+.course-directory li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.course-directory li a { text-decoration: none; display: block; }
+.course-directory li a:hover { text-decoration: underline; }
+.course-directory li strong { font-size: .88em; margin-right: .65em; }
+.landing .course-directory h2 { font-size: clamp(31px, 3.1vw, 46px); }
+.course-directory header p:last-child { margin: 8px 0 0; }
+.landing .portfolio-fieldwork figcaption { font-size: 15px; color: var(--ink); }
+@media (max-width: 760px) {
+  .landing .site-header { flex-wrap: wrap; }
+  .atlas-reading, .expedition-entry, .course-directory, .commodity-intro { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  .atlas-entry header { display: block; }
+  .atlas-reading .entry-link { justify-self: start; }
+  .commodity-intro .vessel-context { padding-left: 14px; }
+  .crop-comparison { gap: 8px; }
+  .landing .project-list figcaption { font-size: 15px; }
+  .landing .portfolio-fieldwork figcaption { flex-wrap: wrap; }
+}

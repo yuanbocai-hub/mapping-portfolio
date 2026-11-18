@@ -1,0 +1,30 @@
+.tsangpo-project .overview h2 {
+  font-size: clamp(32px, 3.4vw, 48px);
+}
+.tsangpo-project .hero-figure figcaption,
+.tsangpo-project .map-figure figcaption {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.tsangpo-project .hero-figure figcaption span {
+  color: var(--ink);
+  font-weight: 650;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.tsangpo-project .overview .prose,
+.tsangpo-project .pearl-intro > p,
+.tsangpo-project .section-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.tsangpo-project .pearl-intro h3 {
+  font: 650 clamp(24px, 2.4vw, 32px)/1.2 var(--sans);
+}
+.tsangpo-project .map-note { font-size: 14px; }
+@media (max-width: 650px) {
+  .tsangpo-project .hero-figure figcaption,
+  .tsangpo-project .map-figure figcaption { font-size: 15px; }
+}
