@@ -40,7 +40,7 @@
 .course-directory li a:hover { text-decoration: underline; }
 .course-directory li strong { font-size: .88em; margin-right: .65em; }
 .landing .course-directory h2 { font-size: clamp(31px, 3.1vw, 46px); }
-.course-directory header p:last-child { margin: 8px 0 0; }
+.course-directory header > h2 + p { margin: 8px 0 0; }
 .landing .portfolio-fieldwork figcaption { font-size: 15px; color: var(--ink); }
 @media (max-width: 760px) {
   .landing .site-header { flex-wrap: wrap; }
@@ -54,3 +54,10 @@
 }
 .atlas-entry .atlas-title { flex: 1 1 600px; min-width: 0; }
 .atlas-entry .atlas-title p { max-width: 68ch; margin: 12px 0 0; font-family: var(--serif); }
+
+.course-tools { margin-top: 22px; font-size: 14px; line-height: 1.6; }
+.course-tools h3 { margin: 0 0 4px; font: inherit; font-weight: 650; }
+.course-tools dl, .course-tools dd { margin: 0; }
+.course-tools dt, .course-tools dd { display: inline; }
+.course-tools dt::after { content: " · "; }
+.course-tools dd { font-weight: 550; }
