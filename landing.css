@@ -52,3 +52,5 @@
   .landing .project-list figcaption { font-size: 15px; }
   .landing .portfolio-fieldwork figcaption { flex-wrap: wrap; }
 }
+.atlas-entry .atlas-title { flex: 1 1 600px; min-width: 0; }
+.atlas-entry .atlas-title p { max-width: 68ch; margin: 12px 0 0; font-family: var(--serif); }
