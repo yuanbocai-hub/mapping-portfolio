@@ -21,6 +21,7 @@
 - Solid lines indicate schematic waterway connections; dashed lake-to-Ichang lines summarize interpreted cargo relationships via the main stem, not direct navigation routes, scheduled services, or a claim that every shipment followed this sequence. The specific lake-to-Ichang reading was supplied by the project author; no page-specific quotation for both links has been independently verified here. Transshipment at Ichang is documented in the repository's Worcester port notes.
 - Lake geometry: Natural Earth 1:10m Lakes, Poyang Hu (`ne_id` 1159114015) and Dongting Hu (`ne_id` 1159116351), downloaded 2026-11-19 from https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_lakes.geojson. These are generalized contemporary reference outlines, not dated historical shorelines. Source overview: https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/. Natural Earth data are public domain.
 - The two original lake features are retained in `assets/yangtze-lake-outlines.geojson`. The build script preserves their north-up orientation and proportions using longitude scaled by the cosine of mean latitude, then fits each lake independently. Lake areas and route distances must not be compared from this schematic.
+- The small grey dashed bracket indicates the approximate Three Gorges reach upstream of Ichang and downstream of Fu-chou. Endpoint ticks are schematic; no geographic scale is implied. Extent reference: UNESCO tentative-list description, https://whc.unesco.org/en/tentativelists/1623/.
 - Rebuild with `python3 scripts/build-yangtze-schematic.py`.
 
 **Historical navigation:** G. R. G. Worcester, *Junks and Sampans of the Upper Yangtze* (Shanghai: Statistical Department of the Inspectorate General of Customs, 1940), Chapter V, “The Kungt’anho.” The research task supplied a photograph of the relevant chapter text. The chart’s bibliographic year was corrected from the earlier draft’s 1931 to 1940.
@@ -89,3 +90,11 @@ The navigation chart is an experiment in drawing with Codex. Codex assisted the 
 - Plan, elevation, and perspective: supplied YUE-FAN drawing. Its original plate number is not established by the supplied file.
 
 Original supplied figures are in `assets/figures/`; JPEG browsing copies are in `assets/`. Watermarks and existing image credits are retained. The page provides edited text descriptions of the annotations, also collected in [the figure notes](notes/figure-annotations.md). Embedded lettering in the supplied images has not been repainted.
+
+### Traditional Chinese commodity map
+
+- `assets/yangtze-commodities-zh-full.jpg`: author-supplied `長江流域物產圖_繁體_高清15MB.jpg`; retained at its original 9930 × 7016 pixels. `assets/yangtze-commodities-zh.jpg` is a 2200-pixel web preview. Shown as an alternative to the seven commodity panels; the English integrated map remains the opening main view.
+
+### West River field photograph
+
+- `assets/wuzhou-sand-barge.jpg`: author-supplied `插图/运沙船1.jpeg`, copied without cropping or resampling (1086 × 724 pixels). Route identification supplied by the author: departing Wuzhou, bound for Guangdong. Shown beside “Following my home river upstream.”

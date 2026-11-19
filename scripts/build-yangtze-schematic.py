@@ -1,81 +1,85 @@
-"""Build the transport schematic from saved Natural Earth lake geometry."""
+"""Build the compact transport diagram; interpretation remains HTML beside it."""
 from pathlib import Path
+from html import escape
 import json
 import math
-from html import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 features = json.loads((ROOT / 'assets/yangtze-lake-outlines.geojson').read_text())['features']
-parts = ['''<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="710" viewBox="0 0 1240 710" role="img" aria-labelledby="title description">
-<title id="title">Yangtze transport connections and lake networks</title>
-<desc id="description">Shanghai to Hankow is Worcester’s lower river; Hankow to Ichang the middle river; above Ichang the upper river. Poyang Lake connects at Hukou, Dongting Lake at Chenglingji, and the Wu River at Fu-chou. Dashed lines indicate interpretive cargo connections between the lake networks and Ichang via the main stem, not direct routes. Contemporary Natural Earth outlines represent the lakes at independent scales.</desc>
-<rect width="1240" height="710" fill="#f5f2ea"/>
+parts = ['''<svg xmlns="http://www.w3.org/2000/svg" width="985" height="600" viewBox="0 110 985 600" role="img" aria-labelledby="title desc">
+<title id="title">Yangtze transport connections, lake networks and Three Gorges</title>
+<desc id="desc">Bilingual schematic with the approximate Three Gorges reach upstream of Ichang. An annotation directly beneath Ichang identifies transfer to craft suited to upstream rapids. Solid lines indicate waterways, dashed rust lines summarize cargo relationships via the main stem. Contemporary lake outlines are shown north up at independent scales. Not to scale.</desc>
+<rect y="110" width="985" height="600" fill="#f5f2ea"/>
 <style>
-text{fill:#203d3e;font-family:Georgia,'Times New Roman','Songti TC','Noto Serif CJK TC',serif}
-.city{font-size:25px}.zh{font-size:21px}.small{font:18px Arial,'PingFang TC',sans-serif}.note{font:20px Arial,'PingFang TC',sans-serif}.region{font-size:25px;font-style:italic}.accent{fill:#a94e33}
-.water{fill:none;stroke:#23666b;stroke-width:3}.cargo{fill:none;stroke:#a94e33;stroke-width:2.5;stroke-dasharray:8 7}.bracket{fill:none;stroke:#87998c;stroke-width:1.5}.port{fill:#f5f2ea;stroke:#23666b;stroke-width:3}.transfer{fill:#a94e33;stroke:#a94e33;stroke-width:3}
+text{fill:#203d3e;font-family:Georgia,'Songti TC','Times New Roman',serif}
+.heading{font-size:42px}.subheading{font-size:35px}.city{font-size:24px}.zh{font-size:21px}.region{font-size:25px;font-style:italic}
+.body{font-family:Arial,'PingFang TC',sans-serif;font-size:22px}.small{font-family:Arial,'PingFang TC',sans-serif;font-size:18px}.meta{font-family:Arial,'PingFang TC',sans-serif;font-size:17px;fill:#53655f}.accent{fill:#a94e33}
+.water{fill:none;stroke:#23666b;stroke-width:3}.cargo{fill:none;stroke:#a94e33;stroke-width:2.4;stroke-dasharray:7 6}.rule{fill:none;stroke:#a7b3a7;stroke-width:1}.port{fill:#f5f2ea;stroke:#23666b;stroke-width:3}.transfer{fill:#a94e33;stroke:#a94e33;stroke-width:3}
 </style>''']
+def text(x,y,value,cls='city',anchor='start'):
+    role=cls.split()[0]
+    size={'heading':42,'subheading':35,'city':24,'zh':21,'region':25,'body':22,'small':18,'meta':17}[role]
+    family='Arial' if role in ['body','small','meta'] else ('Songti TC' if role=='zh' else 'Georgia')
+    fill='#a94e33' if 'accent' in cls else ('#53655f' if role=='meta' else '#203d3e')
+    italic=' font-style="italic"' if role=='region' else ''
+    parts.append(f'<text x="{x}" y="{y}" class="{cls}" font-size="{size}" font-family="{family}" fill="{fill}"{italic} text-anchor="{anchor}">{escape(value)}</text>')
+def lines(x,y,values,cls='body',step=32):
+    for n,value in enumerate(values):text(x,y+n*step,value,cls)
 
-def text(x, y, value, cls='city', anchor='middle'):
-    parts.append(f'<text x="{x}" y="{y}" class="{cls}" text-anchor="{anchor}">{escape(value)}</text>')
 
-for left,right,label in [(65,470,'Lower river'),(470,750,'Middle river'),(750,1170,'Upper river')]:
-    text((left+right)/2, 45, label, 'region')
-    parts.append(f'<path class="bracket" d="M{left} 61v14 M{left} 68H{right} M{right} 61v14"/>')
-parts.append('<path class="water" d="M65 172H1170 M975 172V550"/>')
+for a,b,name in [(70,350,'Lower river'),(350,570,'Middle river'),(570,925,'Upper river')]:
+    text((a+b)/2,134,name,'region','middle')
+    parts.append(f'<path class="rule" d="M{a} 150v13 M{a} 156H{b} M{b} 150v13"/>')
+parts.append('<path d="M590 174v12 M710 174v12" fill="none" stroke="#7a8981" stroke-width="1.5"/>')
+parts.append('<path d="M590 180H710" fill="none" stroke="#7a8981" stroke-width="1.5" stroke-dasharray="4 4"/>')
+text(650,169,'Three Gorges','meta','middle')
+parts.append('<g transform="translate(0,36)">')
+parts.append('<path class="water" d="M70 224H925 M750 224V550"/>')
+for x,en,zh in [(70,'Shanghai','上海'),(350,'Hankow','漢口'),(570,'Ichang','宜昌'),(750,'Fu-chou','涪州'),(925,'Chungking','重慶')]:
+    text(x,184,en,'city','middle');text(x,210,zh,'zh','middle')
+    cls='transfer' if x in [570,750] else 'port'
+    parts.append(f'<circle cx="{x}" cy="224" r="8" class="{cls}"/>')
 
-for x,en,zh in [(65,'Shanghai','上海'),(470,'Hankow','漢口'),(750,'Ichang','宜昌'),(975,'Fu-chou','涪州'),(1170,'Chungking','重慶')]:
-    text(x,115,en);text(x,146,zh,'zh')
-    cls='transfer' if x in [750,975] else 'port'
-    parts.append(f'<circle class="{cls}" cx="{x}" cy="172" r="9"/>')
-
-def lake(name, cx, cy, width, height):
+def lake(name,cx,cy,width,height):
     feature=next(f for f in features if f['properties']['name']==name)
-    rings=feature['geometry']['coordinates']
-    coords=[p for ring in rings for p in ring]
-    lat=sum(p[1] for p in coords)/len(coords)
-    coslat=math.cos(math.radians(lat))
+    rings=feature['geometry']['coordinates'];points=[p for ring in rings for p in ring]
+    coslat=math.cos(math.radians(sum(p[1] for p in points)/len(points)))
     project=lambda p:(p[0]*coslat,-p[1])
-    flat=[project(p) for p in coords]
-    xmin,xmax=min(p[0] for p in flat),max(p[0] for p in flat)
-    ymin,ymax=min(p[1] for p in flat),max(p[1] for p in flat)
+    pp=[project(p) for p in points]
+    xmin,xmax=min(p[0] for p in pp),max(p[0] for p in pp)
+    ymin,ymax=min(p[1] for p in pp),max(p[1] for p in pp)
     scale=min(width/(xmax-xmin),height/(ymax-ymin))
-    transform=lambda p:(cx+(project(p)[0]-(xmin+xmax)/2)*scale,cy+(project(p)[1]-(ymin+ymax)/2)*scale)
-    paths=[]
-    for ring in rings:
-        paths.append('M'+' L'.join(f'{x:.2f},{y:.2f}' for x,y in map(transform,ring))+' Z')
-    # Connect to the northern edge of the outline; ports remain schematic.
-    north=transform(min(coords,key=lambda p:project(p)[1]))
-    parts.append(f'<path class="water" d="M{cx} 172V250H{north[0]:.2f}V{north[1]:.2f}"/>')
-    parts.append(f'<path d="{" ".join(paths)}" fill="#d5e5e2" stroke="#23666b" stroke-width="1.8" fill-rule="evenodd"/>')
+    tx=lambda p:(cx+(project(p)[0]-(xmin+xmax)/2)*scale,cy+(project(p)[1]-(ymin+ymax)/2)*scale)
+    north=tx(min(points,key=lambda p:project(p)[1]))
+    parts.append(f'<path class="water" d="M{cx} 224V320H{north[0]:.2f}V{north[1]:.2f}"/>')
+    d=' '.join('M'+' L'.join(f'{x:.2f},{y:.2f}' for x,y in map(tx,ring))+' Z' for ring in rings)
+    parts.append(f'<path d="{d}" fill="#d5e5e2" stroke="#23666b" stroke-width="1.8" fill-rule="evenodd"/>')
 
-lake('Poyang Hu',250,425,170,205)
-lake('Dongting Hu',595,425,230,180)
-for x,en,zh in [(250,'Hukou','湖口'),(595,'Chenglingji','城陵磯')]:
-    parts.append(f'<circle class="port" cx="{x}" cy="172" r="5"/>')
-    text(x+14,207,en,'small','start');text(x+14,233,zh,'small','start')
+# Positions are schematic. Each outline preserves its own shape and orientation.
+lake('Poyang Hu',235,440,145,175)
+lake('Dongting Hu',470,450,185,145)
+for x,en,zh in [(235,'Hukou','湖口'),(470,'Chenglingji','城陵磯')]:
+    parts.append(f'<circle cx="{x}" cy="224" r="4.5" class="port"/>')
+    text(x-12,278,en,'small','end');text(x-12,303,zh,'zh','end')
+parts.append('<path class="cargo" d="M285 396 C320 315 440 345 480 300 L480 253 Q480 239 562 232 M551 430 C620 405 677 383 677 335 C677 265 650 242 578 232"/>')
 
-# Cargo relationships are distinct from the solid water connections.
-parts.append('<path class="cargo" d="M318 390 C355 275 665 325 743 184 M700 423 C760 365 775 260 755 184"/>')
-text(467,300,'Cargo connections','note accent')
-text(467,325,'via the main stem','small')
-text(250,561,'Poyang Lake','city');text(250,590,'鄱陽湖','zh')
-text(595,561,'Dongting Lake','city');text(595,590,'洞庭湖','zh')
+text(235,566,'Poyang Lake','city','middle');text(235,594,'鄱陽湖','zh','middle')
+text(470,566,'Dongting Lake','city','middle');text(470,594,'洞庭湖','zh','middle')
+parts.append('<path class="rule" d="M570 238V250"/>')
+for y,value in [(271,'Transfer to craft'),(296,'suited to'),(321,'upstream rapids')]:
+    text(570,y,value,'small','middle')
+lines(775,318,['Salt to','Wu River boats'],'small',25)
+text(775,398,'Wu Chiang','city accent');text(775,427,'烏江','zh accent')
+for y,en,zh in [(452,'Kung-t’an','龔灘'),(550,'Upper Wu Chiang','烏江上游')]:
+    parts.append(f'<circle cx="750" cy="{y}" r="7" class="port"/>')
+    text(775,y+5,en,'city');text(775,y+32,zh,'zh')
+text(775,515,'Further transfers','small')
 
-text(790,236,'Transfer to craft suited','small','start')
-text(790,261,'to upstream rapids','small','start')
-text(1000,320,'Salt transferred to','small','start')
-text(1000,345,'Wu River boats','small','start')
-text(947,366,'Wu Chiang','note accent','end');text(947,394,'烏江','zh accent','end')
-for y,en,zh in [(437,'Kung-t’an','龔灘'),(550,'Upper Wu Chiang','烏江上游')]:
-    parts.append(f'<circle class="port" cx="975" cy="{y}" r="8"/>')
-    text(998,y+6,en,'city','start');text(998,y+34,zh,'zh','start')
-text(998,495,'Further transfers','small','start')
-text(998,518,'upstream','small','start')
-
-parts.append('<path class="water" d="M65 641H115"/><path class="cargo" d="M465 641H515"/>')
-text(129,648,'Waterway connections','small','start');text(529,648,'Cargo connections (schematic)','small','start')
-text(65,686,'Not to scale. Lake outlines shown at independent scales; north is up within each outline.','small','start')
-parts.append('</svg>')
-(ROOT/'assets/yangtze-transport-schematic.svg').write_text('\n'.join(parts))
-print('Built assets/yangtze-transport-schematic.svg')
+parts.append('<path class="water" d="M55 638H95"/><path class="cargo" d="M340 638H380"/>')
+text(108,644,'Waterway connections','small');text(393,644,'Cargo connections','small')
+parts.append('<circle cx="665" cy="638" r="6" class="transfer"/>')
+text(681,644,'Transfer port','small')
+parts.append('</g></svg>')
+output=ROOT/'assets/yangtze-transport-schematic.svg'
+output.write_text('\n'.join(parts))
+print(output)

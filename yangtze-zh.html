@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yuanbo Cai 的历史制图项目：重绘 1935 年长江物产图中的七类物产，探讨区域地理与水路运输，并展示借助 Codex 绘制的乌江航运图。">
+  <meta name="theme-color" content="#f5f2ea">
+  <title>作为水路运输体系的长江 · Yuanbo Cai</title>
+  <link rel="stylesheet" href="portfolio.css"><link rel="stylesheet" href="projects.css"><link rel="stylesheet" href="yangtze.css">
+  <script src="portfolio.js" defer></script>
+  <script src="yangtze-language.js" defer></script>
+  <link rel="alternate" hreflang="en" href="yangtze.html">
+  <link rel="alternate" hreflang="zh-Hans" href="yangtze-zh.html">
+</head>
+<body>
+<a class="skip" href="#main">跳至项目正文</a>
+<header class="site-header"><a class="wordmark" href="index.html">Yuanbo Cai <span>地图制图与历史 GIS</span></a><div class="header-tools"><nav class="project-links" aria-label="作品集导航"><a href="index.html">全部项目</a><a href="corridors.html">东喜马拉雅</a><a href="tsangpo.html">雅鲁藏布江</a><a href="yangtze-zh.html">长江</a><a href="coursework.html">课程作业</a></nav><nav class="language-switch" aria-label="语言切换"><a href="yangtze.html" lang="en" hreflang="en" data-language-link>EN</a><span aria-hidden="true">/</span><a href="yangtze-zh.html" lang="zh-Hans" hreflang="zh-Hans" data-language-link aria-current="page">中文</a></nav></div></header>
+<main id="main">
+  <section class="hero wrap" id="top" aria-labelledby="project-title">
+    <div class="hero-copy yangtze-opening">
+      <div class="opening-title">
+      <p class="eyebrow">历史地图重绘 <span>长江流域物产图</span></p>
+      <h1 id="project-title">作为水路运输体系的<br><em>长江</em></h1>
+      </div>
+      <aside class="cargo-opening" aria-label="研究的出发点">
+        <p class="cargo-premise">一批货物所能抵达的远方， <em>可能远超承运它的那艘船。</em></p>
+        <p class="cargo-evidence">Joseph Earle Spencer 在 1938 年关于长江贸易的研究中写道：大船将货物运回母港，再由船工转装小船，驶入水浅的支流。</p>
+        <a class="cargo-source" href="https://www.jstor.org/stable/210570">J. E. Spencer ·《长江流域的贸易与转运》· 1938</a>
+      </aside>
+      <section class="yangtze-reading" aria-labelledby="reading-title">
+        <h2 id="reading-title">从名称与航运理解长江</h2>
+        <p class="reading-lead">阅读历史文献时，我开始追问：河流名称、区域认同与航行实践，如何呈现同一条河流的不同地理面貌？这些认识，为我在水文学中学到的 Strahler 与 Shreve 河网分级体系之外，增加了理解长江的视角。</p>
+        <div class="reading-columns naming-notes">
+          <section aria-labelledby="changing-names-title">
+            <h3 id="changing-names-title">名称所指的范围会改变</h3>
+            <p>“扬子江”最初是南京至河口这一长江下游江段的地方性名称。到了十九世纪，英文文献逐渐把这个名称用于更远的上游。</p>
+          </section>
+          <section aria-labelledby="regional-names-title">
+            <h3 id="regional-names-title">沿江各地有自己的江段名称</h3>
+            <p><i>金沙江</i> （River of Golden Sand）、 <i>川江</i> （四川江段）、 <i>荆江</i>，以及 <i>皖江</i> ，赋予各段江水具体的区域身份。对峡江的描述，则让人们通过沿途地貌认识这条河流。</p>
+          </section>
+        </div>
+        <section class="transport-reading" aria-labelledby="transport-title">
+          <h3 id="transport-title">由货物接续起来的江段</h3>
+          <div class="transport-layout">
+          <figure class="transport-figure">
+            <a href="assets/yangtze-transport-schematic.svg" data-lightbox data-caption="长江水路与货运联系示意。依据夏士德《长江的帆船与舢板》（1947–1948）。湖泊采用 Natural Earth 现代参考轮廓；示意图不按比例绘制。"><img src="assets/yangtze-transport-schematic.svg" width="985" height="600" alt="中英双语示意图：上海、汉口、宜昌、涪州和重庆。实线将鄱阳湖经湖口、洞庭湖经城陵矶、乌江经涪州接入长江。赭色虚线表示两湖水网经干流与宜昌衔接的货运关系。宜昌上游的小号虚线括号标示三峡的大致范围。" loading="lazy"></a>
+            <figcaption>
+              <p class="transport-reference">夏士德（G. R. G. Worcester）， <cite>《长江的帆船与舢板》（The Junks and Sampans of the Yangtze）</cite> （1947–1948）</p>
+              <details class="diagram-notes"><summary>示意图来源与说明</summary><p>各批货物的路线并不相同，并非全部依次经过各港。赭色虚线表示经干流衔接的货运关系，不代表直达航线或班次。灰色虚线括号标示三峡的大致范围；本图不按比例绘制。</p><p>湖泊轮廓： <a href="https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/">Natural Earth，1:1000 万</a>，为现代参考轮廓，并非历史岸线复原。 <a href="assets/yangtze-transport-schematic.svg">打开完整示意图</a>。</p></details>
+            </figcaption>
+          </figure>
+          <div class="transport-interpretation">
+            <h3>不同的船，<br>接续的旅程。</h3>
+            <div><p>水流、滩险、船型、装卸方式、船帮归属、母港与贸易关系，使不同江段各具特点。在宜昌，转运将上游船只与服务于长江中下游及其湖区水网的船只衔接起来。</p>
+            <p>从 <i>乌江</i> 出发，跟随货物经过涪州，我们便能看见：一艘只服务于特定航段的船，如何参与更广阔的长江运输网络。</p></div>
+          </div>
+          </div>
+        </section>
+        <a class="text-link" href="#main-map">查看地图</a>
+      </section>
+    </div>
+    <figure class="hero-figure hero-map" id="main-map">
+      <a href="Yangtze_Products_1930s_EN_HighRes15MB.jpg" data-lightbox data-caption="根据 Hong Maoxi 1935 年地图重绘的长江物产区。制图：Yuanbo Cai。"><img src="assets/yangtze-commodities.jpg" width="2200" height="1554" alt="重绘的长江物产图，浅色物产区围绕河网交叠分布。" fetchpriority="high"></a>
+      <figcaption><span>01 / 长江物产图重绘</span>从青藏高原，经四川与中游湖泊平原，通向上海的长江口</figcaption>
+    </figure>
+    <section class="historical-setting" aria-labelledby="setting-title">
+      <div><p class="eyebrow">制图选择</p><h2 id="setting-title">将船放回它的历史地理之中</h2></div>
+      <div class="setting-copy">
+        <p>为了把歪屁股船放回长江的历史地理之中，我将行政区划、历史地名与河流水网结合起来。</p>
+        <p>我采用中国历史地理信息系统（CHGIS）项目发布的 1911 年行政区划 Shapefile，作为晚清行政空间的底图。行政驻地标注晚清名称，并使用威妥玛拼音；与现名不同的地方，在括号内补充现代地名。这为阅读稍后的民国史料提供了历史地理参照。</p>
+        <p>在视觉上，我特别强调四川及长江上游的主要支流与其下一级支流，让读者更容易追踪它们与中游湖泊、平原乃至河口的水路联系。结合民国地图与中国海关出版物，这张河网底图为追踪史料中的航路和转运关系提供了地理框架。</p>
+      </div>
+    </section>
+  </section>
+  <nav class="chapter-nav" aria-label="项目章节"><div class="wrap">
+    <a href="#commodities">成都局部</a><a href="#reflection">形势 · 地图设计</a><a href="#method">重绘方法</a><a href="#navigation">乌江与船模项目</a><a href="#pearl-river">延伸：珠江</a>
+  </div></nav>
+  <section class="chapter wrap" id="commodities" aria-labelledby="commodities-title">
+    <div class="section-heading"><h2 id="commodities-title">穿过成都糖产区，追踪麻的边界</h2></div>
+    <div class="chengdu-pair">
+      <figure><a href="assets/chengdu-source.svg" data-lightbox data-caption="1935 年物产图中的成都地区。"><img src="assets/chengdu-source.svg" alt="1935 年原图局部，可见成都以南的糖产区和周边物产符号。"></a><figcaption><strong>1935 年原图</strong> 先找到成都以南的糖产区，再沿着重叠处追踪麻的轮廓。</figcaption></figure>
+      <figure><a href="assets/chengdu-reconstruction.svg" data-lightbox data-caption="长江物产重绘图中的成都地区。"><img src="assets/chengdu-reconstruction.svg" alt="重绘后的同一区域，将糖、麻产区与河流一同展示。"></a><figcaption><strong>我的重绘</strong> 初次提取时，麻的轮廓被分成了几块。沿原图穿过糖产区逐段核对后，成都周边才重新连成一个完整区域。</figcaption></figure>
+    </div>
+    <section class="region-note" id="reflection" aria-labelledby="reflection-title">
+      <h2 id="reflection-title"><span lang="zh">形势</span> <i>Xíngshì</i></h2>
+      <div><p>我最初通过支流理解“形势”：山谷让水流向一处，山脊又将水分向另一处。物产图让我换一种方式阅读同样的地形。在成都周边，我希望读者能沿着一条河，穿过同时标有糖和麻的区域。</p>
+      <p>浅色、断续的色带构成疏松的圈，其中一些并未闭合。它们表示轮廓内部的物产分布区域，并不意味着物产只分布在色带本身。</p>
+      <p>使用较重的填色时，我既难以看清河流，也容易失去对物产区域形态的感知。我减淡颜色，并在选定的边缘留出开口，让空间格局更容易辨认：物产区域在哪里集聚、如何在流域内延展，又在哪里彼此重叠。我希望读者既能顺着这些区域的形态与走向阅读，也能持续看清河网。底层数据仍保留重叠关系，包括最终展示中省略部分边线的地段。</p></div>
+    </section>
+    <div class="map-switcher" data-switcher>
+      <div class="viewer-heading"><h3>七类物产分图</h3><div class="view-controls" role="group" aria-label="选择长江地图视图"><button type="button" data-view="separated" aria-pressed="true">七类物产分图</button><button type="button" data-view="chinese" aria-pressed="false">繁體中文地圖</button><button type="button" data-view="source" aria-pressed="false">历史原图</button></div></div>
+      <figure class="map-figure tall-sheet" data-panel="separated"><a href="yangtze_seven_panels_hydro_EN_600dpi.png" data-lightbox data-caption="糖、麻、烟草、茶、丝、棉花和稻米的七张独立分图，为长江综合图的配套图件。"><img src="assets/yangtze-seven-panels.jpg" alt="七张分图分别将糖、麻、烟草、茶、丝、棉花和稻米与河网对照展示。" loading="lazy"></a><figcaption><span>在稻米分图中，可以沿轮廓追踪湖北与湖南。第一次提取出的两个片段，在历史原图中属于同一个区域。</span><a href="yangtze_seven_panels_hydro_EN_600dpi.png">查看高清分图</a></figcaption></figure>
+      <figure class="map-figure" data-panel="chinese"><a href="assets/yangtze-commodities-zh-full.jpg" data-lightbox data-caption="重绘长江流域物产图的繁体中文版。"><img src="assets/yangtze-commodities-zh.jpg" width="2200" height="1554" alt="繁体中文版长江流域物产图，包含历史地名及七类物产区域。" loading="lazy"></a><figcaption><span>長江流域物產圖 · 繁體中文</span><a href="assets/yangtze-commodities-zh-full.jpg">查看高清地图</a></figcaption></figure>
+      <figure class="map-figure" data-panel="source"><a href="长江流域物产_原件.jpg" data-lightbox data-caption="项目所用长江物产历史地图数字复制件，署名 Hong Maoxi，1935 年。"><img src="assets/yangtze-source.jpg" alt="历史长江物产图，可见密集交叠的色带、纹理、标注与附图。" loading="lazy"></a><figcaption><span>史料 / 长江</span>项目所用数字复制件 · 原图署名 Hong Maoxi，1935 年</figcaption></figure>
+    </div>
+
+  </section>
+
+  <section class="method-band" id="method" aria-labelledby="method-title"><div class="wrap">
+    <div class="section-heading"><p class="eyebrow">02 / 地图重绘</p><h2 id="method-title">分辨图面符号，<br>理解物产区域</h2></div>
+    <div class="method-lead prose"><p>乍看之下，原图像是一团交叠的颜色。同一地点可能标有几种物产，图面又同时使用实色块、纹理填充和有色轮廓。褪色与套印使这些符号更难区分，单一的颜色阈值无法可靠地将物产与河流、铁路或另一类产品分开。</p></div>
+    <ol class="method-steps">
+      <li><span class="step-number">01</span><div><h3>配准主图</h3><p>我用印刷经纬网对主图进行地理配准，提取物产时排除图例和独立附图。采用受约束的二次变换处理扫描形变，并以独立检查区分“与经纬网吻合”与“历史地图本身较为粗略的地理表达”。</p></div></li>
+      <li><span class="step-number">02</span><div><h3>结合上下文识别符号</h3><p>我用局部样本引导颜色与纹理提取，并在核查窗口中区分相似符号：红色糖产区与铁路、深紫色茶产区与浅色麻轮廓，以及烟草纹理与水体底色。每类物产都回到扫描原图核对，不能将所有颜色相近的像素都视作证据。</p></div></li>
+      <li><span class="step-number">03</span><div><h3>回到原图核查</h3><p>我逐段核对断裂轮廓，并单独保存推定的边界段，以便重新检查各处接合。</p></div></li>
+    </ol>
+    <div class="method-comparison"><article><p class="eyebrow">长江 / 解释性区域重构</p><h3>重构被轮廓包围的区域</h3><p>实色符号转成区域，断续的环带则被解释为围合边界。缺墨处依靠可见轮廓与人工核查进行重构，推定的连接段单独记录。七类物产共形成 91 个重构要素；这一数量包含了将湖北、湖南稻米轮廓连接起来等解释性决定。</p></article><article><p class="eyebrow">珠江 / 保留原图符号</p><h3>保留色带的间断</h3><p>稻米、糖、丝和柞蚕丝保留印刷色带的宽度与间断，茶与烟草则保留为色块。导出数据中，六类物产共有 188 个不相连的片段；这些是原图符号的碎片数量，并非农业区域数量。</p></article></div>
+    <details class="technical-note"><summary>精度与展示选择</summary><div class="technical-columns"><p>长江图经纬网检查残差约为 7.45 个原图像素，折合约 7.1 千米。这衡量的是配准检查结果，不等于历史地图的绝对位置精度。珠江图最终的内部经纬网残差约为 3.2 像素；与 13 处历史城市符号比较，均方根误差约为 20.7 千米。两类检查衡量的对象不同。</p><p>在最终的长江图中，部分麻边界因与其他符号冲突而未显示，源 GeoJSON 仍保留其重叠关系。因此，图面上缺少一段线，并不意味着该处没有生产。两套数据都不足以估计实际耕作面积。这里的“自然间断”指印刷色带本身的缺口；提取过程没有使用 Jenks 自然断点分类。</p></div></details>
+  </div></section>
+
+  <section class="chapter wrap" id="navigation" aria-labelledby="navigation-title">
+    <div class="section-heading"><p class="eyebrow">歪屁股船模型项目</p><h2 id="navigation-title">货物在哪里需要换船？</h2></div>
+    <div class="section-intro"><p>1935 年的物产图给流域内的产品标出了位置。为了理解货物如何移动，我又读了夏士德关于乌江的记录。在涪州（今涪陵），货物可以在长江与支流之间转运；上行抵达龚滩后，又需要换船，再经四段航程通向思南。</p><p>这张航运图是我借助 Codex 进行的一次制图尝试，它协助绘制河流与安排航段。夏士德记载龚滩至思南共有 71 处险滩，因此我标注整个河段，而没有把险滩逐一定位。</p></div>
+    <figure class="map-figure">
+      <a href="歪屁股船英文_川江乌江航运体系_真实GIS版_EN_v10_400DPI.png" data-lightbox data-caption="歪屁股船航运图：川江与乌江。历史航运信息依据夏士德 1940 年的记载。"><img src="assets/wu-navigation.jpg" width="2200" height="1554" alt="航运图显示涪州与长江的汇口、龚滩，以及经沿河、新滩、潮砥通向思南的分段航路。" loading="lazy"></a>
+      <figcaption><span>04 / Codex 辅助绘制的航运图</span><a href="歪屁股船英文_川江乌江航运体系_真实GIS版_EN_v10_400DPI.png">查看高清航运图</a></figcaption>
+    </figure>
+    <aside class="map-note"><strong>读图说明。</strong> 新滩的位置根据历史航段距离内插估计。图面使用非等比例缩放，为乌江航段提供更多展示空间。</aside>
+
+    <div class="vessel-history">
+      <figure>
+        <a href="assets/junk-model/river-boats-original-atmosphere.png" data-lightbox data-caption="停泊于涪州的歪屁股船，配有篷顶与长橹。甘博摄，《歪船尾的木船》，1917 年。杜克大学 David M. Rubenstein 珍本与手稿图书馆，甘博摄影收藏。编号 22A-115。"><img src="assets/junk-model/river-boats.jpg" width="1600" height="1258" alt="甘博 1917 年摄于涪州的歪屁股船照片，可见篷顶、长橹与江边船工。" loading="lazy"></a>
+        <figcaption>停泊于 <span lang="zh-Hant">涪州</span>的歪屁股船，配有篷顶与长橹。甘博（Sidney D. Gamble）摄，1917 年。 <a href="https://repository.duke.edu/dc/gamble/gamble_022A_115"><cite>《歪船尾的木船》（Twisted Stern Boats）</cite>，22A-115</a> · 杜克大学 David M. Rubenstein 珍本与手稿图书馆，甘博摄影收藏。</figcaption>
+      </figure>
+      <div class="vessel-history-copy"><p class="eyebrow">阅读船体</p><h3>从江边影像<br>到木质船模</h3><p>照片让船上的工作装置清晰可见：长橹伸出船体，绳索交错于船只与岸边，编织篷顶覆盖着生活与载货空间。</p><p>结合夏士德的图纸与文字，这类影像帮助我们追问：船体结构如何支持船工的行船与操纵？</p></div>
+    </div>
+
+    <section class="model-project" aria-labelledby="model-title">
+      <h3 id="model-title">复原一艘 <span lang="zh">歪屁股船</span></h3>
+      <p>在 YUE-FAN Studio，我们想知道：为什么一艘乌江盐船的船尾两侧高低不一？夏士德的图纸提供了船体线型；他对长橹的描述，则帮助我们理解这种不对称结构如何用于水上操纵。</p>
+      <p>我们先建立数字模型，再研究如何将船体及其附件设计成可拼装的木质套件。船厂师傅张玉琪老师指导我们反复调整，设计前后修改了八版。抬高的一侧船尾为一支橹提供支点，同时为另一支橹留出摆动空间。</p>
+      <p class="small-note">英国科学博物馆集团也收藏着同类船型的历史模型，由中国船匠在夏士德指导下制作。 <a href="https://collection.sciencemuseumgroup.org.uk/objects/co42012/model-of-a-crooked-stern-type-chinese-junk">查看博物馆馆藏记录</a></p>
+    </section>
+    <div class="model-gallery" aria-label="歪屁股船模型实拍">
+      <figure class="model-overview">
+        <a href="assets/junk-model/model-overview.jpg" data-lightbox data-caption="歪屁股船模型斜视图，展示船体、篷顶、高架平台与长橹。模型及项目摄影：YUE-FAN Studio。"><img src="assets/junk-model/model-overview-preview.jpg" width="1200" height="928" alt="浅色背景上的木质歪屁股船模型斜视图，可见船体、编织篷顶、高架平台与长橹。" loading="lazy"></a>
+        <figcaption><strong>船体全貌</strong>船体、篷顶、高架操纵平台与长橹。YUE-FAN Studio。</figcaption>
+      </figure>
+      <figure class="model-stern">
+        <a href="assets/junk-model/model-stern.jpg" data-lightbox data-caption="不对称的船尾为长橹的操纵提供空间，帮助船工在下险滩时调整方向。模型及项目摄影：YUE-FAN Studio。"><img src="assets/junk-model/model-stern-preview.jpg" width="1200" height="800" alt="木质模型船尾特写，两侧高低不一，配有长橹与红色纸饰。" loading="lazy"></a>
+        <figcaption><strong>船尾为什么是歪的？</strong>不对称的船尾为长橹的操纵提供空间，帮助船工在下险滩时调整船只方向。</figcaption>
+      </figure>
+    </div>
+    <details class="source-disclosure model-more"><summary>更多模型视图</summary>
+      <div class="model-gallery">
+        <figure><a href="assets/junk-model/model-opposite-view.jpg" data-lightbox data-caption="歪屁股船模型另一侧斜视图。模型及项目摄影：YUE-FAN Studio。"><img src="assets/junk-model/model-opposite-view-preview.jpg" width="1200" height="869" alt="从另一侧观看模型，可见敞开的舱室、篷顶与长橹。" loading="lazy"></a><figcaption>另一侧的视图，可见敞开的舱室与长橹布置。</figcaption></figure>
+        <figure><a href="assets/junk-model/model-handheld.jpg" data-lightbox data-caption="置于展示底座上的完成模型，手持展示。模型及项目摄影：YUE-FAN Studio。"><img src="assets/junk-model/model-handheld-preview.jpg" width="1200" height="675" alt="一只手托住木质底座上的完成模型，可据此感知模型大小。" loading="lazy"></a><figcaption>置于展示底座上的完成模型；手持照片呈现模型的大致尺寸。</figcaption></figure>
+      </div>
+    </details>
+    <details class="source-disclosure vessel-drawing"><summary>查看船体平面图与构造图</summary><figure><a href="assets/figures/hull.png" data-lightbox data-caption="歪屁股船的平面、立面与透视图。图纸由 YUE-FAN Studio 提供。"><img src="assets/hull.jpg" alt="歪屁股船的平面、立面与透视图。" loading="lazy"></a><figcaption>05 / 船体 · 图纸由 YUE-FAN Studio 提供</figcaption></figure></details>
+    <div class="mechanics-intro"><p class="eyebrow">从航路到船体</p><h3>逆流时牵引，<br>顺流时控向。</h3><p>一条航线很难说明实际行船所需的劳动。这些标注图把操作过程带回视野：纤绳如何连接船体、怎样越过船首，以及长橹如何操纵。</p></div>
+    <div class="figure-switcher" data-switcher>
+      <div class="view-controls" role="group" aria-label="选择航行操作细节"><button type="button" data-view="upstream" aria-pressed="true">上水 / 牵引</button><button type="button" data-view="downstream" aria-pressed="false">下水 / 操纵</button></div>
+      <div class="mechanics-panel" data-panel="upstream">
+        <figure><a href="assets/figures/upstream.png" data-lightbox data-caption="上水牵引装置。YUE-FAN Studio 根据夏士德 1941 年图版 10、18 改绘。"><img src="assets/upstream.jpg" width="1200" height="1800" alt="船首、牵引横梁、提升绳与铁环的标注图，展示纤绳如何固定及越过船首换边。" loading="lazy"></a><figcaption>06 / 夏士德，1941 · 图版 10、18<br>改绘与标注：YUE-FAN Studio</figcaption></figure>
+        <div class="mechanics-copy"><p class="eyebrow">逆流而上</p><h4>沿纤绳追踪牵引力</h4><p>上水图从岸上的牵引力讲起。竹纤绳系在牵引横梁上；换边时，提升绳与铁环帮助纤绳越过高起的船首。</p><p>另一条系岸绳控制船与河岸的距离。这套装置让河岸也成为运输体系的一部分：船上的操作依赖岸上的人力与固定点。</p><details><summary>查看图中文字说明</summary><dl class="label-list"><dt>牵引横梁</dt><dd>每根横梁固定三条竹纤绳。</dd><dt>船首立柱</dt><dd>可拆卸的硬木柱高出甲板约 2.5 米，用于支撑提升绳。</dd><dt>提升绳与铁环</dt><dd>拉紧提升绳可抬起铁环，使纤绳越过船首。提升绳下端固定在立柱底部的销钉上。</dd><dt>系岸绳与绞棒</dt><dd>绳索固定在岸上岩石处，以绞棒收紧并保持张力。项目所用标注图对其材质保留了不确定性。</dd><dt>前部舱室</dt><dd>最前方舱室不设甲板；第二舱在行船时也保持敞开，图中所示甲板板件为此需要移开。</dd><dt>草绳索段</dt><dd>配合船钩使用，帮助控制船只移动。</dd></dl></details></div>
+      </div>
+      <div class="mechanics-panel" data-panel="downstream">
+        <figure><a href="assets/figures/downstream.png" data-lightbox data-caption="歪屁股船操纵装置。YUE-FAN Studio 根据 Audemard 1963 年第五卷图版 30 改绘。"><img src="assets/downstream.jpg" width="1800" height="1350" alt="历史照片标注高架操纵平台、船尾橹、侧橹、首橹与划桨位置。" loading="lazy"></a><figcaption>07 / Audemard，1963 · 第五卷，图版 30<br>改绘与标注：YUE-FAN Studio</figcaption></figure>
+        <div class="mechanics-copy"><p class="eyebrow">顺流而下</p><h4>方向操纵成为关键</h4><p>第二张图展示船上操纵装置的布置。长橹伸出船体，高架平台为船尾操作者提供工作空间。抬高的一侧船尾提供支点，并使两支橹彼此错开。</p><p>我把这张照片放在航运图旁，是因为船体形态只有放回具体江段才更容易理解。这张图记录了设备和操作位置，并不能据此还原某一次实际下滩的全部水情。</p><details><summary>查看照片文字说明</summary><dl class="label-list"><dt>老大</dt><dd>船长，图中正在操纵船尾长橹。</dd><dt>高架操纵平台</dt><dd>用于操纵船尾长橹的高架平台。支撑绳保持平台稳定，限制横向晃动。</dd><dt>高起的船尾</dt><dd>为长橹提供支点，使两支船尾橹互不干扰。</dd><dt>船首操作者（T’ai-kung）</dt><dd>在船首操作首橹，并以船钩探测水深。</dd><dt>船尾橹、侧橹与首橹</dt><dd>用于控制方向。</dd><dt>划桨</dt><dd>用于推进船只。</dd></dl></details></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter wrap pearl-extension" id="pearl-river" aria-labelledby="pearl-title">
+    <div class="pearl-intro"><p class="eyebrow">比较延伸 / 另一个河流区域</p><h2 id="pearl-title">珠江与广东东部</h2><p>我想知道，以广州为中心的经济区域沿江向内陆延伸多远，以及这些联系如何塑造区域不平等。历史上，广西的稻米等初级产品支撑了广州及周边地区的商品经济。我追问，今天广西劳动力向沿海工厂的流动，是否与这种早期的供给格局存在相似之处，以及人口外流如何影响广西的人口红利。</p><p>Hong Maoxi 的地图描绘了柞蚕丝、烟草、糖、丝、茶和稻米六类物产。我保留了原图超出流域的覆盖范围，以便考察历史上的供给地理，而非套用现代分水岭边界。</p></div>
+    <figure class="map-figure"><a href="Pearl_River_Eastern_Kuangtung_EN_HighRes.png" data-lightbox data-caption="珠江流域与广东东部，保留原图物产符号的独立片段与间断。"><img src="assets/pearl-commodities.jpg" width="2200" height="1556" alt="珠江与广东东部物产重绘图，显示中国南方的物产色带与色块。" loading="lazy"></a><figcaption><span>08 / 南方的比较</span><a href="Pearl_River_Eastern_Kuangtung_EN_HighRes.png">查看高清地图</a></figcaption></figure>
+    <details class="source-disclosure"><summary>对照珠江历史原图</summary><figure><a href="粤江流域物产_原件.jpg" data-lightbox data-caption="项目所用珠江物产历史地图数字复制件，署名 Hong Maoxi，1935 年。"><img src="assets/pearl-source.jpg" alt="珠江历史物产图，显示重绘所依据的有色环带与色块。" loading="lazy"></a><figcaption>原图符号同时包括有色环带、实色块与纹理色块。</figcaption></figure></details>
+  </section>
+
+  <section class="wrap home-river" aria-labelledby="home-river-title">
+    <div class="home-river-heading">
+      <p class="eyebrow">从地图走向河流</p>
+      <h2 id="home-river-title">溯流而上，认识我的母亲河</h2>
+      <a class="photo-essay-link" href="west-river.html"><span>摄影叙事</span>同一条江河，不同的人间：遇见西江的多重面貌</a>
+      <figure class="home-river-photo">
+        <a href="assets/wuzhou-sand-barge.jpg" data-lightbox data-caption="运沙船从梧州出发，开往广东。"><img src="assets/wuzhou-sand-barge.jpg" width="1086" height="724" alt="梧州，一艘满载河沙的运输船驶过拱桥下方，背景为沿江建筑。" loading="lazy"></a>
+        <figcaption>运沙船从梧州出发，开往广东。</figcaption>
+      </figure>
+    </div>
+    <div class="home-river-copy">
+      <p>我在广东深圳长大，毗邻香港、靠近珠江口，最初对河流的认识来自下游的日常生活。改革开放时期深圳的快速发展，是我的童年背景。学习看见更广阔的流域，也成为重新认识母亲河的一种实践。</p>
+      <p>城市天际线背后，还有一些在城市增长叙事中不易被看见的联系：从广西进入沿海工厂的劳动者、顺流运往下游的建筑河沙、上游水电站发出的电力，以及通过水库和调水系统供应的用水。绘制珠江地图，成为我理解河口日常生活如何依赖更远内陆的人、物资和水路的一部分。</p>
+      <p>我的摄影项目沿江继续这一追问，记录与渔民、船工和沿岸居民的相遇。</p>
+    </div>
+  </section>
+
+  <section class="sources wrap" id="sources" aria-labelledby="sources-title"><div class="section-heading"><p class="eyebrow">史料与项目资料</p><h2 id="sources-title">与地图一同阅读</h2></div>
+    <div class="source-grid"><div><h3>历史材料</h3><ol class="bibliography"><li>Joseph Earle Spencer， <a href="https://www.jstor.org/stable/210570">《长江流域的贸易与转运》（Trade and Transshipment in the Yangtze Valley），</a> <i>Geographical Review</i> 第 28 卷第 1 期（1938），112–123 页。支流船只转运见第 117 页；沙市棉花贸易见第 123 页。</li><li>Hong Maoxi， <i>Latest General Survey Map of China</i> （1935）。署名依据项目所用地图，数字复制件的完整来源仍待补充。</li><li>夏士德（G. R. G. Worcester）， <a href="https://catalog.etoncollege.com/B18556"><i>《长江的帆船与舢板》（The Junks and Sampans of the Yangtze）</i></a> （1947–1948），两卷本。</li><li>夏士德（G. R. G. Worcester）， <i>Junks and Sampans of the Upper Yangtze</i> （1940），第五章“The Kungt’anho”。</li><li>夏士德（G. R. G. Worcester）， <i>Notes on the Crooked-bow and Crooked-stern Junks of Szechwan</i> （1941），图版 10、18。</li><li>L. Audemard， <i>Les Jonques Chinoises</i>，第五卷， <i>Haut Yang Tse Kiang</i> （1963），图版 30。</li></ol></div><div><h3>继续阅读</h3><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio">地图与源文件仓库 <span>↗</span></a><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio/blob/main/Worcester_Junk_Inventory_and_Yangtze_Sections_EN.md">船型与航运分区 <span>↗</span></a><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio/blob/main/Worcester_Yangtze_Ports_Five_Functional_Categories_and_Evidence_EN.md">港口及其功能 <span>↗</span></a><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio/blob/main/SOURCES.md">来源与参考地理信息 <span>↗</span></a><p class="small-note">历史物产信息、1911 年行政参照，以及现代地形和河流数据，分别描述不同时间与层面的地理。各类数据的年代与来源在地图中保留标注。</p></div></div>
+  </section>
+</main>
+<footer class="wrap"><p>制图：Yuanbo Cai · 项目资料：YUE-FAN Studio<br>历史图像与参考数据的署名及权利归属分别保留。</p><a href="#top">返回顶部</a></footer>
+<dialog id="image-dialog" aria-labelledby="image-caption"><div class="lightbox-toolbar"><p id="image-caption"></p><div><a id="image-original" href="#">打开图片文件</a><button type="button" id="close-image" aria-label="关闭图片">关闭 ×</button></div></div><div class="lightbox-stage"><img id="lightbox-image" alt=""></div><p class="lightbox-help">点击图片切换适应窗口与原始尺寸。按 Esc 关闭。</p></dialog>
+</body>
+</html>

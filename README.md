@@ -16,6 +16,12 @@ The project asks how dispersed areas of production might be connected through wa
 
 Related projects: [Corridors before Borders](https://yuanbocai-hub.github.io/mapping-portfolio/corridors.html) · [Following the Tsangpo](https://yuanbocai-hub.github.io/mapping-portfolio/tsangpo.html)
 
+### Yangtze project languages
+
+The project opens in English at `yangtze.html`. Its header links to the Chinese version, `yangtze-zh.html`, and back; switching preserves the current section. Both versions use the same photographs, maps, styles and interactive controls.
+
+After changing English copy, update the matching strings in `scripts/yangtze-zh-translations.json`, then run `python3 scripts/build-yangtze-chinese.py`. This regenerates the Chinese page from the English structure and reports any untranslated text before writing. Edit the translation dictionary rather than editing the generated Chinese HTML directly.
+
 ## Principal work: the Yangtze commodity maps
 
 [![Reconstructed Yangtze commodity regions](assets/yangtze-commodities.jpg)](Yangtze_Products_1930s_EN_HighRes15MB.jpg)
