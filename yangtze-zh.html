@@ -6,7 +6,7 @@
   <meta name="description" content="Yuanbo Cai 的历史制图项目：重绘 1935 年长江物产图中的七类物产，探讨区域地理与水路运输，并展示借助 Codex 绘制的乌江航运图。">
   <meta name="theme-color" content="#f5f2ea">
   <title>作为水路运输体系的长江 · Yuanbo Cai</title>
-  <link rel="stylesheet" href="portfolio.css"><link rel="stylesheet" href="projects.css"><link rel="stylesheet" href="yangtze.css?v=20261119-transport">
+  <link rel="stylesheet" href="portfolio.css"><link rel="stylesheet" href="projects.css"><link rel="stylesheet" href="yangtze.css?v=20261119-regions">
   <script src="portfolio.js" defer></script>
   <script src="yangtze-language.js" defer></script>
   <link rel="alternate" hreflang="en" href="yangtze.html">
@@ -86,15 +86,17 @@
     </div>
     <section class="region-note" id="reflection" aria-labelledby="reflection-title">
       <h2 id="reflection-title"><span lang="zh">形势</span> <i>Xíngshì</i></h2>
+      <div class="reflection-text"><p>我最初通过支流理解“形势”：山谷让水流向一处，山脊又将水分向另一处。物产图让我换一种方式阅读同样的地形。在成都周边，我希望读者能沿着一条河，穿过同时标有糖和麻的区域。</p>
+      <p>浅色、断续的色带构成疏松的圈，其中一些并未闭合。它们表示轮廓内部的物产分布区域，并不意味着物产只分布在色带本身。</p>
+      <p>使用较重的填色时，我既难以看清河流，也容易失去对物产区域形态的感知。我减淡颜色，并在选定的边缘留出开口，让空间格局更容易辨认：物产区域在哪里集聚、如何在流域内延展，又在哪里彼此重叠。我希望读者既能顺着这些区域的形态与走向阅读，也能持续看清河网。底层数据仍保留重叠关系，包括最终展示中省略部分边线的地段。</p></div>
+    </section>
+    <section id="seven-commodity-maps" aria-labelledby="seven-maps-title">
       <div class="map-switcher" data-switcher>
-      <div class="viewer-heading"><div class="commodity-view-heading"><h3>七类物产分图</h3><p class="commodity-view-note">物产分视图依据我对洪懋熙 1935 年物产图进行地理配准后提取的 GeoJSON 图层重绘。</p></div><div class="view-controls" role="group" aria-label="选择长江地图视图"><button type="button" data-view="separated" aria-pressed="true">七类物产分图</button><button type="button" data-view="chinese" aria-pressed="false">繁體中文地圖</button><button type="button" data-view="source" aria-pressed="false">历史原图</button></div></div>
+      <div class="viewer-heading"><div class="commodity-view-heading"><h2 id="seven-maps-title">七类物产分图</h2><p class="commodity-view-note">物产分视图依据我对洪懋熙 1935 年物产图进行地理配准后提取的 GeoJSON 图层重绘。</p></div><div class="view-controls" role="group" aria-label="选择长江地图视图"><button type="button" data-view="separated" aria-pressed="true">七类物产分图</button><button type="button" data-view="chinese" aria-pressed="false">繁體中文地圖</button><button type="button" data-view="source" aria-pressed="false">历史原图</button></div></div>
       <figure class="map-figure tall-sheet" data-panel="separated"><a href="yangtze_seven_panels_hydro_EN_600dpi.png" data-lightbox data-caption="糖、麻、烟草、茶、丝、棉花和稻米的七张独立分图，为长江综合图的配套图件。"><img src="assets/yangtze-seven-panels.jpg" alt="七张分图分别将糖、麻、烟草、茶、丝、棉花和稻米与河网对照展示。" loading="lazy"></a><figcaption><span>在稻米分图中，可以沿轮廓追踪湖北与湖南。第一次提取出的两个片段，在历史原图中属于同一个区域。</span><a href="yangtze_seven_panels_hydro_EN_600dpi.png">查看高清分图</a></figcaption></figure>
       <figure class="map-figure" data-panel="chinese"><a href="assets/yangtze-commodities-zh-full.jpg" data-lightbox data-caption="重绘长江流域物产图的繁体中文版。"><img src="assets/yangtze-commodities-zh.jpg" width="2200" height="1554" alt="繁体中文版长江流域物产图，包含历史地名及七类物产区域。" loading="lazy"></a><figcaption><span>長江流域物產圖 · 繁體中文</span><a href="assets/yangtze-commodities-zh-full.jpg">查看高清地图</a></figcaption></figure>
       <figure class="map-figure" data-panel="source"><a href="长江流域物产_原件.jpg" data-lightbox data-caption="项目所用长江物产历史地图数字复制件，署名 Hong Maoxi，1935 年。"><img src="assets/yangtze-source.jpg" alt="历史长江物产图，可见密集交叠的色带、纹理、标注与附图。" loading="lazy"></a><figcaption><span>史料 / 长江</span>项目所用数字复制件 · 原图署名 Hong Maoxi，1935 年</figcaption></figure>
     </div>
-      <details class="reflection-text"><summary>如何读懂图中的物产区域</summary><p>我最初通过支流理解“形势”：山谷让水流向一处，山脊又将水分向另一处。物产图让我换一种方式阅读同样的地形。在成都周边，我希望读者能沿着一条河，穿过同时标有糖和麻的区域。</p>
-      <p>浅色、断续的色带构成疏松的圈，其中一些并未闭合。它们表示轮廓内部的物产分布区域，并不意味着物产只分布在色带本身。</p>
-      <p>使用较重的填色时，我既难以看清河流，也容易失去对物产区域形态的感知。我减淡颜色，并在选定的边缘留出开口，让空间格局更容易辨认：物产区域在哪里集聚、如何在流域内延展，又在哪里彼此重叠。我希望读者既能顺着这些区域的形态与走向阅读，也能持续看清河网。底层数据仍保留重叠关系，包括最终展示中省略部分边线的地段。</p></details>
     </section>
     <details class="method-band method-inset" id="method">
     <summary><span class="eyebrow">02 / 地图重绘</span> <span class="method-label">分辨图面符号，理解物产区域</span></summary>

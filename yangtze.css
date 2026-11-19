@@ -56,9 +56,12 @@
 .region-note { margin: 38px 0 44px; border-block: 1px solid var(--line); padding: 26px 0 10px; }
 .region-note h2 { margin-bottom: 20px; }
 .region-note h2 i { font-size: 24px; }
-.reflection-text { margin-block: 16px; }
-.reflection-text summary, .method-inset > summary { cursor: pointer; }
-.reflection-text[open] summary, .method-inset[open] > summary { margin-bottom: 18px; }
+.region-note { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); column-gap: clamp(24px, 5vw, 72px); }
+.reflection-text p { margin: 0 0 1em; }
+#seven-maps-title { font-size: 30px; }
+@media (max-width: 700px) { .region-note { grid-template-columns: 1fr; } }
+.method-inset > summary { cursor: pointer; }
+.method-inset[open] > summary { margin-bottom: 18px; }
 .region-note p, .method-lead p, .section-intro p { font-size: 17px; max-width: 70ch; }
 .method-steps h3, .method-comparison h3 { font: 650 21px/1.25 var(--sans); }
 .method-inset { padding: 16px 20px; margin-top: 20px; }
