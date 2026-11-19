@@ -27,13 +27,19 @@
 .diagram-notes summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
 .diagram-notes p { font-size: inherit; margin-top: 10px; }
 @media(max-width:1000px) {
-  .transport-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .transport-interpretation { padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .transport-layout { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 22px; }
+  .transport-interpretation { padding-left: 18px; }
+  .transport-interpretation h3 { font-size: 25px; }
+  .transport-interpretation p { font-size: 15px; line-height: 1.65; }
 }
 @media(max-width:760px) {
+  .transport-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .transport-interpretation { padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--line); }
   .transport-figure > a { overflow-x: auto; }
   .transport-figure img { min-width: 760px; }
 }
+.commodity-view-heading { flex: 1; min-width: 0; }
+.commodity-view-heading .commodity-view-note { max-width: 62ch; margin: 9px 0 0; color: var(--muted); font: 14px/1.6 var(--sans); }
 .hero .hero-map { max-width: none; }
 .hero .hero-map img { max-height: none; }
 .historical-setting { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 64px; border-top: 1px solid var(--line); padding-top: 30px; }
@@ -49,6 +55,18 @@
 .region-note h2 i { display: block; font-size: 24px; }
 .region-note p, .method-lead p, .section-intro p { font-size: 17px; max-width: 70ch; }
 .method-steps h3, .method-comparison h3 { font: 650 21px/1.25 var(--sans); }
+.method-inset { padding: clamp(20px, 3vw, 36px); margin-top: 30px; }
+.method-inset .section-heading { margin-bottom: 20px; }
+.method-inset h2 { font-size: clamp(28px, 3vw, 38px); letter-spacing: -.025em; }
+.method-inset .method-steps { grid-template-columns: minmax(0, 1fr); gap: 0; margin-top: 24px; }
+.method-inset .method-steps li { display: block; padding-top: 0; }
+.method-step summary { cursor: pointer; padding-block: 16px; }
+.method-step .step-number { margin-right: 14px; color: var(--accent); font-size: 14px; }
+.method-step h3 { display: inline; font-size: 19px; margin: 0; }
+.method-step p { max-width: 85ch; margin: 0 0 20px; font-size: 15px; line-height: 1.7; }
+.method-inset .technical-note { margin-top: 0; padding-bottom: 18px; }
+.method-inset .technical-note summary { cursor: pointer; font-size: 15px; }
+.method-inset .method-comparison { margin-top: 18px; padding-top: 20px; }
 @media(max-width:760px) {
   .hero, .chengdu-pair, .region-note { grid-template-columns: 1fr; }
   .yangtze-opening, .reading-columns, .historical-setting { grid-template-columns: minmax(0, 1fr); gap: 24px; }

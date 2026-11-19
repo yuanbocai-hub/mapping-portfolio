@@ -6,7 +6,7 @@
   <meta name="description" content="Yuanbo Cai 的历史制图项目：重绘 1935 年长江物产图中的七类物产，探讨区域地理与水路运输，并展示借助 Codex 绘制的乌江航运图。">
   <meta name="theme-color" content="#f5f2ea">
   <title>作为水路运输体系的长江 · Yuanbo Cai</title>
-  <link rel="stylesheet" href="portfolio.css"><link rel="stylesheet" href="projects.css"><link rel="stylesheet" href="yangtze.css">
+  <link rel="stylesheet" href="portfolio.css"><link rel="stylesheet" href="projects.css"><link rel="stylesheet" href="yangtze.css?v=20261119-transport">
   <script src="portfolio.js" defer></script>
   <script src="yangtze-language.js" defer></script>
   <link rel="alternate" hreflang="en" href="yangtze.html">
@@ -74,7 +74,7 @@
     </section>
   </section>
   <nav class="chapter-nav" aria-label="项目章节"><div class="wrap">
-    <a href="#commodities">成都局部</a><a href="#reflection">形势 · 地图设计</a><a href="#method">重绘方法</a><a href="#navigation">乌江与船模项目</a><a href="#pearl-river">延伸：珠江</a>
+    <a href="#commodities">成都局部</a><a href="#method">重绘方法</a><a href="#reflection">形势 · 地图设计</a><a href="#navigation">乌江与船模项目</a><a href="#pearl-river">延伸：珠江</a>
   </div></nav>
   <section class="chapter wrap" id="commodities" aria-labelledby="commodities-title">
     <div class="section-heading"><h2 id="commodities-title">穿过成都糖产区，追踪麻的边界</h2></div>
@@ -82,6 +82,17 @@
       <figure><a href="assets/chengdu-source.svg" data-lightbox data-caption="1935 年物产图中的成都地区。"><img src="assets/chengdu-source.svg" alt="1935 年原图局部，可见成都以南的糖产区和周边物产符号。"></a><figcaption><strong>1935 年原图</strong> 先找到成都以南的糖产区，再沿着重叠处追踪麻的轮廓。</figcaption></figure>
       <figure><a href="assets/chengdu-reconstruction.svg" data-lightbox data-caption="长江物产重绘图中的成都地区。"><img src="assets/chengdu-reconstruction.svg" alt="重绘后的同一区域，将糖、麻产区与河流一同展示。"></a><figcaption><strong>我的重绘</strong> 初次提取时，麻的轮廓被分成了几块。沿原图穿过糖产区逐段核对后，成都周边才重新连成一个完整区域。</figcaption></figure>
     </div>
+  <section class="method-band method-inset" id="method" aria-labelledby="method-title">
+    <div class="section-heading"><p class="eyebrow">02 / 地图重绘</p><h2 id="method-title">分辨图面符号，<br>理解物产区域</h2></div>
+    <div class="method-lead prose"><p>乍看之下，原图像是一团交叠的颜色。同一地点可能标有几种物产，图面又同时使用实色块、纹理填充和有色轮廓。褪色与套印使这些符号更难区分，单一的颜色阈值无法可靠地将物产与河流、铁路或另一类产品分开。</p></div>
+    <ol class="method-steps">
+      <li><details class="method-step"><summary><span class="step-number">01</span><h3>配准主图</h3></summary><p>我用印刷经纬网对主图进行地理配准，提取物产时排除图例和独立附图。采用受约束的二次变换处理扫描形变，并以独立检查区分“与经纬网吻合”与“历史地图本身较为粗略的地理表达”。</p></details></li>
+      <li><details class="method-step"><summary><span class="step-number">02</span><h3>结合上下文识别符号</h3></summary><p>我用局部样本引导颜色与纹理提取，并在核查窗口中区分相似符号：红色糖产区与铁路、深紫色茶产区与浅色麻轮廓，以及烟草纹理与水体底色。每类物产都回到扫描原图核对，不能将所有颜色相近的像素都视作证据。</p></details></li>
+      <li><details class="method-step"><summary><span class="step-number">03</span><h3>回到原图核查</h3></summary><p>我逐段核对断裂轮廓，并单独保存推定的边界段，以便重新检查各处接合。</p></details></li>
+    </ol>
+    <details class="technical-note method-map-comparison"><summary>两张地图的处理有何不同</summary><div class="method-comparison"><article><p class="eyebrow">长江 / 解释性区域重构</p><h3>重构被轮廓包围的区域</h3><p>实色符号转成区域，断续的环带则被解释为围合边界。缺墨处依靠可见轮廓与人工核查进行重构，推定的连接段单独记录。七类物产共形成 91 个重构要素；这一数量包含了将湖北、湖南稻米轮廓连接起来等解释性决定。</p></article><article><p class="eyebrow">珠江 / 保留原图符号</p><h3>保留色带的间断</h3><p>稻米、糖、丝和柞蚕丝保留印刷色带的宽度与间断，茶与烟草则保留为色块。导出数据中，六类物产共有 188 个不相连的片段；这些是原图符号的碎片数量，并非农业区域数量。</p></article></div></details>
+    <details class="technical-note"><summary>精度与展示选择</summary><div class="technical-columns"><p>长江图经纬网检查残差约为 7.45 个原图像素，折合约 7.1 千米。这衡量的是配准检查结果，不等于历史地图的绝对位置精度。珠江图最终的内部经纬网残差约为 3.2 像素；与 13 处历史城市符号比较，均方根误差约为 20.7 千米。两类检查衡量的对象不同。</p><p>在最终的长江图中，部分麻边界因与其他符号冲突而未显示，源 GeoJSON 仍保留其重叠关系。因此，图面上缺少一段线，并不意味着该处没有生产。两套数据都不足以估计实际耕作面积。这里的“自然间断”指印刷色带本身的缺口；提取过程没有使用 Jenks 自然断点分类。</p></div></details>
+    </section>
     <section class="region-note" id="reflection" aria-labelledby="reflection-title">
       <h2 id="reflection-title"><span lang="zh">形势</span> <i>Xíngshì</i></h2>
       <div><p>我最初通过支流理解“形势”：山谷让水流向一处，山脊又将水分向另一处。物产图让我换一种方式阅读同样的地形。在成都周边，我希望读者能沿着一条河，穿过同时标有糖和麻的区域。</p>
@@ -89,7 +100,7 @@
       <p>使用较重的填色时，我既难以看清河流，也容易失去对物产区域形态的感知。我减淡颜色，并在选定的边缘留出开口，让空间格局更容易辨认：物产区域在哪里集聚、如何在流域内延展，又在哪里彼此重叠。我希望读者既能顺着这些区域的形态与走向阅读，也能持续看清河网。底层数据仍保留重叠关系，包括最终展示中省略部分边线的地段。</p></div>
     </section>
     <div class="map-switcher" data-switcher>
-      <div class="viewer-heading"><h3>七类物产分图</h3><div class="view-controls" role="group" aria-label="选择长江地图视图"><button type="button" data-view="separated" aria-pressed="true">七类物产分图</button><button type="button" data-view="chinese" aria-pressed="false">繁體中文地圖</button><button type="button" data-view="source" aria-pressed="false">历史原图</button></div></div>
+      <div class="viewer-heading"><div class="commodity-view-heading"><h3>七类物产分图</h3><p class="commodity-view-note">物产分视图依据我对洪懋熙 1935 年物产图进行地理配准后提取的 GeoJSON 图层重绘。</p></div><div class="view-controls" role="group" aria-label="选择长江地图视图"><button type="button" data-view="separated" aria-pressed="true">七类物产分图</button><button type="button" data-view="chinese" aria-pressed="false">繁體中文地圖</button><button type="button" data-view="source" aria-pressed="false">历史原图</button></div></div>
       <figure class="map-figure tall-sheet" data-panel="separated"><a href="yangtze_seven_panels_hydro_EN_600dpi.png" data-lightbox data-caption="糖、麻、烟草、茶、丝、棉花和稻米的七张独立分图，为长江综合图的配套图件。"><img src="assets/yangtze-seven-panels.jpg" alt="七张分图分别将糖、麻、烟草、茶、丝、棉花和稻米与河网对照展示。" loading="lazy"></a><figcaption><span>在稻米分图中，可以沿轮廓追踪湖北与湖南。第一次提取出的两个片段，在历史原图中属于同一个区域。</span><a href="yangtze_seven_panels_hydro_EN_600dpi.png">查看高清分图</a></figcaption></figure>
       <figure class="map-figure" data-panel="chinese"><a href="assets/yangtze-commodities-zh-full.jpg" data-lightbox data-caption="重绘长江流域物产图的繁体中文版。"><img src="assets/yangtze-commodities-zh.jpg" width="2200" height="1554" alt="繁体中文版长江流域物产图，包含历史地名及七类物产区域。" loading="lazy"></a><figcaption><span>長江流域物產圖 · 繁體中文</span><a href="assets/yangtze-commodities-zh-full.jpg">查看高清地图</a></figcaption></figure>
       <figure class="map-figure" data-panel="source"><a href="长江流域物产_原件.jpg" data-lightbox data-caption="项目所用长江物产历史地图数字复制件，署名 Hong Maoxi，1935 年。"><img src="assets/yangtze-source.jpg" alt="历史长江物产图，可见密集交叠的色带、纹理、标注与附图。" loading="lazy"></a><figcaption><span>史料 / 长江</span>项目所用数字复制件 · 原图署名 Hong Maoxi，1935 年</figcaption></figure>
@@ -97,17 +108,7 @@
 
   </section>
 
-  <section class="method-band" id="method" aria-labelledby="method-title"><div class="wrap">
-    <div class="section-heading"><p class="eyebrow">02 / 地图重绘</p><h2 id="method-title">分辨图面符号，<br>理解物产区域</h2></div>
-    <div class="method-lead prose"><p>乍看之下，原图像是一团交叠的颜色。同一地点可能标有几种物产，图面又同时使用实色块、纹理填充和有色轮廓。褪色与套印使这些符号更难区分，单一的颜色阈值无法可靠地将物产与河流、铁路或另一类产品分开。</p></div>
-    <ol class="method-steps">
-      <li><span class="step-number">01</span><div><h3>配准主图</h3><p>我用印刷经纬网对主图进行地理配准，提取物产时排除图例和独立附图。采用受约束的二次变换处理扫描形变，并以独立检查区分“与经纬网吻合”与“历史地图本身较为粗略的地理表达”。</p></div></li>
-      <li><span class="step-number">02</span><div><h3>结合上下文识别符号</h3><p>我用局部样本引导颜色与纹理提取，并在核查窗口中区分相似符号：红色糖产区与铁路、深紫色茶产区与浅色麻轮廓，以及烟草纹理与水体底色。每类物产都回到扫描原图核对，不能将所有颜色相近的像素都视作证据。</p></div></li>
-      <li><span class="step-number">03</span><div><h3>回到原图核查</h3><p>我逐段核对断裂轮廓，并单独保存推定的边界段，以便重新检查各处接合。</p></div></li>
-    </ol>
-    <div class="method-comparison"><article><p class="eyebrow">长江 / 解释性区域重构</p><h3>重构被轮廓包围的区域</h3><p>实色符号转成区域，断续的环带则被解释为围合边界。缺墨处依靠可见轮廓与人工核查进行重构，推定的连接段单独记录。七类物产共形成 91 个重构要素；这一数量包含了将湖北、湖南稻米轮廓连接起来等解释性决定。</p></article><article><p class="eyebrow">珠江 / 保留原图符号</p><h3>保留色带的间断</h3><p>稻米、糖、丝和柞蚕丝保留印刷色带的宽度与间断，茶与烟草则保留为色块。导出数据中，六类物产共有 188 个不相连的片段；这些是原图符号的碎片数量，并非农业区域数量。</p></article></div>
-    <details class="technical-note"><summary>精度与展示选择</summary><div class="technical-columns"><p>长江图经纬网检查残差约为 7.45 个原图像素，折合约 7.1 千米。这衡量的是配准检查结果，不等于历史地图的绝对位置精度。珠江图最终的内部经纬网残差约为 3.2 像素；与 13 处历史城市符号比较，均方根误差约为 20.7 千米。两类检查衡量的对象不同。</p><p>在最终的长江图中，部分麻边界因与其他符号冲突而未显示，源 GeoJSON 仍保留其重叠关系。因此，图面上缺少一段线，并不意味着该处没有生产。两套数据都不足以估计实际耕作面积。这里的“自然间断”指印刷色带本身的缺口；提取过程没有使用 Jenks 自然断点分类。</p></div></details>
-  </div></section>
+
 
   <section class="chapter wrap" id="navigation" aria-labelledby="navigation-title">
     <div class="section-heading"><p class="eyebrow">歪屁股船模型项目</p><h2 id="navigation-title">货物在哪里需要换船？</h2></div>
@@ -187,7 +188,7 @@
   </section>
 
   <section class="sources wrap" id="sources" aria-labelledby="sources-title"><div class="section-heading"><p class="eyebrow">史料与项目资料</p><h2 id="sources-title">与地图一同阅读</h2></div>
-    <div class="source-grid"><div><h3>历史材料</h3><ol class="bibliography"><li>Joseph Earle Spencer， <a href="https://www.jstor.org/stable/210570">《长江流域的贸易与转运》（Trade and Transshipment in the Yangtze Valley），</a> <i>Geographical Review</i> 第 28 卷第 1 期（1938），112–123 页。支流船只转运见第 117 页；沙市棉花贸易见第 123 页。</li><li>Hong Maoxi， <i>Latest General Survey Map of China</i> （1935）。署名依据项目所用地图，数字复制件的完整来源仍待补充。</li><li>夏士德（G. R. G. Worcester）， <a href="https://catalog.etoncollege.com/B18556"><i>《长江的帆船与舢板》（The Junks and Sampans of the Yangtze）</i></a> （1947–1948），两卷本。</li><li>夏士德（G. R. G. Worcester）， <i>Junks and Sampans of the Upper Yangtze</i> （1940），第五章“The Kungt’anho”。</li><li>夏士德（G. R. G. Worcester）， <i>Notes on the Crooked-bow and Crooked-stern Junks of Szechwan</i> （1941），图版 10、18。</li><li>L. Audemard， <i>Les Jonques Chinoises</i>，第五卷， <i>Haut Yang Tse Kiang</i> （1963），图版 30。</li></ol></div><div><h3>继续阅读</h3><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio">地图与源文件仓库 <span>↗</span></a><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio/blob/main/Worcester_Junk_Inventory_and_Yangtze_Sections_EN.md">船型与航运分区 <span>↗</span></a><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio/blob/main/Worcester_Yangtze_Ports_Five_Functional_Categories_and_Evidence_EN.md">港口及其功能 <span>↗</span></a><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio/blob/main/SOURCES.md">来源与参考地理信息 <span>↗</span></a><p class="small-note">历史物产信息、1911 年行政参照，以及现代地形和河流数据，分别描述不同时间与层面的地理。各类数据的年代与来源在地图中保留标注。</p></div></div>
+    <div class="source-grid"><div><h3>历史材料</h3><ol class="bibliography"><li>Joseph Earle Spencer， <a href="https://www.jstor.org/stable/210570">《长江流域的贸易与转运》（Trade and Transshipment in the Yangtze Valley），</a> <i>Geographical Review</i> 第 28 卷第 1 期（1938），112–123 页。支流船只转运见第 117 页；沙市棉花贸易见第 123 页。</li><li>Hong Maoxi， <i>Latest General Survey Map of China</i> （1935）。</li><li>夏士德（G. R. G. Worcester）， <a href="https://catalog.etoncollege.com/B18556"><i>《长江的帆船与舢板》（The Junks and Sampans of the Yangtze）</i></a> （1947–1948），两卷本。</li><li>夏士德（G. R. G. Worcester）， <i>Junks and Sampans of the Upper Yangtze</i> （1940），第五章“The Kungt’anho”。</li><li>夏士德（G. R. G. Worcester）， <i>Notes on the Crooked-bow and Crooked-stern Junks of Szechwan</i> （1941），图版 10、18。</li><li>L. Audemard， <i>Les Jonques Chinoises</i>，第五卷， <i>Haut Yang Tse Kiang</i> （1963），图版 30。</li></ol></div><div><h3>继续阅读</h3><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio">地图与源文件仓库 <span>↗</span></a><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio/blob/main/Worcester_Junk_Inventory_and_Yangtze_Sections_EN.md">船型与航运分区 <span>↗</span></a><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio/blob/main/Worcester_Yangtze_Ports_Five_Functional_Categories_and_Evidence_EN.md">港口及其功能 <span>↗</span></a><a class="resource-row" href="https://github.com/yuanbocai-hub/mapping-portfolio/blob/main/SOURCES.md">来源与参考地理信息 <span>↗</span></a><p class="small-note">历史物产信息、1911 年行政参照，以及现代地形和河流数据，分别描述不同时间与层面的地理。各类数据的年代与来源在地图中保留标注。</p></div></div>
   </section>
 </main>
 <footer class="wrap"><p>制图：Yuanbo Cai · 项目资料：YUE-FAN Studio<br>历史图像与参考数据的署名及权利归属分别保留。</p><a href="#top">返回顶部</a></footer>

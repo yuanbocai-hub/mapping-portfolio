@@ -60,6 +60,15 @@
       "bytes": 1605293,
       "sha256": "554e91447cc7c5e784729ecbd5e9355ce7b95aa08fe7bdc6a1d720dea9d24aaa",
       "preview": "assets/pearl-source.jpg"
+    },
+    {
+      "file": "assets/tibet/tsari-char-3d.png",
+      "role": "Tsari–Char oblique terrain view, corridor study B",
+      "width": 3200,
+      "height": 2300,
+      "bytes": 8916544,
+      "sha256": "737ed48c94d86960e147664045dd40f0f8ae3a76798cad49515420ab6da85807",
+      "preview": "assets/tibet/tsari-char-3d.jpg"
     }
   ]
 }

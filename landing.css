@@ -4,6 +4,7 @@
   font: clamp(1rem, 1.5vw, 1.125rem)/1.6 var(--serif);
 }
 .portfolio-intro p { margin: 0 0 0.8em; }
+.portfolio-intro strong { color: var(--river); font-weight: 700; }
 .portfolio-intro p:last-child { margin-bottom: 0; }
 .portfolio-intro .portfolio-study {
   font-family: var(--sans);
@@ -41,9 +42,10 @@
 .expedition-entry h2 { margin-bottom: 20px; }
 .commodity-intro { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(24px, 7vw, 98px); margin: 22px 0 24px; }
 .commodity-intro p { margin: 0; }
-.commodity-intro .vessel-context { border-left: 2px solid var(--line); padding-left: 20px; }
-.landing .vessel-context p { font-size: 16px; }
-.vessel-context p + p { margin-top: 8px; }
+.commodity-intro .vessel-context { align-self: start; background: var(--wash); border-top: 2px solid var(--accent); padding: 22px 24px; }
+.landing .project-list .vessel-context p { font-size: 15px; line-height: 1.7; color: var(--muted); }
+.landing .project-list .vessel-context .vessel-context-premise { font: italic clamp(21px, 2vw, 25px)/1.4 var(--serif); color: var(--ink); }
+.vessel-context p + p { margin-top: 20px; }
 .crop-comparison { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; color: inherit; text-decoration: none; margin-bottom: 18px; }
 .crop-comparison img { background: #eee9de; }
 .course-directory ul { list-style: none; margin: 0; padding: 0; }
@@ -62,7 +64,7 @@
   .atlas-reading, .expedition-entry, .course-directory, .commodity-intro { display: grid; grid-template-columns: 1fr; gap: 20px; }
   .atlas-entry header { display: block; }
   .atlas-reading .entry-link { justify-self: start; }
-  .commodity-intro .vessel-context { padding-left: 14px; }
+  .commodity-intro .vessel-context { padding: 20px; }
   .crop-comparison { gap: 8px; }
   .landing .project-list figcaption { font-size: 15px; }
   .landing .portfolio-fieldwork figcaption { flex-wrap: wrap; }

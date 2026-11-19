@@ -98,3 +98,9 @@ Original supplied figures are in `assets/figures/`; JPEG browsing copies are in 
 ### West River field photograph
 
 - `assets/wuzhou-sand-barge.jpg`: author-supplied `插图/运沙船1.jpeg`, copied without cropping or resampling (1086 × 724 pixels). Route identification supplied by the author: departing Wuzhou, bound for Guangdong. Shown beside “Following my home river upstream.”
+
+### Tsari–Char oblique terrain view
+
+- `assets/tibet/tsari-char-3d.png`: unchanged author-supplied `藏南河流项目/Tsari_Char_3D_EN.png` (3200 × 2300 pixels). `assets/tibet/tsari-char-3d.jpg` is a 2400 × 1725 browsing derivative. Replaces the displayed B map on `corridors.html`; earlier files remain available.
+- Embedded credits: Bailey, *Report* (1914), pp. 69–71; *Geographical Journal* 44(4), p. 355. Terrain: Copernicus GLO-30 resampled to a 60 m grid; rivers: HydroRIVERS. Orthographic oblique view, 1.35× vertical exaggeration; same extent as the 2D figure. Draped heights are display heights, not surveyed route elevations.
+- Website interpretation follows presentation slides 10–11 and their source notes. Route dashes retain the historical source's linework, and the Takpashiri reference point is label-derived. The selected segments do not reconstruct a complete closed Kingkor.

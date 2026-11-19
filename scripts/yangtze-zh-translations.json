@@ -197,7 +197,6 @@
     "28, no. 1 (1938), 112–123. See p. 117 for transfers to tributary craft and p. 123 for cotton at Shasi.": "第 28 卷第 1 期（1938），112–123 页。支流船只转运见第 117 页；沙市棉花贸易见第 123 页。",
     "Hong Maoxi,": "Hong Maoxi，",
     "Latest General Survey Map of China": "Latest General Survey Map of China",
-    "(1935). Attribution follows the supplied maps; full reproduction provenance remains to be documented.": "（1935）。署名依据项目所用地图，数字复制件的完整来源仍待补充。",
     "(1947–1948), two volumes.": "（1947–1948），两卷本。",
     "Junks and Sampans of the Upper Yangtze": "Junks and Sampans of the Upper Yangtze",
     "(1940), chapter V, “The Kungt’anho.”": "（1940），第五章“The Kungt’anho”。",
@@ -234,7 +233,10 @@
     "Extension: The Pearl River": "延伸：珠江",
     "I wanted to know how far Canton’s economic region extended upriver, and how these connections shaped regional inequality. Historically, rice and other primary products from Kwang-Hsi helped sustain the commercial economy of Canton and the surrounding region. I ask whether today’s labour migration from Kwang-Hsi to coastal factories echoes that earlier pattern—and how the outflow affects the region’s demographic dividend.": "我想知道，以广州为中心的经济区域沿江向内陆延伸多远，以及这些联系如何塑造区域不平等。历史上，广西的稻米等初级产品支撑了广州及周边地区的商品经济。我追问，今天广西劳动力向沿海工厂的流动，是否与这种早期的供给格局存在相似之处，以及人口外流如何影响广西的人口红利。",
     "Hong’s sheet maps six commodities—tussah silk, tobacco, sugar, silk, tea, and rice. I retained its coverage beyond the drainage basin to follow the historical geography of supply rather than impose a modern watershed boundary.": "Hong Maoxi 的地图描绘了柞蚕丝、烟草、糖、丝、茶和稻米六类物产。我保留了原图超出流域的覆盖范围，以便考察历史上的供给地理，而非套用现代分水岭边界。",
-    "Behind the skyline are connections that are less visible in accounts of urban growth: workers arriving from Kwang-Hsi for coastal factories, river sand carried downstream for construction, electricity generated at upstream hydropower stations, and water supplied through reservoirs and transfer systems. Mapping the Pearl River became part of my effort to understand how everyday life near the estuary depends on people, materials, and waterways farther inland.": "城市天际线背后，还有一些在城市增长叙事中不易被看见的联系：从广西进入沿海工厂的劳动者、顺流运往下游的建筑河沙、上游水电站发出的电力，以及通过水库和调水系统供应的用水。绘制珠江地图，成为我理解河口日常生活如何依赖更远内陆的人、物资和水路的一部分。"
+    "Behind the skyline are connections that are less visible in accounts of urban growth: workers arriving from Kwang-Hsi for coastal factories, river sand carried downstream for construction, electricity generated at upstream hydropower stations, and water supplied through reservoirs and transfer systems. Mapping the Pearl River became part of my effort to understand how everyday life near the estuary depends on people, materials, and waterways farther inland.": "城市天际线背后，还有一些在城市增长叙事中不易被看见的联系：从广西进入沿海工厂的劳动者、顺流运往下游的建筑河沙、上游水电站发出的电力，以及通过水库和调水系统供应的用水。绘制珠江地图，成为我理解河口日常生活如何依赖更远内陆的人、物资和水路的一部分。",
+    "How the two maps differ": "两张地图的处理有何不同",
+    "Individual commodity views redrawn from GeoJSON layers I extracted after georeferencing Hong Maoxi’s 1935 commodity map.": "物产分视图依据我对洪懋熙 1935 年物产图进行地理配准后提取的 GeoJSON 图层重绘。",
+    "(1935).": "（1935）。"
   },
   "attributes": {
     "Historical cartography by Yuanbo Cai: reconstructing seven commodity patterns from a 1935 Yangtze map, with reflections on regional geography and a Codex-assisted navigation study.": "Yuanbo Cai 的历史制图项目：重绘 1935 年长江物产图中的七类物产，探讨区域地理与水路运输，并展示借助 Codex 绘制的乌江航运图。",
