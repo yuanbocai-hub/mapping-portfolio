@@ -50,6 +50,8 @@
 .chengdu-pair a { display: block; }
 .chengdu-pair figcaption, .map-figure figcaption, .mechanics-panel figcaption, .hero-map figcaption { font: 15px/1.55 var(--sans); color: var(--ink); }
 .chengdu-pair figcaption { padding: 12px 0; }
+.opening-title .map-intro { max-width: 60ch; margin: 1.25rem 0 0; font: 1rem/1.6 var(--sans); color: var(--ink); }
+.chengdu-pair .map-reading-note { margin: .75rem 0 0; padding-inline-start: .85rem; border-inline-start: 2px solid currentColor; }
 .chengdu-pair strong { display: block; }
 .region-note { margin: 38px 0 44px; border-block: 1px solid var(--line); padding: 26px 0 10px; }
 .region-note h2 { margin-bottom: 20px; }

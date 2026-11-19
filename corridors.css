@@ -70,3 +70,23 @@
   .gazetteer-entry { grid-template-columns: 1fr; gap: 16px; }
   .corridors-project .map-figure figcaption { font-size: 15px; }
 }
+
+.corridors-body-nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px 24px;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  font-size: 14px;
+}
+.corridors-body-nav a { text-decoration: none; }
+.corridors-body-nav a:is(:hover, :focus-visible) { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 600px) {
+  .corridors-body-nav { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 12px; padding-block: 4px; font-size: 13px; }
+  .corridors-body-nav a { padding-block: 3px; }
+}
+@media print { .corridors-body-nav { display: none; } }
