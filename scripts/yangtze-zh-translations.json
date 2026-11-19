@@ -236,7 +236,9 @@
     "Behind the skyline are connections that are less visible in accounts of urban growth: workers arriving from Kwang-Hsi for coastal factories, river sand carried downstream for construction, electricity generated at upstream hydropower stations, and water supplied through reservoirs and transfer systems. Mapping the Pearl River became part of my effort to understand how everyday life near the estuary depends on people, materials, and waterways farther inland.": "城市天际线背后，还有一些在城市增长叙事中不易被看见的联系：从广西进入沿海工厂的劳动者、顺流运往下游的建筑河沙、上游水电站发出的电力，以及通过水库和调水系统供应的用水。绘制珠江地图，成为我理解河口日常生活如何依赖更远内陆的人、物资和水路的一部分。",
     "How the two maps differ": "两张地图的处理有何不同",
     "Individual commodity views redrawn from GeoJSON layers I extracted after georeferencing Hong Maoxi’s 1935 commodity map.": "物产分视图依据我对洪懋熙 1935 年物产图进行地理配准后提取的 GeoJSON 图层重绘。",
-    "(1935).": "（1935）。"
+    "(1935).": "（1935）。",
+    "Separating the ink, interpreting the region": "分辨图面符号，理解物产区域",
+    "How to read the commodity regions": "如何读懂图中的物产区域"
   },
   "attributes": {
     "Historical cartography by Yuanbo Cai: reconstructing seven commodity patterns from a 1935 Yangtze map, with reflections on regional geography and a Codex-assisted navigation study.": "Yuanbo Cai 的历史制图项目：重绘 1935 年长江物产图中的七类物产，探讨区域地理与水路运输，并展示借助 Codex 绘制的乌江航运图。",

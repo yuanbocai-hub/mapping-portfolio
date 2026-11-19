@@ -74,7 +74,7 @@
     </section>
   </section>
   <nav class="chapter-nav" aria-label="项目章节"><div class="wrap">
-    <a href="#commodities">成都局部</a><a href="#method">重绘方法</a><a href="#reflection">形势 · 地图设计</a><a href="#navigation">乌江与船模项目</a><a href="#pearl-river">延伸：珠江</a>
+    <a href="#commodities">成都局部</a><a href="#reflection">形势 · 地图设计</a><a href="#method">重绘方法</a><a href="#navigation">乌江与船模项目</a><a href="#pearl-river">延伸：珠江</a>
   </div></nav>
   <section class="chapter wrap" id="commodities" aria-labelledby="commodities-title">
     <div class="section-heading"><h2 id="commodities-title">穿过成都糖产区，追踪麻的边界</h2></div>
@@ -82,8 +82,20 @@
       <figure><a href="assets/chengdu-source.svg" data-lightbox data-caption="1935 年物产图中的成都地区。"><img src="assets/chengdu-source.svg" alt="1935 年原图局部，可见成都以南的糖产区和周边物产符号。"></a><figcaption><strong>1935 年原图</strong> 先找到成都以南的糖产区，再沿着重叠处追踪麻的轮廓。</figcaption></figure>
       <figure><a href="assets/chengdu-reconstruction.svg" data-lightbox data-caption="长江物产重绘图中的成都地区。"><img src="assets/chengdu-reconstruction.svg" alt="重绘后的同一区域，将糖、麻产区与河流一同展示。"></a><figcaption><strong>我的重绘</strong> 初次提取时，麻的轮廓被分成了几块。沿原图穿过糖产区逐段核对后，成都周边才重新连成一个完整区域。</figcaption></figure>
     </div>
-  <section class="method-band method-inset" id="method" aria-labelledby="method-title">
-    <div class="section-heading"><p class="eyebrow">02 / 地图重绘</p><h2 id="method-title">分辨图面符号，<br>理解物产区域</h2></div>
+    <section class="region-note" id="reflection" aria-labelledby="reflection-title">
+      <h2 id="reflection-title"><span lang="zh">形势</span> <i>Xíngshì</i></h2>
+      <div class="map-switcher" data-switcher>
+      <div class="viewer-heading"><div class="commodity-view-heading"><h3>七类物产分图</h3><p class="commodity-view-note">物产分视图依据我对洪懋熙 1935 年物产图进行地理配准后提取的 GeoJSON 图层重绘。</p></div><div class="view-controls" role="group" aria-label="选择长江地图视图"><button type="button" data-view="separated" aria-pressed="true">七类物产分图</button><button type="button" data-view="chinese" aria-pressed="false">繁體中文地圖</button><button type="button" data-view="source" aria-pressed="false">历史原图</button></div></div>
+      <figure class="map-figure tall-sheet" data-panel="separated"><a href="yangtze_seven_panels_hydro_EN_600dpi.png" data-lightbox data-caption="糖、麻、烟草、茶、丝、棉花和稻米的七张独立分图，为长江综合图的配套图件。"><img src="assets/yangtze-seven-panels.jpg" alt="七张分图分别将糖、麻、烟草、茶、丝、棉花和稻米与河网对照展示。" loading="lazy"></a><figcaption><span>在稻米分图中，可以沿轮廓追踪湖北与湖南。第一次提取出的两个片段，在历史原图中属于同一个区域。</span><a href="yangtze_seven_panels_hydro_EN_600dpi.png">查看高清分图</a></figcaption></figure>
+      <figure class="map-figure" data-panel="chinese"><a href="assets/yangtze-commodities-zh-full.jpg" data-lightbox data-caption="重绘长江流域物产图的繁体中文版。"><img src="assets/yangtze-commodities-zh.jpg" width="2200" height="1554" alt="繁体中文版长江流域物产图，包含历史地名及七类物产区域。" loading="lazy"></a><figcaption><span>長江流域物產圖 · 繁體中文</span><a href="assets/yangtze-commodities-zh-full.jpg">查看高清地图</a></figcaption></figure>
+      <figure class="map-figure" data-panel="source"><a href="长江流域物产_原件.jpg" data-lightbox data-caption="项目所用长江物产历史地图数字复制件，署名 Hong Maoxi，1935 年。"><img src="assets/yangtze-source.jpg" alt="历史长江物产图，可见密集交叠的色带、纹理、标注与附图。" loading="lazy"></a><figcaption><span>史料 / 长江</span>项目所用数字复制件 · 原图署名 Hong Maoxi，1935 年</figcaption></figure>
+    </div>
+      <details class="reflection-text"><summary>如何读懂图中的物产区域</summary><p>我最初通过支流理解“形势”：山谷让水流向一处，山脊又将水分向另一处。物产图让我换一种方式阅读同样的地形。在成都周边，我希望读者能沿着一条河，穿过同时标有糖和麻的区域。</p>
+      <p>浅色、断续的色带构成疏松的圈，其中一些并未闭合。它们表示轮廓内部的物产分布区域，并不意味着物产只分布在色带本身。</p>
+      <p>使用较重的填色时，我既难以看清河流，也容易失去对物产区域形态的感知。我减淡颜色，并在选定的边缘留出开口，让空间格局更容易辨认：物产区域在哪里集聚、如何在流域内延展，又在哪里彼此重叠。我希望读者既能顺着这些区域的形态与走向阅读，也能持续看清河网。底层数据仍保留重叠关系，包括最终展示中省略部分边线的地段。</p></details>
+    </section>
+    <details class="method-band method-inset" id="method">
+    <summary><span class="eyebrow">02 / 地图重绘</span> <span class="method-label">分辨图面符号，理解物产区域</span></summary>
     <div class="method-lead prose"><p>乍看之下，原图像是一团交叠的颜色。同一地点可能标有几种物产，图面又同时使用实色块、纹理填充和有色轮廓。褪色与套印使这些符号更难区分，单一的颜色阈值无法可靠地将物产与河流、铁路或另一类产品分开。</p></div>
     <ol class="method-steps">
       <li><details class="method-step"><summary><span class="step-number">01</span><h3>配准主图</h3></summary><p>我用印刷经纬网对主图进行地理配准，提取物产时排除图例和独立附图。采用受约束的二次变换处理扫描形变，并以独立检查区分“与经纬网吻合”与“历史地图本身较为粗略的地理表达”。</p></details></li>
@@ -92,19 +104,7 @@
     </ol>
     <details class="technical-note method-map-comparison"><summary>两张地图的处理有何不同</summary><div class="method-comparison"><article><p class="eyebrow">长江 / 解释性区域重构</p><h3>重构被轮廓包围的区域</h3><p>实色符号转成区域，断续的环带则被解释为围合边界。缺墨处依靠可见轮廓与人工核查进行重构，推定的连接段单独记录。七类物产共形成 91 个重构要素；这一数量包含了将湖北、湖南稻米轮廓连接起来等解释性决定。</p></article><article><p class="eyebrow">珠江 / 保留原图符号</p><h3>保留色带的间断</h3><p>稻米、糖、丝和柞蚕丝保留印刷色带的宽度与间断，茶与烟草则保留为色块。导出数据中，六类物产共有 188 个不相连的片段；这些是原图符号的碎片数量，并非农业区域数量。</p></article></div></details>
     <details class="technical-note"><summary>精度与展示选择</summary><div class="technical-columns"><p>长江图经纬网检查残差约为 7.45 个原图像素，折合约 7.1 千米。这衡量的是配准检查结果，不等于历史地图的绝对位置精度。珠江图最终的内部经纬网残差约为 3.2 像素；与 13 处历史城市符号比较，均方根误差约为 20.7 千米。两类检查衡量的对象不同。</p><p>在最终的长江图中，部分麻边界因与其他符号冲突而未显示，源 GeoJSON 仍保留其重叠关系。因此，图面上缺少一段线，并不意味着该处没有生产。两套数据都不足以估计实际耕作面积。这里的“自然间断”指印刷色带本身的缺口；提取过程没有使用 Jenks 自然断点分类。</p></div></details>
-    </section>
-    <section class="region-note" id="reflection" aria-labelledby="reflection-title">
-      <h2 id="reflection-title"><span lang="zh">形势</span> <i>Xíngshì</i></h2>
-      <div><p>我最初通过支流理解“形势”：山谷让水流向一处，山脊又将水分向另一处。物产图让我换一种方式阅读同样的地形。在成都周边，我希望读者能沿着一条河，穿过同时标有糖和麻的区域。</p>
-      <p>浅色、断续的色带构成疏松的圈，其中一些并未闭合。它们表示轮廓内部的物产分布区域，并不意味着物产只分布在色带本身。</p>
-      <p>使用较重的填色时，我既难以看清河流，也容易失去对物产区域形态的感知。我减淡颜色，并在选定的边缘留出开口，让空间格局更容易辨认：物产区域在哪里集聚、如何在流域内延展，又在哪里彼此重叠。我希望读者既能顺着这些区域的形态与走向阅读，也能持续看清河网。底层数据仍保留重叠关系，包括最终展示中省略部分边线的地段。</p></div>
-    </section>
-    <div class="map-switcher" data-switcher>
-      <div class="viewer-heading"><div class="commodity-view-heading"><h3>七类物产分图</h3><p class="commodity-view-note">物产分视图依据我对洪懋熙 1935 年物产图进行地理配准后提取的 GeoJSON 图层重绘。</p></div><div class="view-controls" role="group" aria-label="选择长江地图视图"><button type="button" data-view="separated" aria-pressed="true">七类物产分图</button><button type="button" data-view="chinese" aria-pressed="false">繁體中文地圖</button><button type="button" data-view="source" aria-pressed="false">历史原图</button></div></div>
-      <figure class="map-figure tall-sheet" data-panel="separated"><a href="yangtze_seven_panels_hydro_EN_600dpi.png" data-lightbox data-caption="糖、麻、烟草、茶、丝、棉花和稻米的七张独立分图，为长江综合图的配套图件。"><img src="assets/yangtze-seven-panels.jpg" alt="七张分图分别将糖、麻、烟草、茶、丝、棉花和稻米与河网对照展示。" loading="lazy"></a><figcaption><span>在稻米分图中，可以沿轮廓追踪湖北与湖南。第一次提取出的两个片段，在历史原图中属于同一个区域。</span><a href="yangtze_seven_panels_hydro_EN_600dpi.png">查看高清分图</a></figcaption></figure>
-      <figure class="map-figure" data-panel="chinese"><a href="assets/yangtze-commodities-zh-full.jpg" data-lightbox data-caption="重绘长江流域物产图的繁体中文版。"><img src="assets/yangtze-commodities-zh.jpg" width="2200" height="1554" alt="繁体中文版长江流域物产图，包含历史地名及七类物产区域。" loading="lazy"></a><figcaption><span>長江流域物產圖 · 繁體中文</span><a href="assets/yangtze-commodities-zh-full.jpg">查看高清地图</a></figcaption></figure>
-      <figure class="map-figure" data-panel="source"><a href="长江流域物产_原件.jpg" data-lightbox data-caption="项目所用长江物产历史地图数字复制件，署名 Hong Maoxi，1935 年。"><img src="assets/yangtze-source.jpg" alt="历史长江物产图，可见密集交叠的色带、纹理、标注与附图。" loading="lazy"></a><figcaption><span>史料 / 长江</span>项目所用数字复制件 · 原图署名 Hong Maoxi，1935 年</figcaption></figure>
-    </div>
+    </details>
 
   </section>
 

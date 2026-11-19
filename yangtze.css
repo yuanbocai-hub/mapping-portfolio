@@ -51,13 +51,17 @@
 .chengdu-pair figcaption, .map-figure figcaption, .mechanics-panel figcaption, .hero-map figcaption { font: 15px/1.55 var(--sans); color: var(--ink); }
 .chengdu-pair figcaption { padding: 12px 0; }
 .chengdu-pair strong { display: block; }
-.region-note { margin: 38px 0 44px; border-block: 1px solid var(--line); padding: 26px 0 10px; display: grid; grid-template-columns: 1fr 2fr; gap: 26px; }
-.region-note h2 i { display: block; font-size: 24px; }
+.region-note { margin: 38px 0 44px; border-block: 1px solid var(--line); padding: 26px 0 10px; }
+.region-note h2 { margin-bottom: 20px; }
+.region-note h2 i { font-size: 24px; }
+.reflection-text { margin-block: 16px; }
+.reflection-text summary, .method-inset > summary { cursor: pointer; }
+.reflection-text[open] summary, .method-inset[open] > summary { margin-bottom: 18px; }
 .region-note p, .method-lead p, .section-intro p { font-size: 17px; max-width: 70ch; }
 .method-steps h3, .method-comparison h3 { font: 650 21px/1.25 var(--sans); }
-.method-inset { padding: clamp(20px, 3vw, 36px); margin-top: 30px; }
-.method-inset .section-heading { margin-bottom: 20px; }
-.method-inset h2 { font-size: clamp(28px, 3vw, 38px); letter-spacing: -.025em; }
+.method-inset { padding: 16px 20px; margin-top: 20px; }
+.method-inset > summary .eyebrow { margin-right: 12px; }
+.method-label { font: 21px/1.4 var(--serif); }
 .method-inset .method-steps { grid-template-columns: minmax(0, 1fr); gap: 0; margin-top: 24px; }
 .method-inset .method-steps li { display: block; padding-top: 0; }
 .method-step summary { cursor: pointer; padding-block: 16px; }
@@ -68,7 +72,7 @@
 .method-inset .technical-note summary { cursor: pointer; font-size: 15px; }
 .method-inset .method-comparison { margin-top: 18px; padding-top: 20px; }
 @media(max-width:760px) {
-  .hero, .chengdu-pair, .region-note { grid-template-columns: 1fr; }
+  .hero, .chengdu-pair { grid-template-columns: 1fr; }
   .yangtze-opening, .reading-columns, .historical-setting { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .cargo-opening { padding-left: 18px; }
   .reading-columns { gap: 0; }
