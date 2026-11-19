@@ -78,3 +78,8 @@
 .course-tools dt, .course-tools dd { display: inline; }
 .course-tools dt::after { content: " · "; }
 .course-tools dd { font-weight: 550; }
+
+.landing .portfolio-about > p:not(.eyebrow) { font-size: 20px; }
+@media (max-width: 600px) {
+  .landing .portfolio-about > p:not(.eyebrow) { font-size: 18px; }
+}
