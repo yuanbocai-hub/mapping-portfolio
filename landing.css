@@ -1,3 +1,15 @@
+.portfolio-intro {
+  max-width: 76ch;
+  margin-top: 1.25rem;
+  font: clamp(1rem, 1.5vw, 1.125rem)/1.6 var(--serif);
+}
+.portfolio-intro p { margin: 0 0 0.8em; }
+.portfolio-intro p:last-child { margin-bottom: 0; }
+.portfolio-intro .portfolio-study {
+  font-family: var(--sans);
+  color: var(--muted);
+}
+
 /* Keep the atlas plate, expedition photograph and source comparison in their original proportions. */
 .landing .project-list article {
   padding-block: clamp(36px, 5vw, 72px);
@@ -41,7 +53,9 @@
 .course-directory li strong { font-size: .88em; margin-right: .65em; }
 .landing .course-directory h2 { font-size: clamp(31px, 3.1vw, 46px); }
 .course-directory header > h2 + p { margin: 8px 0 0; }
+.portfolio-photo-heading .fieldwork-credit { max-width: 64ch; margin: 0.8rem 0 0; color: var(--muted); font-size: 1rem; line-height: 1.55; }
 .landing .portfolio-fieldwork figcaption { font-size: 15px; color: var(--ink); }
+.landing .portfolio-fieldwork figcaption > span { text-transform: none; letter-spacing: normal; }
 @media (max-width: 760px) {
   .landing .site-header { flex-wrap: wrap; }
   .atlas-reading, .expedition-entry, .course-directory, .commodity-intro { display: grid; grid-template-columns: 1fr; gap: 20px; }
