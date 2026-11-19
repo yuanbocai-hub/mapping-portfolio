@@ -54,6 +54,21 @@
 .model-project { margin: 44px 0 26px; max-width: 78ch; }
 .model-project h3 { margin-bottom: 16px; }
 .model-project h3 span { white-space: nowrap; }
+.vessel-history { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(24px, 5vw, 60px); align-items: center; margin-top: 44px; }
+.vessel-history-copy h3 { font-size: clamp(28px, 3vw, 38px); margin-bottom: 22px; }
+.vessel-history-copy p:not(.eyebrow) { font-size: 17px; line-height: 1.7; }
+.vessel-history figcaption, .model-gallery figcaption { display: block; font-size: 14px; line-height: 1.6; padding-top: 12px; }
+.model-gallery { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 28px; margin: 26px 0; align-items: start; }
+.model-gallery > figure { width: 100%; max-width: none; margin: 0; }
+.model-gallery a { display: block; background: #fbf9fd; }
+.model-gallery img { aspect-ratio: 1.3; object-fit: contain; }
+.model-gallery figcaption strong { display: block; color: var(--ink); font-size: 16px; margin-bottom: 4px; }
+.model-more { border-block: 1px solid var(--line); }
+.model-more summary { font-size: 15px; }
+@media(max-width:760px) {
+  .vessel-history, .model-gallery { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .model-gallery img { aspect-ratio: auto; }
+}
 .home-river { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 6vw, 80px); padding-block: 40px 64px; }
 .home-river h2 { font-size: clamp(30px, 3.3vw, 44px); max-width: 19ch; letter-spacing: -.025em; }
 .home-river-copy p { font-size: 17px; line-height: 1.75; max-width: 66ch; }

@@ -2,6 +2,16 @@
 
 ## Navigation chart
 
+### Historical river photograph and model photography
+
+- Supplied historical image: `歪屁股修复.png`, from the project author's local `歪屁股项目` folder. Preserved byte-for-byte as `assets/junk-model/river-boats-original-atmosphere.png`; JPEG display copy retains the original framing and tonal character. This is the original-atmosphere export, not the AI-generated reconstruction. Photographer, location, date and holding institution have not been established; the page does not assign them. The image shows a fleet of boats and is not used to identify every vessel as a crooked-stern junk.
+- Model photographs supplied in `歪屁股项目/产品实拍`, credited to YUE-FAN Studio as project material. Web copies are resized and JPEG-encoded without generative edits, cropping or retouching. File correspondence:
+  - `9404df9c14ccaeb97b47717200515590.jpg` → `model-overview`.
+  - `84883152d9832f5b0f29acf0630b15c9.jpg` → `model-stern`.
+  - `5fa70a8c2f772ff8934f113d3f2ea1b1.jpg` → `model-opposite-view`.
+  - `582f8b4a3cfde9bdb8ce349c8d4129f1.jpg` → `model-handheld`.
+- Display copies are 1200 px on the long side, expanded views 2400 px. Originals remain in the supplied source folder.
+
 ### Introductory transport schematic
 
 - `assets/yangtze-transport-schematic.svg`: selected waterway and cargo relationships, not a geographic route map. Main-stem sections meet at Hankow and Ichang. The figure follows the user-selected citation: G. R. G. Worcester, *The Junks and Sampans of the Yangtze* (1947–1948), two volumes. Catalogue: https://catalog.etoncollege.com/B18556.
