@@ -14,17 +14,44 @@
 <header class="site-header"><a class="wordmark" href="index.html">Yuanbo Cai <span>Cartography &amp; historical GIS</span></a><nav class="project-links" aria-label="Portfolio"><a href="index.html">All projects</a><a href="corridors.html">East Himalaya</a><a href="tsangpo.html">Tsangpo</a><a href="yangtze.html">Yangtze</a><a href="coursework.html">Course work</a></nav></header>
 <main id="main">
   <section class="hero wrap" id="top" aria-labelledby="project-title">
-    <div class="hero-copy">
+    <div class="hero-copy yangtze-opening">
+      <div class="opening-title">
       <p class="eyebrow">Historical cartography <span>长江流域物产图</span></p>
       <h1 id="project-title">The Yangtze<br>as a <em>river transportation system</em></h1>
-      <p class="deck">A cargo could travel much farther than the boat that carried it. In his 1938 account of Yangtze trade, Joseph Earle Spencer describes large junks taking goods back to their home ports, where crews loaded them onto smaller boats for the shallower tributaries.</p>
-      <p>I redrew seven commodities from a 1935 map to see where their production areas lay along the Yangtze and its tributaries. Cotton led me to Shasi, a port in the middle-river plains where cotton from the surrounding district entered the export trade. For a closer look at the boats, I turned to G. R. G. Worcester, a river inspector with the Chinese Maritime Customs Service. At Fuling in Sichuan, he records salt cargoes changing boats for the journey up the Wu River. The vessel that took them upriver was the crooked-stern junk I set out to model.</p>
-      <a class="text-link" href="#commodities">Explore the reconstruction <span aria-hidden="true">↓</span></a>
+      </div>
+      <aside class="cargo-opening" aria-label="The starting question">
+        <p class="cargo-premise">A cargo could travel much farther <em>than the boat that carried it.</em></p>
+        <p class="cargo-evidence">In his 1938 account of Yangtze trade, Joseph Earle Spencer describes large junks taking goods back to their home ports, where crews loaded them onto smaller boats for the shallower tributaries.</p>
+        <a class="cargo-source" href="https://www.jstor.org/stable/210570">J. E. Spencer · Trade and Transshipment in the Yangtze Valley · 1938</a>
+      </aside>
+      <section class="yangtze-reading" aria-labelledby="reading-title">
+        <h2 id="reading-title">Reading the Yangtze through names and navigation</h2>
+        <div class="reading-columns">
+          <div>
+            <p>In hydrology, I learned to read a river network through its confluences. Strahler order tracks how branches combine, while Shreve magnitude counts the headwater channels that feed a reach. Reading historical travel accounts led me to ask a different question. What part of the river did travellers mean when they wrote <i>Yangtze</i>, <i>Ch’ang Chiang</i> (the Long River), or <i>Ta Chiang</i> (the Great River)?</p>
+            <p>The name <i>Yangtze</i> grew out of a local name associated with the lower river near Yangchow (Yangzhou) and Chinkiang (Zhenjiang). By the nineteenth century, English-language accounts and charts were applying it much farther upstream. Chinese names such as <i>Chin-sha Chiang</i> (the River of Golden Sand), <i>Ch’uan Chiang</i> (the Szechuan reach, including the Three Gorges), <i>Ching Chiang</i>, and <i>Wan Chiang</i> give individual stretches of the main river a regional identity. The broader tendency to use <i>chiang</i> in the south and <i>ho</i> in the north also reflects regional naming traditions.</p>
+          </div>
+          <div>
+            <p>Worcester divided the river according to how people navigated it. His lower river extended from the estuary through Shanghai to Hankow, his middle river from Hankow to Ichang, and his upper river above Ichang into the waterways of Szechuan. I read these divisions as reflecting distinct technical and social traditions of river transport. What distinguished one reach from another was more than distance: currents and rapids, vessel design, cargo-handling practices, boatmen’s affiliations, home ports, and the direction of trade all mattered.</p>
+            <p>At Ichang, cargo could be transferred from middle- and lower-river boats to vessels suited to the rapids upstream. Seen this way, the journey upriver passed through different transport systems, connected at ports where cargo moved between vessels and crews.</p>
+            <p>The crooked-stern junk gives us a way to read this geography from a tributary. Starting on the <i>Wu Chiang</i> and following its cargo through Fu-chou (present-day Fuling), we can trace how a boat built for one reach participated in trade across the wider Yangtze network.</p>
+          </div>
+        </div>
+        <a class="text-link" href="#main-map">Read the map</a>
+      </section>
     </div>
-    <figure class="hero-figure hero-map">
+    <figure class="hero-figure hero-map" id="main-map">
       <a href="Yangtze_Products_1930s_EN_HighRes15MB.jpg" data-lightbox data-caption="Yangtze commodity regions, reconstructed from Hong Maoxi’s 1935 map. Cartography: Yuanbo Cai."><img src="assets/yangtze-commodities.jpg" width="2200" height="1554" alt="The reconstructed Yangtze commodity map, showing pale overlapping commodity regions around the river network." fetchpriority="high"></a>
       <figcaption><span>01 / The Yangtze reconstruction</span>From the Tibetan Plateau through Sichuan and the middle-river lake plains to the estuary at Shanghai</figcaption>
     </figure>
+    <section class="historical-setting" aria-labelledby="setting-title">
+      <div><p class="eyebrow">Cartographic choices</p><h2 id="setting-title">Placing the boat in its historical geography</h2></div>
+      <div class="setting-copy">
+        <p>To place the crooked-stern junk within the historical geography of the Yangtze, I brought together administrative boundaries, historical place names, and the river network.</p>
+        <p>To reconstruct the administrative setting, I used the 1911 administrative boundary shapefiles published by the China Historical GIS (CHGIS) project as a late Qing baseline. I labelled administrative seats with their late Qing names in Wade–Giles, adding modern names in parentheses where they differ. This provides a historical reference for reading the later Republican-era sources.</p>
+        <p>I gave particular visual emphasis to the Yangtze’s major tributaries and their tributaries in Szechuan and the upper basin, making it easier to follow their connections to the middle-river lakes and plains and onward to the estuary. Read alongside Republican-era maps and publications of the Chinese Maritime Customs Service, this river network provides a geographical framework for tracing routes and transfers described in the sources.</p>
+      </div>
+    </section>
   </section>
   <nav class="chapter-nav" aria-label="Project chapters"><div class="wrap">
     <a href="#commodities">Chengdu detail</a><a href="#reflection">形势 · Map design</a><a href="#method">Reconstruction</a><a href="#navigation">Wu River navigation</a>

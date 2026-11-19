@@ -1,4 +1,20 @@
-.hero { grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.35fr); }
+.hero { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+.yangtze-opening { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 46px 64px; align-items: start; }
+.cargo-opening { border-top: 3px solid var(--accent); padding: 25px 0 0 24px; border-left: 1px solid var(--line); margin-top: 6px; }
+.cargo-premise { font: clamp(28px, 3vw, 42px)/1.2 var(--serif); letter-spacing: -.025em; margin-bottom: 24px; }
+.cargo-premise em { display: block; color: var(--river); }
+.cargo-evidence { font-size: 17px; line-height: 1.7; max-width: 50ch; }
+.cargo-source { display: block; font-size: 14px; line-height: 1.6; color: var(--muted); text-decoration-thickness: 1px; }
+.yangtze-reading { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 32px; }
+.yangtze-reading h2 { max-width: 32ch; font-size: clamp(28px, 3vw, 38px); letter-spacing: -.025em; margin-bottom: 26px; }
+.reading-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; }
+.reading-columns p, .setting-copy p { font-size: 17px; line-height: 1.75; max-width: 66ch; }
+.hero .hero-map { max-width: none; }
+.hero .hero-map img { max-height: none; }
+.historical-setting { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 64px; border-top: 1px solid var(--line); padding-top: 30px; }
+.historical-setting h2 { font-size: clamp(28px, 3vw, 38px); letter-spacing: -.025em; max-width: 18ch; }
+.historical-setting .eyebrow { display: block; font-size: 14px; margin-bottom: 14px; }
+.setting-copy p:last-child { margin-bottom: 0; }
 .chengdu-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(16px,3vw,42px); }
 .chengdu-pair a { display: block; }
 .chengdu-pair figcaption, .map-figure figcaption, .mechanics-panel figcaption, .hero-map figcaption { font: 15px/1.55 var(--sans); color: var(--ink); }
@@ -10,6 +26,11 @@
 .method-steps h3, .method-comparison h3 { font: 650 21px/1.25 var(--sans); }
 @media(max-width:760px) {
   .hero, .chengdu-pair, .region-note { grid-template-columns: 1fr; }
+  .yangtze-opening, .reading-columns, .historical-setting { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .cargo-opening { padding-left: 18px; }
+  .reading-columns { gap: 0; }
+  .yangtze-reading { padding-top: 24px; }
+  .historical-setting h2 { max-width: 26ch; }
   .region-note h2 i { display: inline; }
 }
 .chapter-nav a { font-size: 14px; color: var(--ink); }
