@@ -90,3 +90,17 @@
   .corridors-body-nav a { padding-block: 3px; }
 }
 @media print { .corridors-body-nav { display: none; } }
+
+.yongyap-comparison {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(18px, 3vw, 40px);
+}
+.yongyap-comparison figure { margin: 0; min-width: 0; }
+.yongyap-comparison a { display: block; }
+.yongyap-comparison img { width: 100%; height: auto; display: block; }
+.yongyap-comparison figcaption { padding-top: 10px; font: 15px/1.6 var(--sans); }
+.yongyap-comparison strong { display: block; }
+.yongyap-continuation { grid-column: -2 / -1; }
+@media (max-width: 600px) { .yongyap-comparison { grid-template-columns: 1fr; } }
