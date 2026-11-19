@@ -51,6 +51,7 @@
 .course-directory li a { text-decoration: none; display: block; }
 .course-directory li a:hover { text-decoration: underline; }
 .course-directory li strong { font-size: .88em; margin-right: .65em; }
+.course-directory .course-assignment { display: block; margin-top: 2px; color: var(--muted); font-size: .88em; }
 .landing .course-directory h2 { font-size: clamp(31px, 3.1vw, 46px); }
 .course-directory header > h2 + p { margin: 8px 0 0; }
 .portfolio-photo-heading .fieldwork-credit { max-width: 64ch; margin: 0.8rem 0 0; color: var(--muted); font-size: 1rem; line-height: 1.55; }
