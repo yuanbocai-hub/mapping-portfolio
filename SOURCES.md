@@ -4,7 +4,10 @@
 
 ### Historical river photograph and model photography
 
-- Supplied historical image: `歪屁股修复.png`, from the project author's local `歪屁股项目` folder. Preserved byte-for-byte as `assets/junk-model/river-boats-original-atmosphere.png`; JPEG display copy retains the original framing and tonal character. This is the original-atmosphere export, not the AI-generated reconstruction. Photographer, location, date and holding institution have not been established; the page does not assign them. The image shows a fleet of boats and is not used to identify every vessel as a crooked-stern junk.
+- Supplied historical image: `歪屁股修复.png`, from the project author's local `歪屁股项目` folder. Preserved byte-for-byte as `assets/junk-model/river-boats-original-atmosphere.png`; JPEG display copy retains the original framing and tonal character. This is the original-atmosphere export, not the AI-generated reconstruction.
+- Image identified by direct visual comparison with Duke's digitized negative: Sidney D. Gamble, *Twisted Stern Boats*, 1917, item `22A-115` / `gamble_022A_115`. The record identifies the location as Fuling/Fuzhou, Sichuan (涪州/涪陵, now Chongqing). Record: https://repository.duke.edu/dc/gamble/gamble_022A_115. Persistent identifier: https://idn.duke.edu/ark:/87924/r3862bq52. The supplied image omits the negative's black outer border.
+- Preferred credit: *Twisted Stern Boats*, 22A-115, Sidney D. Gamble Photographs, David M. Rubenstein Rare Book & Manuscript Library, Duke University. The individual Duke record states CC0 1.0 / Free Re-Use. Date is 1917, not merely the broader collection series date of 1917–1919.
+- The model stern caption describes the sweep arrangement as aiding directional control during a rapid descent. It follows the existing project interpretation of Worcester's drawings and the accompanying steering plates; it does not attribute a modern performance measurement to the model.
 - Model photographs supplied in `歪屁股项目/产品实拍`, credited to YUE-FAN Studio as project material. Web copies are resized and JPEG-encoded without generative edits, cropping or retouching. File correspondence:
   - `9404df9c14ccaeb97b47717200515590.jpg` → `model-overview`.
   - `84883152d9832f5b0f29acf0630b15c9.jpg` → `model-stern`.
