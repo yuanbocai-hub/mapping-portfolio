@@ -9,6 +9,22 @@
 .yangtze-reading h2 { max-width: 32ch; font-size: clamp(28px, 3vw, 38px); letter-spacing: -.025em; margin-bottom: 26px; }
 .reading-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; }
 .reading-columns p, .setting-copy p { font-size: 17px; line-height: 1.75; max-width: 66ch; }
+.reading-lead { max-width: 88ch; font-size: 18px; line-height: 1.7; margin-bottom: 28px; }
+.naming-notes h3 { font-size: 25px; line-height: 1.25; color: var(--accent); margin-bottom: 12px; }
+.transport-reading { border-top: 1px solid var(--line); padding-top: 28px; margin-top: 16px; }
+.transport-reading > h3 { font-size: clamp(28px, 3vw, 36px); }
+.transport-reference { font-size: 15px; margin: 12px 0 20px; }
+.transport-figure > a { display: block; }
+.transport-figure figcaption { display: block; font-size: 14px; line-height: 1.6; margin-top: 12px; max-width: 100ch; }
+.transport-figure figcaption a { white-space: normal; }
+.transport-interpretation { display: grid; grid-template-columns: 1fr 2fr; gap: 36px; padding-top: 28px; margin-top: 22px; border-top: 1px solid var(--line); }
+.transport-interpretation h3 { font-size: 28px; }
+.transport-interpretation p { font-size: 17px; line-height: 1.7; max-width: 70ch; }
+@media(max-width:760px) {
+  .transport-interpretation { grid-template-columns: 1fr; gap: 18px; }
+  .transport-figure > a { overflow-x: auto; }
+  .transport-figure img { min-width: 900px; }
+}
 .hero .hero-map { max-width: none; }
 .hero .hero-map img { max-height: none; }
 .historical-setting { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 64px; border-top: 1px solid var(--line); padding-top: 30px; }

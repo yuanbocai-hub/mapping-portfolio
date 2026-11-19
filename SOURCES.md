@@ -2,6 +2,14 @@
 
 ## Navigation chart
 
+### Introductory transport schematic
+
+- `assets/yangtze-transport-schematic.svg`: selected waterway and cargo relationships, not a geographic route map. Main-stem sections meet at Hankow and Ichang. The figure follows the user-selected citation: G. R. G. Worcester, *The Junks and Sampans of the Yangtze* (1947–1948), two volumes. Catalogue: https://catalog.etoncollege.com/B18556.
+- Solid lines indicate schematic waterway connections; dashed lake-to-Ichang lines summarize interpreted cargo relationships via the main stem, not direct navigation routes, scheduled services, or a claim that every shipment followed this sequence. The specific lake-to-Ichang reading was supplied by the project author; no page-specific quotation for both links has been independently verified here. Transshipment at Ichang is documented in the repository's Worcester port notes.
+- Lake geometry: Natural Earth 1:10m Lakes, Poyang Hu (`ne_id` 1159114015) and Dongting Hu (`ne_id` 1159116351), downloaded 2026-11-19 from https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_lakes.geojson. These are generalized contemporary reference outlines, not dated historical shorelines. Source overview: https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/. Natural Earth data are public domain.
+- The two original lake features are retained in `assets/yangtze-lake-outlines.geojson`. The build script preserves their north-up orientation and proportions using longitude scaled by the cosine of mean latitude, then fits each lake independently. Lake areas and route distances must not be compared from this schematic.
+- Rebuild with `python3 scripts/build-yangtze-schematic.py`.
+
 **Historical navigation:** G. R. G. Worcester, *Junks and Sampans of the Upper Yangtze* (Shanghai: Statistical Department of the Inspectorate General of Customs, 1940), Chapter V, “The Kungt’anho.” The research task supplied a photograph of the relevant chapter text. The chart’s bibliographic year was corrected from the earlier draft’s 1931 to 1940.
 
 - Catalogue record: https://ci.nii.ac.jp/ncid/BA29337189
