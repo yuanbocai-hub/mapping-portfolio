@@ -80,3 +80,7 @@ body.divide{--paper:#e8eee8;--ink:#203a34;--muted:#52665b;--line:#b9c9bc;--accen
 @media print{.divide .divide-index{display:none}}
 
 .divide .encounter-quotes{margin-top:30px}.divide .encounter-quotes blockquote{margin-bottom:0}.divide .encounter-context{margin-top:30px}.divide .encounter-context .encounter-grid{margin-top:28px}
+
+.divide .four-pass-title-row{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:36px;align-items:end}
+.divide .frontier-heading-note{font:italic 22px/1.45 var(--serif);color:var(--muted);text-align:right;margin:0 0 28px}
+@media(max-width:760px){.divide .four-pass-title-row{grid-template-columns:1fr;gap:0}.divide .frontier-heading-note{text-align:left;font-size:20px;margin:0 0 25px}}
