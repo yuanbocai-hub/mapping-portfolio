@@ -33,3 +33,16 @@ body.divide{--paper:#14231f;--ink:#f2f0e6;--muted:#bdcbc3;--line:#415149;--accen
 .divide .encounter-note{font-size:16px;color:var(--muted)}
 .divide .interpretation-note{font-size:17px;border-top:1px solid var(--line);padding-top:26px;margin-top:32px;color:var(--muted)}
 @media(max-width:760px){.divide .encounter-grid{grid-template-columns:1fr;gap:25px}.divide .encounter-grid blockquote p{font-size:25px}}
+
+/* Lighter reading surface and a more open terrain cover. */
+body.divide{--paper:#e8eee8;--ink:#203a34;--muted:#52665b;--line:#b9c9bc;--accent:#8b6235;--river:#28695e}
+.divide .site-header{background:var(--paper)}
+.divide .hero-copy{color:#fffaf0;text-shadow:0 1px 4px rgba(12,30,24,.65)}
+.divide .hero-copy .eyebrow,.divide .divide-hero h1 em{color:#f1d99f}
+.divide .divide-hero img{filter:brightness(1.05)}
+.divide .divide-hero figure>a::after{background:linear-gradient(180deg,rgba(8,22,18,.28),transparent 28%,transparent 78%,rgba(8,22,18,.38))}
+.divide .craft{background:#d9e5db}
+.divide .craft-grid p{color:#405b4d}
+.divide .story-extension{--extension-surface:#d6e3d9}
+.divide dialog{background:#e8eee8;color:#203a34}
+@media(max-width:600px){.divide .divide-hero figure>a::after{background:linear-gradient(180deg,rgba(8,22,18,.48),transparent 38%,transparent 77%,rgba(8,22,18,.5))}}

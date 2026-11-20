@@ -1,0 +1,10 @@
+.story-extension{--extension-surface:var(--wash);width:min(1120px,calc(100% - 80px));margin:80px auto 25px;padding:34px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;background:var(--extension-surface);border-top:2px solid var(--accent)}
+.story-extension .extension-eyebrow{font:13px/1.5 var(--sans);letter-spacing:.10em;text-transform:uppercase;color:var(--accent);margin:0 0 15px}
+.story-extension h2{font:clamp(28px,3vw,39px)/1.18 var(--serif);letter-spacing:-.025em;margin:0 0 20px}
+.story-extension .extension-copy>p:not(.extension-eyebrow){font:17px/1.75 var(--sans);margin:0 0 24px}
+.story-extension .extension-links{display:flex;flex-wrap:wrap;gap:15px 24px;font:15px/1.5 var(--sans)}
+.story-extension .extension-primary{font-weight:650;text-decoration-thickness:2px}
+.story-extension figure{margin:0}.story-extension img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.story-extension figcaption{display:block;font:13px/1.6 var(--sans);color:var(--muted);margin:12px 0 0;padding:0}
+.divide .story-extension{--extension-surface:#d6e3d9}.divide .story-extension h2{font-size:clamp(28px,3vw,39px);margin-bottom:20px}.divide .story-extension figcaption{font-size:13px}
+@media(max-width:760px){.story-extension{width:calc(100% - 36px);margin-top:55px;padding:24px;grid-template-columns:1fr;gap:26px}.story-extension h2 br{display:none}.story-extension figure{max-width:600px}.story-extension .extension-links{flex-direction:column;gap:12px}}
