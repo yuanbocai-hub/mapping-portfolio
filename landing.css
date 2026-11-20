@@ -86,3 +86,9 @@
 
 .divide-entry .divide-card-image{display:block;background:#172723;margin-top:25px}.divide-entry .divide-card-image img{max-height:760px;object-fit:contain}.divide-entry .divide-card-deck{font-family:var(--serif);font-style:italic;margin-top:16px}
 .divide-entry .divide-card-image{background:#e5ece6}
+
+.divide-card-heading{display:grid;grid-template-columns:minmax(0,2fr) minmax(280px,1fr);gap:32px;align-items:end}
+.landing .project-list .divide-card-meta p{font:14px/1.65 var(--sans);color:var(--muted);margin:0 0 5px}
+.divide-card-meta{text-align:right;padding-bottom:2px}
+.divide-card-meta a{color:var(--ink);text-underline-offset:3px}
+@media(max-width:760px){.divide-card-heading{grid-template-columns:1fr;gap:16px}.divide-card-meta{text-align:left}.landing .project-list .divide-card-meta p{font-size:14px}}
