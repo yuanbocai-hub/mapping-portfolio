@@ -6,7 +6,7 @@
   <meta name="description" content="Yuanbo Cai 的历史制图项目：重绘 1935 年长江物产图中的七类物产，探讨区域地理与水路运输，并展示借助 Codex 绘制的乌江航运图。">
   <meta name="theme-color" content="#f5f2ea">
   <title>作为水路运输体系的长江 · Yuanbo Cai</title>
-  <link rel="stylesheet" href="portfolio.css"><link rel="stylesheet" href="projects.css"><link rel="stylesheet" href="yangtze.css?v=20261119-regions">
+  <link rel="stylesheet" href="portfolio.css"><link rel="stylesheet" href="projects.css"><link rel="stylesheet" href="yangtze.css?v=20261119-basin">
   <script src="portfolio.js" defer></script>
   <script src="yangtze-language.js" defer></script>
   <link rel="alternate" hreflang="en" href="yangtze.html">
@@ -62,7 +62,7 @@
       </section>
     </div>
     <figure class="hero-figure hero-map" id="main-map">
-      <a href="Yangtze_Products_1930s_EN_HighRes15MB.jpg" data-lightbox data-caption="根据 Hong Maoxi 1935 年地图重绘的长江物产区。制图：Yuanbo Cai。"><img src="assets/yangtze-commodities.jpg" width="2200" height="1554" alt="重绘的长江物产图，浅色物产区围绕河网交叠分布。" fetchpriority="high"></a>
+      <a href="Yangtze_Products_1930s_EN_HighRes15MB.jpg?v=20261119-final" data-lightbox data-caption="根据 Hong Maoxi 1935 年地图重绘的长江物产区。制图：Yuanbo Cai。"><img src="assets/yangtze-commodities.jpg?v=20261119-final" width="2200" height="1554" alt="重绘的长江物产图，浅色物产区围绕河网交叠分布。" fetchpriority="high"></a>
       <figcaption><span>01 / 长江物产图重绘</span>从青藏高原，经四川与中游湖泊平原，通向上海的长江口</figcaption>
     </figure>
     <section class="historical-setting" aria-labelledby="setting-title">
@@ -81,9 +81,10 @@
     <div class="section-heading"><h2 id="commodities-title">穿过成都糖产区，追踪麻的边界</h2></div>
     <div class="chengdu-pair">
       <figure><a href="assets/chengdu-source.svg" data-lightbox data-caption="1935 年物产图中的成都地区。"><img src="assets/chengdu-source.svg" alt="1935 年原图局部，可见成都以南的糖产区和周边物产符号。"></a><figcaption><strong>1935 年原图</strong> 先找到成都以南的糖产区，再沿着重叠处追踪麻的轮廓。</figcaption></figure>
-      <figure><a href="assets/chengdu-reconstruction.svg" data-lightbox data-caption="长江物产重绘图中的成都地区。"><img src="assets/chengdu-reconstruction.svg" alt="重绘后的同一区域，将糖、麻产区与河流一同展示。"></a><figcaption><strong>我的重绘</strong> 初次提取时，麻的轮廓被分成了几块。沿原图穿过糖产区逐段核对后，成都周边才重新连成一个完整区域。
+      <figure><a href="assets/chengdu-reconstruction.svg?v=20261119-final" data-lightbox data-caption="长江物产重绘图中的成都地区。"><img src="assets/chengdu-reconstruction.svg?v=20261119-final" alt="重绘后的同一区域，将糖、麻产区与河流一同展示。"></a><figcaption><strong>我的重绘</strong> 初次提取时，麻的轮廓被分成了几块。沿原图穿过糖产区逐段核对后，成都周边才重新连成一个完整区域。
         <p class="map-reading-note">浅色色带勾勒出各类作物的分布范围。我在轮廓上留出缺口，让读者能顺着河道，穿过糖、麻产区重叠的地方。</p></figcaption></figure>
     </div>
+    <figure class="sichuan-basin-context" id="sichuan-basin"><a href="assets/sichuan-basin-context-full.jpg" data-lightbox data-caption="四川盆地與周圍山地"><img src="assets/sichuan-basin-context.jpg" width="2000" height="1500" loading="lazy" alt="擴大範圍的最終重繪圖：成都平原、盆地內部丘陵與周圍山地，同糖、麻及其他物產區和岷江、沱江、嘉陵江、烏江水系一併呈現。"></a><figcaption><strong>四川盆地與周圍山地</strong> 擴大範圍的最終重繪圖：成都平原、盆地內部丘陵與周圍山地，同糖、麻及其他物產區和岷江、沱江、嘉陵江、烏江水系一併呈現。</figcaption></figure>
     <section class="region-note" id="reflection" aria-labelledby="reflection-title">
       <h2 id="reflection-title"><span lang="zh">形势</span> <i>Xíngshì</i></h2>
       <div class="reflection-text"><p>我最初通过支流理解“形势”：山谷让水流向一处，山脊又将水分向另一处。物产图让我换一种方式阅读同样的地形。在成都周边，我希望读者能沿着一条河，穿过同时标有糖和麻的区域。</p>
@@ -94,7 +95,7 @@
       <div class="map-switcher" data-switcher>
       <div class="viewer-heading"><div class="commodity-view-heading"><h2 id="seven-maps-title">七类物产分图</h2><p class="commodity-view-note">物产分视图依据我对洪懋熙 1935 年物产图进行地理配准后提取的 GeoJSON 图层重绘。</p></div><div class="view-controls" role="group" aria-label="选择长江地图视图"><button type="button" data-view="separated" aria-pressed="true">七类物产分图</button><button type="button" data-view="chinese" aria-pressed="false">繁體中文地圖</button><button type="button" data-view="source" aria-pressed="false">历史原图</button></div></div>
       <figure class="map-figure tall-sheet" data-panel="separated"><a href="yangtze_seven_panels_hydro_EN_600dpi.png" data-lightbox data-caption="糖、麻、烟草、茶、丝、棉花和稻米的七张独立分图，为长江综合图的配套图件。"><img src="assets/yangtze-seven-panels.jpg" alt="七张分图分别将糖、麻、烟草、茶、丝、棉花和稻米与河网对照展示。" loading="lazy"></a><figcaption><span>在稻米分图中，可以沿轮廓追踪湖北与湖南。第一次提取出的两个片段，在历史原图中属于同一个区域。</span><a href="yangtze_seven_panels_hydro_EN_600dpi.png">查看高清分图</a></figcaption></figure>
-      <figure class="map-figure" data-panel="chinese"><a href="assets/yangtze-commodities-zh-full.jpg" data-lightbox data-caption="重绘长江流域物产图的繁体中文版。"><img src="assets/yangtze-commodities-zh.jpg" width="2200" height="1554" alt="繁体中文版长江流域物产图，包含历史地名及七类物产区域。" loading="lazy"></a><figcaption><span>長江流域物產圖 · 繁體中文</span><a href="assets/yangtze-commodities-zh-full.jpg">查看高清地图</a></figcaption></figure>
+      <figure class="map-figure" data-panel="chinese"><a href="assets/yangtze-commodities-zh-full.jpg?v=20261119-final" data-lightbox data-caption="重绘长江流域物产图的繁体中文版。"><img src="assets/yangtze-commodities-zh.jpg?v=20261119-final" width="2200" height="1554" alt="繁体中文版长江流域物产图，包含历史地名及七类物产区域。" loading="lazy"></a><figcaption><span>長江流域物產圖 · 繁體中文</span><a href="assets/yangtze-commodities-zh-full.jpg?v=20261119-final">查看高清地图</a></figcaption></figure>
       <figure class="map-figure" data-panel="source"><a href="长江流域物产_原件.jpg" data-lightbox data-caption="项目所用长江物产历史地图数字复制件，署名 Hong Maoxi，1935 年。"><img src="assets/yangtze-source.jpg" alt="历史长江物产图，可见密集交叠的色带、纹理、标注与附图。" loading="lazy"></a><figcaption><span>史料 / 长江</span>项目所用数字复制件 · 原图署名 Hong Maoxi，1935 年</figcaption></figure>
     </div>
     </section>

@@ -141,3 +141,5 @@ html[lang="zh-Hans"] .bibliography { line-height: 1.85; }
   .home-river { grid-template-columns: minmax(0, 1fr); padding-block: 24px 40px; }
   .home-river h2 { max-width: 26ch; }
 }
+
+.sichuan-basin-context{margin:30px 0 52px}.sichuan-basin-context a{display:block}.sichuan-basin-context img{display:block;width:100%;height:auto}.sichuan-basin-context figcaption{padding-top:12px;font:15px/1.55 var(--sans);color:var(--ink)}.sichuan-basin-context figcaption strong{display:block;margin-bottom:4px}
