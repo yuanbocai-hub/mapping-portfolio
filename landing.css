@@ -111,3 +111,9 @@
 .landing .project-list .commodity-entry .vessel-context .vessel-context-premise{font-size:clamp(19px,1.8vw,22px);line-height:1.3;}
 .landing .commodity-entry .vessel-context p+p{margin-top:12px;}
 .landing .commodity-entry>.commodity-intro+figure{margin-top:12px;}
+
+.landing .course-directory .course-listing{min-width:0;}
+.landing .course-directory a.course-assignment{display:block;margin-top:3px;color:var(--muted);font-size:.88em;}
+.landing .course-directory .related-coursework{margin-top:18px;max-width:66ch;color:var(--muted);}
+.landing .course-directory .related-coursework h3{margin:0 0 5px;font:600 14px/1.5 var(--sans);}
+.landing .project-list .related-coursework p{margin:0;font-size:14px;line-height:1.65;}
