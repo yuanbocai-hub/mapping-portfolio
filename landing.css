@@ -92,3 +92,5 @@
 .divide-card-meta{text-align:right;padding-bottom:2px}
 .divide-card-meta a{color:var(--ink);text-underline-offset:3px}
 @media(max-width:760px){.divide-card-heading{grid-template-columns:1fr;gap:16px}.divide-card-meta{text-align:left}.landing .project-list .divide-card-meta p{font-size:14px}}
+
+.landing .project-list .divide-card-focus{font:16px/1.55 var(--sans);color:var(--muted);max-width:62ch;margin:10px 0 0}
