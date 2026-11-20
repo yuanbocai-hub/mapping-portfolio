@@ -58,3 +58,25 @@ body.divide{--paper:#e8eee8;--ink:#203a34;--muted:#52665b;--line:#b9c9bc;--accen
 .divide .line-reading h3{font:600 17px/1.4 var(--sans);margin-bottom:12px;color:var(--accent)}
 .divide .line-reading p{font-size:16px;line-height:1.6;margin-bottom:0}
 @media(max-width:760px){.divide .line-reading{grid-template-columns:1fr;gap:22px}.divide .ward-evidence{padding:24px 20px}.divide .argument-section h2 br{display:none}}
+
+/* Right-aligned section navigation remains outside the map artwork. */
+.divide .divide-index{position:sticky;top:0;z-index:8;padding:0 32px;border-block:1px solid var(--line);background:rgba(232,238,232,.97);backdrop-filter:blur(10px)}
+.divide .divide-index details{max-width:1736px;margin:0 auto;padding:0;border:0}
+.divide .divide-index summary{display:none}
+.divide .divide-index ol{display:flex;justify-content:flex-end;align-items:center;gap:26px;list-style:none;margin:0;padding:0}
+.divide .divide-index li{margin:0;padding:0}
+.divide .divide-index a{display:block;padding:19px 0 16px;border-bottom:2px solid transparent;color:var(--muted);text-decoration:none;font:14px/1.5 var(--sans)}
+.divide .divide-index a:hover,.divide .divide-index a[aria-current="location"]{color:var(--ink);border-bottom-color:var(--accent)}
+@media(max-width:1000px){
+ .divide .divide-index{padding-inline:24px}
+ .divide .divide-index summary{display:block;list-style:none;padding:15px 0;text-align:right;font:14px/1.5 var(--sans);color:var(--ink)}
+ .divide .divide-index summary::-webkit-details-marker{display:none}
+ .divide .divide-index summary::after{content:' +';color:var(--accent)}
+ .divide .divide-index details[open] summary::after{content:' −'}
+ .divide .divide-index details[open]>summary{margin:0}
+ .divide .divide-index ol{display:grid;gap:0;padding:0 0 15px}
+ .divide .divide-index a{padding:10px 0;font-size:16px}
+}
+@media print{.divide .divide-index{display:none}}
+
+.divide .encounter-quotes{margin-top:30px}.divide .encounter-quotes blockquote{margin-bottom:0}.divide .encounter-context{margin-top:30px}.divide .encounter-context .encounter-grid{margin-top:28px}
