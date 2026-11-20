@@ -94,3 +94,12 @@
 @media(max-width:760px){.divide-card-heading{grid-template-columns:1fr;gap:16px}.divide-card-meta{text-align:left}.landing .project-list .divide-card-meta p{font-size:14px}}
 
 .landing .project-list .divide-card-focus{font:16px/1.55 var(--sans);color:var(--muted);max-width:62ch;margin:10px 0 0}
+
+/* Compact the Across the Divide introduction without changing its copy. */
+.landing .project-list .divide-entry{padding-top:clamp(24px,3vw,44px)}
+.landing .project-list .divide-entry>.eyebrow{margin-bottom:9px;line-height:1.45}
+.landing .project-list .divide-entry .divide-card-deck{margin:8px 0 8px;line-height:1.4}
+.landing .project-list .divide-entry .divide-card-focus{margin-top:6px;line-height:1.45}
+.landing .project-list .divide-entry .divide-card-meta p{line-height:1.4;margin-bottom:3px}
+.landing .divide-entry .divide-card-image{margin-top:12px}
+@media(max-width:760px){.landing .divide-entry .divide-card-heading{gap:10px}}

@@ -102,3 +102,10 @@
 .yongyap-comparison img { width: 100%; height: auto; }
 .yongyap-comparison figcaption { padding-top: 8px; font: 14px/1.55 var(--sans); }
 .yongyap-comparison strong { display: block; }
+
+/* Contain the comparison figures within the left column. */
+.corridors-project .reading-grid>div{min-width:0}
+.corridors-project .yongyap-comparison{width:100%;max-width:300px;grid-template-columns:minmax(0,1fr)}
+.corridors-project .yongyap-comparison figure{min-width:0;max-width:100%}
+.corridors-project .yongyap-comparison a,.corridors-project .yongyap-comparison img{max-width:100%}
+.corridors-project .yongyap-comparison figcaption{display:block;overflow-wrap:break-word}
