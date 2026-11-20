@@ -46,3 +46,15 @@ body.divide{--paper:#e8eee8;--ink:#203a34;--muted:#52665b;--line:#b9c9bc;--accen
 .divide .story-extension{--extension-surface:#d6e3d9}
 .divide dialog{background:#e8eee8;color:#203a34}
 @media(max-width:600px){.divide .divide-hero figure>a::after{background:linear-gradient(180deg,rgba(8,22,18,.48),transparent 38%,transparent 77%,rgba(8,22,18,.5))}}
+
+.divide .argument-lead{font:clamp(21px,2.2vw,27px)/1.6 var(--serif);max-width:70ch}
+.divide .source-inline{font-size:.85em;white-space:normal}
+.divide .ward-evidence{margin:32px 0 0;padding:26px 30px;background:#d9e5db;border-top:2px solid var(--accent)}
+.divide .evidence-heading{font-size:14px;color:var(--accent);margin-bottom:16px}
+.divide .ward-evidence blockquote{margin:0 0 23px;padding-left:22px}
+.divide .ward-evidence blockquote p{font-size:clamp(24px,2.5vw,31px)}
+.divide .ward-evidence>p:last-child{font-size:16px;margin-bottom:0}
+.divide .line-reading{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:32px 0;padding:25px 0;border-block:1px solid var(--line)}
+.divide .line-reading h3{font:600 17px/1.4 var(--sans);margin-bottom:12px;color:var(--accent)}
+.divide .line-reading p{font-size:16px;line-height:1.6;margin-bottom:0}
+@media(max-width:760px){.divide .line-reading{grid-template-columns:1fr;gap:22px}.divide .ward-evidence{padding:24px 20px}.divide .argument-section h2 br{display:none}}
