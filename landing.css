@@ -117,3 +117,7 @@
 .landing .course-directory .related-coursework{margin-top:18px;max-width:66ch;color:var(--muted);}
 .landing .course-directory .related-coursework h3{margin:0 0 5px;font:600 14px/1.5 var(--sans);}
 .landing .project-list .related-coursework p{margin:0;font-size:14px;line-height:1.65;}
+
+.landing .divide-card-focus span{display:block;}
+.landing .divide-entry .divide-card-image{margin-top:22px;}
+@media(max-width:760px){.landing .divide-card-focus span{display:inline;}}
