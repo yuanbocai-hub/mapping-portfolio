@@ -118,6 +118,10 @@
 .landing .course-directory .related-coursework h3{margin:0 0 5px;font:600 14px/1.5 var(--sans);}
 .landing .project-list .related-coursework p{margin:0;font-size:14px;line-height:1.65;}
 
-.landing .divide-card-focus span{display:block;}
 .landing .divide-entry .divide-card-image{margin-top:22px;}
-@media(max-width:760px){.landing .divide-card-focus span{display:inline;}}
+
+
+.landing .portfolio-about{max-width:740px;padding-block:40px 55px;}
+.landing .portfolio-about>p:not(.eyebrow){font-size:17px;line-height:1.65;color:var(--muted);margin:0;}
+.landing .portfolio-about>p:not(.eyebrow)+p{margin-top:16px;}
+@media(max-width:760px){.landing .portfolio-about>p:not(.eyebrow){font-size:16px;}}
