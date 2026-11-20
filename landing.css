@@ -103,3 +103,11 @@
 .landing .project-list .divide-entry .divide-card-meta p{line-height:1.4;margin-bottom:3px}
 .landing .divide-entry .divide-card-image{margin-top:12px}
 @media(max-width:760px){.landing .divide-entry .divide-card-heading{gap:10px}}
+
+/* Keep the Yangtze introduction compact above the map. */
+.landing .commodity-entry .commodity-intro{margin-bottom:12px;}
+.landing .commodity-entry .vessel-context{padding:16px 20px;}
+.landing .project-list .commodity-entry .vessel-context p{line-height:1.55;}
+.landing .project-list .commodity-entry .vessel-context .vessel-context-premise{font-size:clamp(19px,1.8vw,22px);line-height:1.3;}
+.landing .commodity-entry .vessel-context p+p{margin-top:12px;}
+.landing .commodity-entry>.commodity-intro+figure{margin-top:12px;}
