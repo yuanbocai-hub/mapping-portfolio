@@ -125,3 +125,13 @@
 .landing .portfolio-about>p:not(.eyebrow){font-size:17px;line-height:1.65;color:var(--muted);margin:0;}
 .landing .portfolio-about>p:not(.eyebrow)+p{margin-top:16px;}
 @media(max-width:760px){.landing .portfolio-about>p:not(.eyebrow){font-size:16px;}}
+
+.course-directory .disaster-links {
+  display: flex;
+  align-items: baseline;
+  gap: .6em;
+}
+.course-directory .disaster-links a + a {
+  border-inline-start: 1px solid var(--line);
+  padding-inline-start: .6em;
+}
