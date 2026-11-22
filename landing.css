@@ -135,3 +135,13 @@
   border-inline-start: 1px solid var(--line);
   padding-inline-start: .6em;
 }
+
+.portfolio-masthead .pen-name {
+  display: block;
+  margin-top: .25rem;
+  font-size: .95em;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--muted);
+}
