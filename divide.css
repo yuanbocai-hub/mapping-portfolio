@@ -87,16 +87,21 @@ body.divide{--paper:#e8eee8;--ink:#203a34;--muted:#52665b;--line:#b9c9bc;--accen
 
 .divide .saddle-comparison {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
   margin-top: 28px;
 }
 .divide .saddle-comparison a { display: block; border: 1px solid var(--line); }
+.divide .saddle-comparison img {
+  aspect-ratio: 648 / 688;
+  object-fit: contain;
+  background: var(--wash);
+}
 .divide .saddle-comparison figcaption {
   margin-top: 8px;
   color: var(--muted);
   font: 13px/1.5 var(--sans);
 }
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .divide .saddle-comparison { grid-template-columns: 1fr; }
 }
