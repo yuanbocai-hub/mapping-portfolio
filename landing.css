@@ -128,9 +128,11 @@
 
 .course-directory .disaster-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: .6em;
 }
+.course-directory .disaster-links a { white-space: nowrap; }
 .course-directory .disaster-links a + a {
   border-inline-start: 1px solid var(--line);
   padding-inline-start: .6em;

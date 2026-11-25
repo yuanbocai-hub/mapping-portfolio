@@ -40,3 +40,6 @@
 .project-animation > p { max-width: 68ch; color: var(--muted); }
 .project-animation video { display: block; width: 100%; max-width: 960px; height: auto; background: var(--ink); }
 @media print { .project-animation { display: none; } }
+
+.course-chapter-nav .wrap { overflow-x: auto; }
+.course-chapter-nav a { flex: 0 0 auto; }
