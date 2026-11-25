@@ -43,3 +43,21 @@
 
 .course-chapter-nav .wrap { overflow-x: auto; }
 .course-chapter-nav a { flex: 0 0 auto; }
+
+.dam-project-focus {
+  margin: 12px 0 0;
+  max-width: 30ch;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.45;
+}
+@media (min-width: 940px) {
+  .dam-project-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 30ch;
+    column-gap: 34px;
+    align-items: end;
+  }
+  .dam-project-heading .eyebrow { grid-column: 1 / -1; }
+  .dam-project-focus { margin: 0 0 3px; }
+}
