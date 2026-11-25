@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="UW GIS course work and volunteer mapping by Zhiting Cai: Iceland, the Yarlung Tsangpo, and an earthquake intensity map prepared for Zhuo-Ming.">
+  <meta name="description" content="UW GIS course work and volunteer mapping by Zhiting Cai: Iceland, the Yarlung Tsangpo, and disaster mapping for Zhuo-Ming in Nepal, Venezuela, and Kwangsi Province.">
   <meta name="theme-color" content="#f5f2ea">
   <title>UW Course Work &amp; Volunteer Mapping · Yuanbo Cai</title>
   <link rel="stylesheet" href="portfolio.css">
@@ -23,7 +23,7 @@
     <p class="project-subtitle">QGIS map layouts followed by interactive maps and digital storytelling: three University of Washington course assignments alongside a volunteer practice map prepared for the disaster-response organization Zhuo-Ming (卓明).</p>
     <p class="small-note">In progress: GEOG 458 (Advanced Digital Geography) and GEOG 482 (GIS Data Management).</p>
   </section>
-  <nav class="chapter-nav" aria-label="Course projects"><div class="wrap"><a href="#iceland">01 <span>Iceland · GEOG 360 · QGIS</span></a><a href="#gyirong"><span>Disaster Forensic . Event Reconstruction</span></a><a href="#zhuoming">02 <span>Earthquake intensity · QGIS</span></a><a href="#tsangpo-map">03 <span>Leaflet map · GEOG 465</span></a><a href="#story-map">04 <span>Story map · GEOG 458</span></a></div></nav>
+  <nav class="chapter-nav" aria-label="Course projects"><div class="wrap"><a href="#iceland">01 <span>Iceland · GEOG 360 · QGIS</span></a><a href="#gyirong"><span>Disaster Forensic . Event Reconstruction</span></a><a href="#zhuoming">02 <span>Earthquake intensity · QGIS</span></a><a href="#dam-failure"><span>Dam Failure</span></a><a href="#tsangpo-map">03 <span>Leaflet map · GEOG 465</span></a><a href="#story-map">04 <span>Story map · GEOG 458</span></a></div></nav>
   <section class="chapter wrap" id="iceland" aria-labelledby="iceland-title">
     <div class="section-heading"><p class="eyebrow">01 / GEOG 360 · QGIS · My first GIS class</p><h2 id="iceland-title">Volcanoes in<br>Iceland’s landscape</h2></div>
     <div class="section-intro"><p>The final map brings Holocene and Pleistocene volcanic features into the same view as elevation, contours, roads, and water bodies. It gives the volcanic locations a landscape context, making it possible to compare their distribution across Iceland’s coast, interior, and highlands.</p><p>I used separate symbols for the two volcanic groups and a light elevation ramp to keep the terrain readable beneath them. The map combines the Smithsonian Global Volcanism Program’s volcano data, OpenDEM terrain data, and OpenStreetMap features.</p></div>
@@ -34,6 +34,14 @@
     <div class="section-intro">
       <p>About seven minutes separated the collapse on Langtang Lirung from the arrival of the flood at Gyirong Port. At around 10:52 on 26 August 2026, ice and rock broke away from the mountain’s north face. As the debris descended, it picked up water and sediment from the valley floor. The surge swept down Lende Khola and reached the border crossing at about 10:59. At the confluence, part of the surge pushed upstream along the Kyirong Tsangpo. All times are Beijing time (UTC+8).</p>
       <p>The temporary lake followed a different timetable. Debris blocked the channel, impounding water that drained over the following days. By about 30 August, the lake had largely emptied. The surge that reached the port on the morning of the 26th had already passed days before.</p>
+    </div>
+    <div class="impact-note">
+      <h3>Human impact on both sides of the border</h3>
+      <ul>
+        <li><strong>China, Gyirong Port area:</strong> 43 people were reported dead and 519 missing as of 18:00 on 5 September 2026, Beijing time. <a href="https://cpc.people.com.cn/n1/2026/0907/c64387-40793587.html">Gyirong emergency command briefing, reported by People’s Daily ↗</a></li>
+        <li><strong>Nepal, Rasuwa–Bhote Koshi flood and downstream areas:</strong> 1,453 people were reported dead and 5,285 missing as of 19:00 on 26 September 2026, Nepal time. <a href="https://nepal.un.org/sites/default/files/2026-10/Nepal%20Rasuwa-Bhotekoshi%20Flood%20Situation%20Report%20No.10_20260929.pdf">UN situation report citing Nepal’s disaster authority (PDF) ↗</a></li>
+      </ul>
+      <p>The updates use different dates and reporting areas. The figures are presented as published, with no combined cross-border total.</p>
     </div>
     <figure class="map-figure"><a href="https://github.com/yuanbocai-hub/mapping-portfolio/releases/download/geog360-gyirong-2026/Gyirong_satellite_print_Oct01_final_EN_400dpi.png"><img src="assets/coursework/gyirong/event-map.jpg" alt="Bilingual terrain map tracing the landslide from Langtang Lirung to Gyirong Port." loading="lazy"></a><figcaption><span>Event Reconstruction · Zhiting Cai</span><a href="https://github.com/yuanbocai-hub/mapping-portfolio/releases/download/geog360-gyirong-2026/Gyirong_satellite_print_Oct01_final_400dpi.png">Chinese edition ↗</a></figcaption></figure>
     <div class="section-intro">
@@ -49,6 +57,38 @@
     <div class="section-intro"><p>I made this map while learning QGIS, as a practical exercise for the disaster-response organization Zhuo-Ming (卓明). It combines preliminary earthquake intensity estimates with cities, major roads, and administrative boundaries around Montalbán, Venezuela.</p><p>The work gave me practice in clipping raster data, classifying values, choosing symbols, and arranging a map layout. I used a sequential red palette for intensity and kept the reference layers lighter. The notes beside the map identify the data sources, describe the processing steps, and explain that the estimates are preliminary.</p></div>
     <figure class="map-figure"><a href="assets/coursework/venezuela-intensity-original.png" data-lightbox data-caption="Montalbán, Venezuela · Earthquake intensity map · Cartography: Zhiting Cai · QGIS learning exercise prepared for Zhuo-Ming (卓明), outside UW coursework." aria-label="Enlarge the Zhuo-Ming earthquake intensity map"><img src="assets/coursework/venezuela-intensity.jpg" width="2000" height="1414" alt="An earthquake intensity map around Montalbán, Venezuela, with red intensity classes, cities, roads, explanatory notes, and the Zhuo-Ming logo." loading="lazy"></a><figcaption><span>QGIS practice / Prepared for Zhuo-Ming</span><a href="assets/coursework/venezuela-intensity-original.png">Open the full-resolution map ↗</a></figcaption></figure>
     <div class="reading-grid"><h3>Making the map<br>usable</h3><div class="prose"><p>The intensity surface alone gives little help in locating a named city or transport route. Adding those reference layers connects the estimates to places readers can identify. The accompanying notes retain the provenance of the estimates and the processing steps, making the map easier to assess and reuse.</p><p>Source credits on the original map include the Global Earthquake Rapid Response Team, China University of Geosciences (Wuhan), the Lanzhou Institute of Seismology, USGS, and OpenStreetMap.</p></div></div>
+  </section>
+  <section class="chapter wrap volunteer-project" id="dam-failure" aria-labelledby="dam-failure-title">
+    <div class="section-heading">
+      <p class="eyebrow">GEOG 360 · Extension · Zhuo-Ming (卓明)</p>
+      <h2 id="dam-failure-title">The Liulan Reservoir Dam Failure</h2>
+    </div>
+    <p class="project-context">6 July 2026 · Zhenlong Mountain (镇龙山) · Hengzhou–Guigang (横州—贵港), Kwangsi Province (广西)</p>
+    <div class="section-intro">
+      <p>From 4 to 6 July, slow-moving Typhoon Maysak and moisture from the southwest monsoon brought sustained heavy rain to Kwangsi Province. Around Zhenlong Mountain, ridgelines separate the catchments of Liulan, Yunbiao, and Gandao reservoirs. Some of the rain that fell within these catchments ran downslope in shallow, dispersed flows. Small gullies collected that runoff, then fed larger channels that concentrated it at the reservoir inlets. <a href="https://www.xinhuanet.com/local/20260706/57803e8644c94ffa9e1251a77e066909/c.html">Xinhua on Maysak’s rainfall ↗</a></p>
+      <p>When inflow exceeds what a reservoir is releasing, water accumulates and the level rises. On the morning of 6 July, water overtopped dams at Liulan and Yunbiao and breaches opened. Floodwater from Liulan inundated Liulan Village and nearby fields. The map follows surface runoff from these three catchments within the much wider storm footprint. This is why the transition from hillslope runoff to channel flow matters: the gullies gather water from many slopes and deliver it in concentrated flows at each reservoir inlet. <a href="https://www.news.cn/local/20260707/ee07a2ea7eae45af821e3a528afb9545/c.html">Xinhua field report on the failures and flooding ↗</a></p>
+    </div>
+    <div class="impact-note">
+      <h3>Deaths and missing people</h3>
+      <ul>
+        <li><strong>Liulan Reservoir flood:</strong> the Nanning briefing reported 26 deaths and 7 people missing as of 11:00 on 9 July 2026. <a href="https://news.china.com.cn/2026-07/09/content_118590917.html">9 July briefing ↗</a></li>
+        <li><strong>Liulan, Yunbiao, and other reservoir-failure floods in Hengzhou:</strong> the wider 21 August update reported 107 deaths and 7 people missing. <a href="https://www.news.cn/20260821/da3bdd0ad47148c4a61d809ea0f9e9ab/c.html">Xinhua, 21 August update ↗</a></li>
+      </ul>
+    </div>
+    <figure class="map-figure">
+      <a href="assets/coursework/liulan/liulan-dam-failure-en-400dpi.png" data-lightbox data-caption="Liulan Reservoir Dam Failure · 6 July 2026 · Zhuo-Ming Cartography Team" aria-label="Enlarge the Liulan Reservoir Dam Failure map">
+        <img src="assets/coursework/liulan/liulan-dam-failure-en.jpg" width="1620" height="1330" loading="lazy" alt="Oblique terrain map of Zhenlong Mountain showing hillslope runoff and channels feeding the Liulan, Yunbiao, and Gandao reservoirs, with nearby settlements and a locator map.">
+      </a>
+      <figcaption><span>Event reconstruction · Zhuo-Ming Cartography Team · Yuanbo</span><a href="assets/coursework/liulan/liulan-dam-failure-en-400dpi.png">Open the 400 dpi map ↗</a></figcaption>
+    </figure>
+    <details class="project-animation" data-pause-on-close>
+      <summary>Watch the runoff animation <span>20 seconds</span></summary>
+      <p id="runoff-video-description">Follow dispersed runoff as it joins the gullies and reaches each reservoir. Water keeps moving through channels after the rain stops. The paths come from a 30 m elevation model. Travel timing, line widths and rising reservoir gauges are schematic.</p>
+      <video controls playsinline preload="none" width="1440" height="1080" poster="assets/coursework/liulan/zhenlong-runoff-poster.jpg" aria-label="Zhenlong Mountain runoff animation" aria-describedby="runoff-video-description">
+        <source src="assets/coursework/liulan/zhenlong-runoff-en.mp4" type="video/mp4">
+      </video>
+      <p class="small-note"><a href="assets/coursework/liulan/zhenlong-runoff-en.mp4">Open the MP4 ↗</a></p>
+    </details>
   </section>
   <section class="chapter wrap" id="tsangpo-map" aria-labelledby="tsangpo-title">
     <div class="section-heading"><p class="eyebrow">03 / GEOG 465: GIS Database and Programming</p><h2 id="tsangpo-title">Hydropower, rivers,<br>and the China–India frontier</h2></div>

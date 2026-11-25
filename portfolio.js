@@ -50,3 +50,10 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-10% 0px -55% 0px' });
   links.forEach(link => observer.observe(document.querySelector(link.hash)));
 }
+
+document.querySelectorAll('details[data-pause-on-close]').forEach(disclosure => {
+  const video = disclosure.querySelector('video');
+  disclosure.addEventListener('toggle', () => {
+    if (!disclosure.open) video.pause();
+  });
+});

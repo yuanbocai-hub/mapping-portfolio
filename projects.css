@@ -20,3 +20,23 @@
 .project-card .course-codes{font-size:13px;line-height:1.8;font-weight:600;color:var(--river);margin:0 0 18px}
 
 .project-card .coursework-label{font:italic 20px/1.5 var(--serif);margin:0 0 10px;color:var(--ink)}
+
+.impact-note {
+  max-width: 1060px;
+  margin-block: 24px;
+  padding: 18px 22px;
+  border-inline-start: 2px solid var(--accent);
+  background: var(--wash);
+  color: var(--muted);
+  font-size: 14px;
+}
+.impact-note h3 { color: var(--ink); font-size: 23px; }
+.impact-note ul { margin: 8px 0 0; padding-inline-start: 20px; }
+.impact-note li + li { margin-top: 6px; }
+.impact-note p { margin: 8px 0 0; }
+.project-animation { margin-block: 24px; border-block: 1px solid var(--line); }
+.project-animation summary { padding: 14px 0; }
+.project-animation summary span { margin-inline-start: 12px; font-size: 13px; color: var(--muted); }
+.project-animation > p { max-width: 68ch; color: var(--muted); }
+.project-animation video { display: block; width: 100%; max-width: 960px; height: auto; background: var(--ink); }
+@media print { .project-animation { display: none; } }
