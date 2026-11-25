@@ -104,6 +104,7 @@ body.divide{--paper:#e8eee8;--ink:#203a34;--muted:#52665b;--line:#b9c9bc;--accen
   background: var(--wash);
 }
 .divide .saddle-comparison figcaption {
+  display: block;
   margin-top: 8px;
   color: var(--muted);
   font: 13px/1.5 var(--sans);
