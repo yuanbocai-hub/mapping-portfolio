@@ -154,16 +154,6 @@
 .landing .opening-title h1 { font-size: clamp(40px,4.3vw,68px); }
 #about-my-work { margin-top: 15px; }
 #about-my-work-title { font: 600 16px/1.4 var(--sans); letter-spacing: normal; }
-#about-my-work .portfolio-intro {
-  display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  gap: 12px clamp(24px,3.5vw,52px);
-  max-width: none;
-  margin-top: 8px;
-  font-size: 16px;
-  line-height: 1.55;
-}
-#about-my-work .portfolio-intro p { margin: 0; }
 .landing .project-list .terrain-feature { padding-top: 20px; }
 .landing .project-list .terrain-feature > .eyebrow { margin: 0 0 4px; }
 .feature-caption { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
@@ -197,7 +187,6 @@
 .disaster-collection .case-grid { margin-bottom: 65px; }
 @media (max-width: 740px) {
   .landing .portfolio-masthead { padding-block: 16px; }
-  #about-my-work .portfolio-intro { grid-template-columns: 1fr; }
   .opening-title .eyebrow { margin-bottom: 6px; }
   .feature-heading { grid-template-columns: 1fr; gap: 10px; }
   .feature-caption { display: grid; gap: 6px; }
