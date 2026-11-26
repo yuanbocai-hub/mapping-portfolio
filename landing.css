@@ -163,9 +163,18 @@
 .opening-note summary { width: fit-content; cursor: pointer; color: var(--river); font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
 .landing .project-list .terrain-feature { padding-top: 20px; }
 .landing .project-list .terrain-feature > .eyebrow { margin: 0 0 4px; }
-.feature-heading, .feature-caption { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
-.feature-heading { margin-bottom: 12px; }
-.landing .project-list .feature-heading p { margin: 0; font-family: var(--serif); font-style: italic; }
+.feature-caption { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+.feature-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 12px clamp(24px, 4vw, 64px);
+  align-items: start;
+  margin-bottom: 16px;
+}
+.landing .project-list .feature-subtitle { margin: 4px 0 0; font-family: var(--serif); font-style: italic; }
+.landing .project-list .feature-context p { margin: 0; font: 15px/1.5 var(--sans); color: var(--muted); }
+.landing .project-list .feature-context p + p { margin-top: 6px; }
+.feature-context a { color: var(--ink); }
 .terrain-cover { display: block; }
 .terrain-cover img { width: 100%; aspect-ratio: 65 / 32; object-fit: cover; object-position: 50% 59%; }
 @media (max-width: 650px) {
@@ -189,7 +198,8 @@
 @media (max-width: 740px) {
   .landing .portfolio-masthead { grid-template-columns: 1fr; gap: 12px; padding-block: 16px; }
   .opening-title .eyebrow { margin-bottom: 6px; }
-  .feature-heading, .feature-caption { display: grid; gap: 6px; }
+  .feature-heading { grid-template-columns: 1fr; gap: 10px; }
+  .feature-caption { display: grid; gap: 6px; }
   .landing .project-list .terrain-feature { padding-top: 14px; }
   .landing .project-list .terrain-feature > .eyebrow { font-size: 10px; }
   .case-grid { grid-template-columns: 1fr; gap: 24px; }
