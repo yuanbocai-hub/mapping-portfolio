@@ -176,10 +176,7 @@
 .landing .project-list .feature-context p + p { margin-top: 6px; }
 .feature-context a { color: var(--ink); }
 .terrain-cover { display: block; }
-.terrain-cover img { width: 100%; aspect-ratio: 65 / 32; object-fit: cover; object-position: 50% 59%; }
-@media (max-width: 650px) {
-  .terrain-cover img { aspect-ratio: 245 / 149; }
-}
+.terrain-cover img { display: block; width: 100%; height: auto; }
 .feature-caption { padding-top: 12px; }
 .landing .project-list .feature-caption p { margin: 0; max-width: 72ch; font-size: 15px; }
 .feature-caption > .entry-link { flex: none; }
