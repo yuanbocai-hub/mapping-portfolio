@@ -165,9 +165,18 @@
   margin-bottom: 16px;
 }
 .landing .project-list .feature-subtitle { margin: 4px 0 0; font-family: var(--serif); font-style: italic; }
-.landing .project-list .feature-context p { margin: 0; font: 15px/1.5 var(--sans); color: var(--muted); }
-.landing .project-list .feature-context p + p { margin-top: 6px; }
-.feature-context a { color: var(--ink); }
+.landing .project-list .project-affiliation {
+  margin: 0;
+  font: 650 16px/1.4 var(--sans);
+  color: #89432f;
+}
+.project-affiliation a { color: inherit; text-underline-offset: 3px; }
+.project-affiliation em { font-weight: inherit; }
+.landing .project-list .study-note {
+  margin: 13px 0 0;
+  font: 17px/1.5 var(--serif);
+  color: #435f64;
+}
 .terrain-cover { display: block; }
 .terrain-cover img { display: block; width: 100%; height: auto; }
 .feature-caption { padding-top: 12px; }
