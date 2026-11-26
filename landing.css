@@ -187,6 +187,7 @@
 .case-grid a { display: block; text-decoration: none; }
 .case-grid a:hover h3, .case-grid a:focus-visible h3 { text-decoration: underline; text-underline-offset: 4px; }
 .case-grid img { aspect-ratio: 3 / 2; object-fit: cover; }
+.case-grid img.full-map { object-fit: contain; }
 .case-place { display: block; margin: 14px 0 5px; font: 650 12px/1.4 var(--sans); color: var(--accent); letter-spacing: .08em; text-transform: uppercase; }
 .case-grid h3 { font-size: clamp(22px,2.1vw,32px); line-height: 1.18; }
 .case-grid h3 span { font: .6em var(--sans); }
