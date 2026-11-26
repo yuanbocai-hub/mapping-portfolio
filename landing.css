@@ -166,7 +166,11 @@
 .feature-heading, .feature-caption { display: flex; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
 .feature-heading { margin-bottom: 12px; }
 .landing .project-list .feature-heading p { margin: 0; font-family: var(--serif); font-style: italic; }
-.terrain-cover, .terrain-cover picture { display: block; }
+.terrain-cover { display: block; }
+.terrain-cover img { width: 100%; aspect-ratio: 65 / 32; object-fit: cover; object-position: 50% 59%; }
+@media (max-width: 650px) {
+  .terrain-cover img { aspect-ratio: 245 / 149; }
+}
 .feature-caption { padding-top: 12px; }
 .landing .project-list .feature-caption p { margin: 0; max-width: 72ch; font-size: 15px; }
 .feature-caption > .entry-link { flex: none; }
