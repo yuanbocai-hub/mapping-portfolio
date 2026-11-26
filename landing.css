@@ -164,7 +164,12 @@
   align-items: start;
   margin-bottom: 16px;
 }
-.landing .project-list .feature-subtitle { margin: 4px 0 0; font-family: var(--serif); font-style: italic; }
+.landing .project-list p.feature-subtitle {
+  margin: 12px 0 0;
+  margin-inline-start: clamp(12px, 1.5vw, 24px);
+  font: italic clamp(22px, 2vw, 30px)/1.25 var(--serif);
+  text-wrap: balance;
+}
 .landing .project-list .project-affiliation {
   margin: 0;
   font: 650 16px/1.4 var(--sans);
@@ -200,6 +205,7 @@
   .landing .portfolio-masthead { padding-block: 16px; }
   .opening-title .eyebrow { margin-bottom: 6px; }
   .feature-heading { grid-template-columns: 1fr; gap: 10px; }
+  .landing .project-list p.feature-subtitle { margin: 8px 0 0; }
   .feature-caption { display: grid; gap: 6px; }
   .landing .project-list .terrain-feature { padding-top: 14px; }
   .landing .project-list .terrain-feature > .eyebrow { font-size: 10px; }
